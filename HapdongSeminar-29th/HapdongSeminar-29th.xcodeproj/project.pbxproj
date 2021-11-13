@@ -14,6 +14,13 @@
 		FDD3AD0A273F6C2E00A72451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD3AD08273F6C2E00A72451 /* Main.storyboard */; };
 		FDD3AD0C273F6C3100A72451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD3AD0B273F6C3100A72451 /* Assets.xcassets */; };
 		FDD3AD0F273F6C3100A72451 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDD3AD0D273F6C3100A72451 /* LaunchScreen.storyboard */; };
+		FDD3AD20273F6E1A00A72451 /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3AD1F273F6E1A00A72451 /* APIConstants.swift */; };
+		FDD3AD23273F6E4700A72451 /* sampleComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3AD22273F6E4700A72451 /* sampleComponents.swift */; };
+		FDD3AD25273F6E5B00A72451 /* getClassName + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3AD24273F6E5B00A72451 /* getClassName + UIViewController.swift */; };
+		FDD3AD27273F6E7A00A72451 /* makeAlert + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3AD26273F6E7A00A72451 /* makeAlert + UIViewController.swift */; };
+		FDD3AD29273F6E8A00A72451 /* press + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3AD28273F6E8A00A72451 /* press + UIButton.swift */; };
+		FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3AD2A273F6EA000A72451 /* makeVibrate.swift */; };
+		FDD3AD2D273F6EAD00A72451 /* applyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3AD2C273F6EAD00A72451 /* applyShadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +35,13 @@
 		FDD3AD0B273F6C3100A72451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD3AD0E273F6C3100A72451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDD3AD10273F6C3100A72451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDD3AD1F273F6E1A00A72451 /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		FDD3AD22273F6E4700A72451 /* sampleComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleComponents.swift; sourceTree = "<group>"; };
+		FDD3AD24273F6E5B00A72451 /* getClassName + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "getClassName + UIViewController.swift"; sourceTree = "<group>"; };
+		FDD3AD26273F6E7A00A72451 /* makeAlert + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "makeAlert + UIViewController.swift"; sourceTree = "<group>"; };
+		FDD3AD28273F6E8A00A72451 /* press + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "press + UIButton.swift"; sourceTree = "<group>"; };
+		FDD3AD2A273F6EA000A72451 /* makeVibrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeVibrate.swift; sourceTree = "<group>"; };
+		FDD3AD2C273F6EAD00A72451 /* applyShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = applyShadow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +62,6 @@
 				8D7FA74EF68D1610B6C3459B /* Pods-HapdongSeminar-29th.debug.xcconfig */,
 				6938CA4CB75B346EC9F4916B /* Pods-HapdongSeminar-29th.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,15 +94,102 @@
 		FDD3AD01273F6C2E00A72451 /* HapdongSeminar-29th */ = {
 			isa = PBXGroup;
 			children = (
-				FDD3AD02273F6C2E00A72451 /* AppDelegate.swift */,
-				FDD3AD04273F6C2E00A72451 /* SceneDelegate.swift */,
+				FDD3AD17273F6D9400A72451 /* Global */,
+				FDD3AD16273F6D8F00A72451 /* Screens */,
 				FDD3AD06273F6C2E00A72451 /* ViewController.swift */,
-				FDD3AD08273F6C2E00A72451 /* Main.storyboard */,
-				FDD3AD0B273F6C3100A72451 /* Assets.xcassets */,
-				FDD3AD0D273F6C3100A72451 /* LaunchScreen.storyboard */,
 				FDD3AD10273F6C3100A72451 /* Info.plist */,
 			);
 			path = "HapdongSeminar-29th";
+			sourceTree = "<group>";
+		};
+		FDD3AD16273F6D8F00A72451 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		FDD3AD17273F6D9400A72451 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3AD21273F6E2300A72451 /* Storyboards */,
+				FDD3AD1E273F6E0C00A72451 /* Network */,
+				FDD3AD1D273F6DE400A72451 /* Supporting Files */,
+				FDD3AD1C273F6DD100A72451 /* Utils */,
+				FDD3AD1B273F6DCB00A72451 /* Literals */,
+				FDD3AD1A273F6DC500A72451 /* Resource */,
+				FDD3AD19273F6DBD00A72451 /* Extension */,
+				FDD3AD18273F6DAB00A72451 /* UIComponents */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		FDD3AD18273F6DAB00A72451 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3AD22273F6E4700A72451 /* sampleComponents.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		FDD3AD19273F6DBD00A72451 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3AD24273F6E5B00A72451 /* getClassName + UIViewController.swift */,
+				FDD3AD26273F6E7A00A72451 /* makeAlert + UIViewController.swift */,
+				FDD3AD28273F6E8A00A72451 /* press + UIButton.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		FDD3AD1A273F6DC500A72451 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3AD0B273F6C3100A72451 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		FDD3AD1B273F6DCB00A72451 /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Literals;
+			sourceTree = "<group>";
+		};
+		FDD3AD1C273F6DD100A72451 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3AD2A273F6EA000A72451 /* makeVibrate.swift */,
+				FDD3AD2C273F6EAD00A72451 /* applyShadow.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FDD3AD1D273F6DE400A72451 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3AD02273F6C2E00A72451 /* AppDelegate.swift */,
+				FDD3AD04273F6C2E00A72451 /* SceneDelegate.swift */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FDD3AD1E273F6E0C00A72451 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3AD1F273F6E1A00A72451 /* APIConstants.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		FDD3AD21273F6E2300A72451 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FDD3AD08273F6C2E00A72451 /* Main.storyboard */,
+				FDD3AD0D273F6C3100A72451 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +307,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD3AD2D273F6EAD00A72451 /* applyShadow.swift in Sources */,
+				FDD3AD25273F6E5B00A72451 /* getClassName + UIViewController.swift in Sources */,
+				FDD3AD27273F6E7A00A72451 /* makeAlert + UIViewController.swift in Sources */,
+				FDD3AD20273F6E1A00A72451 /* APIConstants.swift in Sources */,
+				FDD3AD29273F6E8A00A72451 /* press + UIButton.swift in Sources */,
 				FDD3AD07273F6C2E00A72451 /* ViewController.swift in Sources */,
+				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
+				FDD3AD23273F6E4700A72451 /* sampleComponents.swift in Sources */,
 				FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */,
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
 			);
