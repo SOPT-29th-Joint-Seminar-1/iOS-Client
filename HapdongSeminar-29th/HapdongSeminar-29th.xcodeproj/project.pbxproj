@@ -8,6 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		00CF3ACF320382DB0297F8B3 /* Pods_HapdongSeminar_29th.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */; };
+		FDCDE602273FA39E00B2F413 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE601273FA39E00B2F413 /* HomeVC.swift */; };
+		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
+		FDCDE606273FA3E500B2F413 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE605273FA3E500B2F413 /* Home.storyboard */; };
+		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
+		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
+		FDCDE611273FA46800B2F413 /* HomeEventTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60F273FA46800B2F413 /* HomeEventTVC.swift */; };
+		FDCDE612273FA46800B2F413 /* HomeEventTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE610273FA46800B2F413 /* HomeEventTVC.xib */; };
+		FDCDE615273FA47600B2F413 /* HomeReviewTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE613273FA47600B2F413 /* HomeReviewTVC.swift */; };
+		FDCDE616273FA47600B2F413 /* HomeReviewTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE614273FA47600B2F413 /* HomeReviewTVC.xib */; };
+		FDCDE619273FA48100B2F413 /* HomeNewsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE617273FA48100B2F413 /* HomeNewsTVC.swift */; };
+		FDCDE61A273FA48100B2F413 /* HomeNewsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE618273FA48100B2F413 /* HomeNewsTVC.xib */; };
 		FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3AD02273F6C2E00A72451 /* AppDelegate.swift */; };
 		FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3AD04273F6C2E00A72451 /* SceneDelegate.swift */; };
 		FDD3AD07273F6C2E00A72451 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD3AD06273F6C2E00A72451 /* ViewController.swift */; };
@@ -27,6 +38,17 @@
 		6938CA4CB75B346EC9F4916B /* Pods-HapdongSeminar-29th.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapdongSeminar-29th.release.xcconfig"; path = "Target Support Files/Pods-HapdongSeminar-29th/Pods-HapdongSeminar-29th.release.xcconfig"; sourceTree = "<group>"; };
 		8D7FA74EF68D1610B6C3459B /* Pods-HapdongSeminar-29th.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapdongSeminar-29th.debug.xcconfig"; path = "Target Support Files/Pods-HapdongSeminar-29th/Pods-HapdongSeminar-29th.debug.xcconfig"; sourceTree = "<group>"; };
 		98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapdongSeminar_29th.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDCDE601273FA39E00B2F413 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
+		FDCDE605273FA3E500B2F413 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
+		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
+		FDCDE60F273FA46800B2F413 /* HomeEventTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventTVC.swift; sourceTree = "<group>"; };
+		FDCDE610273FA46800B2F413 /* HomeEventTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEventTVC.xib; sourceTree = "<group>"; };
+		FDCDE613273FA47600B2F413 /* HomeReviewTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewTVC.swift; sourceTree = "<group>"; };
+		FDCDE614273FA47600B2F413 /* HomeReviewTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeReviewTVC.xib; sourceTree = "<group>"; };
+		FDCDE617273FA48100B2F413 /* HomeNewsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNewsTVC.swift; sourceTree = "<group>"; };
+		FDCDE618273FA48100B2F413 /* HomeNewsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeNewsTVC.xib; sourceTree = "<group>"; };
 		FDD3ACFF273F6C2E00A72451 /* HapdongSeminar-29th.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HapdongSeminar-29th.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD3AD02273F6C2E00A72451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD3AD04273F6C2E00A72451 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +95,63 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FDCDE5FF273FA34B00B2F413 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FDCDE60A273FA42000B2F413 /* News */,
+				FDCDE609273FA41A00B2F413 /* Review */,
+				FDCDE608273FA40D00B2F413 /* Event */,
+				FDCDE607273FA3F700B2F413 /* Header */,
+				FDCDE601273FA39E00B2F413 /* HomeVC.swift */,
+				FDCDE605273FA3E500B2F413 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FDCDE600273FA36500B2F413 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				FDCDE603273FA3B600B2F413 /* GuideVC.swift */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		FDCDE607273FA3F700B2F413 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */,
+				FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		FDCDE608273FA40D00B2F413 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				FDCDE60F273FA46800B2F413 /* HomeEventTVC.swift */,
+				FDCDE610273FA46800B2F413 /* HomeEventTVC.xib */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		FDCDE609273FA41A00B2F413 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				FDCDE613273FA47600B2F413 /* HomeReviewTVC.swift */,
+				FDCDE614273FA47600B2F413 /* HomeReviewTVC.xib */,
+			);
+			path = Review;
+			sourceTree = "<group>";
+		};
+		FDCDE60A273FA42000B2F413 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				FDCDE617273FA48100B2F413 /* HomeNewsTVC.swift */,
+				FDCDE618273FA48100B2F413 /* HomeNewsTVC.xib */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
 		FDD3ACF6273F6C2E00A72451 = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +175,6 @@
 			children = (
 				FDD3AD17273F6D9400A72451 /* Global */,
 				FDD3AD16273F6D8F00A72451 /* Screens */,
-				FDD3AD06273F6C2E00A72451 /* ViewController.swift */,
 				FDD3AD10273F6C3100A72451 /* Info.plist */,
 			);
 			path = "HapdongSeminar-29th";
@@ -105,6 +183,9 @@
 		FDD3AD16273F6D8F00A72451 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FDCDE600273FA36500B2F413 /* Guide */,
+				FDCDE5FF273FA34B00B2F413 /* Home */,
+				FDD3AD06273F6C2E00A72451 /* ViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -252,9 +333,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */,
 				FDD3AD0F273F6C3100A72451 /* LaunchScreen.storyboard in Resources */,
 				FDD3AD0C273F6C3100A72451 /* Assets.xcassets in Resources */,
+				FDCDE61A273FA48100B2F413 /* HomeNewsTVC.xib in Resources */,
 				FDD3AD0A273F6C2E00A72451 /* Main.storyboard in Resources */,
+				FDCDE606273FA3E500B2F413 /* Home.storyboard in Resources */,
+				FDCDE616273FA47600B2F413 /* HomeReviewTVC.xib in Resources */,
+				FDCDE612273FA46800B2F413 /* HomeEventTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,15 +394,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD3AD2D273F6EAD00A72451 /* applyShadow.swift in Sources */,
+				FDCDE611273FA46800B2F413 /* HomeEventTVC.swift in Sources */,
 				FDD3AD25273F6E5B00A72451 /* getClassName + UIViewController.swift in Sources */,
 				FDD3AD27273F6E7A00A72451 /* makeAlert + UIViewController.swift in Sources */,
+				FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */,
 				FDD3AD20273F6E1A00A72451 /* APIConstants.swift in Sources */,
 				FDD3AD29273F6E8A00A72451 /* press + UIButton.swift in Sources */,
 				FDD3AD07273F6C2E00A72451 /* ViewController.swift in Sources */,
 				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
+				FDCDE615273FA47600B2F413 /* HomeReviewTVC.swift in Sources */,
 				FDD3AD23273F6E4700A72451 /* sampleComponents.swift in Sources */,
 				FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */,
+				FDCDE602273FA39E00B2F413 /* HomeVC.swift in Sources */,
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
+				FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */,
+				FDCDE619273FA48100B2F413 /* HomeNewsTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
