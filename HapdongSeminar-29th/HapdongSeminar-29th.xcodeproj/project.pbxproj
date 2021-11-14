@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		00CF3ACF320382DB0297F8B3 /* Pods_HapdongSeminar_29th.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */; };
+		F2A8E0A12741722700A15287 /* SpoqaHanSansNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2A8E0A02741722700A15287 /* SpoqaHanSansNeo-Regular.ttf */; };
+		F2A8E0A32741727000A15287 /* SpoqaHanSansNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2A8E0A22741727000A15287 /* SpoqaHanSansNeo-Bold.ttf */; };
 		FDCDE602273FA39E00B2F413 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE601273FA39E00B2F413 /* HomeVC.swift */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE606273FA3E500B2F413 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE605273FA3E500B2F413 /* Home.storyboard */; };
@@ -38,6 +40,8 @@
 		6938CA4CB75B346EC9F4916B /* Pods-HapdongSeminar-29th.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapdongSeminar-29th.release.xcconfig"; path = "Target Support Files/Pods-HapdongSeminar-29th/Pods-HapdongSeminar-29th.release.xcconfig"; sourceTree = "<group>"; };
 		8D7FA74EF68D1610B6C3459B /* Pods-HapdongSeminar-29th.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapdongSeminar-29th.debug.xcconfig"; path = "Target Support Files/Pods-HapdongSeminar-29th/Pods-HapdongSeminar-29th.debug.xcconfig"; sourceTree = "<group>"; };
 		98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapdongSeminar_29th.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2A8E0A02741722700A15287 /* SpoqaHanSansNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.ttf"; sourceTree = "<group>"; };
+		F2A8E0A22741727000A15287 /* SpoqaHanSansNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.ttf"; sourceTree = "<group>"; };
 		FDCDE601273FA39E00B2F413 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE605273FA3E500B2F413 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -227,6 +231,8 @@
 			isa = PBXGroup;
 			children = (
 				FDD3AD0B273F6C3100A72451 /* Assets.xcassets */,
+				F2A8E0A22741727000A15287 /* SpoqaHanSansNeo-Bold.ttf */,
+				F2A8E0A02741722700A15287 /* SpoqaHanSansNeo-Regular.ttf */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -337,7 +343,9 @@
 				FDD3AD0F273F6C3100A72451 /* LaunchScreen.storyboard in Resources */,
 				FDD3AD0C273F6C3100A72451 /* Assets.xcassets in Resources */,
 				FDCDE61A273FA48100B2F413 /* HomeNewsTVC.xib in Resources */,
+				F2A8E0A12741722700A15287 /* SpoqaHanSansNeo-Regular.ttf in Resources */,
 				FDD3AD0A273F6C2E00A72451 /* Main.storyboard in Resources */,
+				F2A8E0A32741727000A15287 /* SpoqaHanSansNeo-Bold.ttf in Resources */,
 				FDCDE606273FA3E500B2F413 /* Home.storyboard in Resources */,
 				FDCDE616273FA47600B2F413 /* HomeReviewTVC.xib in Resources */,
 				FDCDE612273FA46800B2F413 /* HomeEventTVC.xib in Resources */,
