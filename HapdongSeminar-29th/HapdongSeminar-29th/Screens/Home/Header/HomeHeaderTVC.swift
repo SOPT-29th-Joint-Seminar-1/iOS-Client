@@ -9,15 +9,32 @@ import UIKit
 
 class HomeHeaderTVC: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    // MARK: - Vars & Lets Part
+    static let identifier = "HomeHeaderTVC"
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    // MARK: - UI Component Part
 
-        // Configure the view for the selected state
-    }
     
-}
+    // MARK: - Life Cycle Part
+
+      override func awakeFromNib() {
+          super.awakeFromNib()
+      }
+
+      override func setSelected(_ selected: Bool, animated: Bool) {
+          super.setSelected(selected, animated: animated)
+
+      }
+      
+    // MARK: - IBAction Part
+
+    
+    // MARK: - Custom Method Part
+
+    
+    // MARK: - @objc Function Part
+
+  }
+
+  // MARK: - Extension Part
+

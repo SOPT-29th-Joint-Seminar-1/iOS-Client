@@ -26,10 +26,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="Wiv-0x-Suo">
-                                        <rect key="frame" x="261.33333333333331" y="46" width="20" height="16"/>
+                                        <rect key="frame" x="261.33333333333331" y="45.666666666666664" width="20" height="16"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울 마포구 양화로 183 822호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SqY-Sj-Jh3">
-                                        <rect key="frame" x="105.00000000000001" y="46" width="153.33333333333337" height="16"/>
+                                        <rect key="frame" x="105.00000000000001" y="46" width="153.33333333333337" height="15.333333333333336"/>
                                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="12"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -44,7 +44,7 @@
                                         <buttonConfiguration key="configuration" style="plain" image="icon_call"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oGz-BG-I4E" userLabel="address Btn">
-                                        <rect key="frame" x="105.00000000000001" y="46" width="176.33333333333337" height="16"/>
+                                        <rect key="frame" x="105.00000000000001" y="46" width="176.33333333333337" height="15.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title=""/>
                                         <connections>
@@ -68,18 +68,61 @@
                                     <constraint firstAttribute="trailing" secondItem="1NP-xB-VwI" secondAttribute="trailing" constant="20" id="yT7-ah-dWh"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jcp-yx-jWP" userLabel="Home TV">
+                                <rect key="frame" x="0.0" y="75" width="375" height="1491"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeHeaderTVC" id="kqN-CQ-UqW" userLabel="Header TVC" customClass="HomeHeaderTVC" customModule="HapdongSeminar_29th" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kqN-CQ-UqW" id="0A0-zB-FEx">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeEventTVC" id="L5i-Hd-uBy" userLabel="Event TVC" customClass="HomeEventTVC" customModule="HapdongSeminar_29th" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="88.333333969116211" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L5i-Hd-uBy" id="ZmO-X3-DgB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeReviewTVC" id="Bkx-xH-asF" userLabel="Review TVC" customClass="HomeReviewTVC" customModule="HapdongSeminar_29th" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="132.00000190734863" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Bkx-xH-asF" id="rjt-vw-WIi">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HomeNewsTVC" id="8YE-O1-WvA" userLabel="News TVC" customClass="HomeNewsTVC" customModule="HapdongSeminar_29th" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="175.66666984558105" width="375" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8YE-O1-WvA" id="9WU-8x-dIf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lbW-CG-zaL"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="lbW-CG-zaL" firstAttribute="bottom" secondItem="Jcp-yx-jWP" secondAttribute="bottom" id="4nl-3a-0bc"/>
+                            <constraint firstItem="Jcp-yx-jWP" firstAttribute="leading" secondItem="lbW-CG-zaL" secondAttribute="leading" id="Vbv-3a-Fh7"/>
                             <constraint firstAttribute="trailing" secondItem="vuV-Ez-CgX" secondAttribute="trailing" id="Yh8-Qz-WBE"/>
+                            <constraint firstItem="lbW-CG-zaL" firstAttribute="trailing" secondItem="Jcp-yx-jWP" secondAttribute="trailing" id="eiJ-ag-xlm"/>
                             <constraint firstItem="vuV-Ez-CgX" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="gTB-eK-u0Y"/>
                             <constraint firstItem="vuV-Ez-CgX" firstAttribute="leading" secondItem="lbW-CG-zaL" secondAttribute="leading" id="s18-ff-b88"/>
+                            <constraint firstItem="Jcp-yx-jWP" firstAttribute="top" secondItem="vuV-Ez-CgX" secondAttribute="bottom" id="yQh-tw-3j6"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="375" height="1600"/>
                     <connections>
                         <outlet property="addressBtn" destination="oGz-BG-I4E" id="kMw-E3-OPT"/>
+                        <outlet property="homeTV" destination="Jcp-yx-jWP" id="Bmm-Yy-rIn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
