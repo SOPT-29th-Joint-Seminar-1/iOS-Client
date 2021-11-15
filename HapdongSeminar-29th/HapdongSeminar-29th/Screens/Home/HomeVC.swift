@@ -11,7 +11,7 @@ class HomeVC: UIViewController {
 
   // MARK: - Vars & Lets Part
     @IBOutlet weak var addressBtn: UIButton!
-    
+    @IBOutlet weak var homeTV: UITableView!
     
   // MARK: - UI Component Part
 

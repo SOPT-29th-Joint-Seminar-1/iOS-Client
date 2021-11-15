@@ -9,12 +9,32 @@ import UIKit
 
 class HomeNewsTVC: UITableViewCell {
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
+    // MARK: - Vars & Lets Part
+    static let identifier = "HomeNewsTVC"
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-    }
+    // MARK: - UI Component Part
+
     
-}
+    // MARK: - Life Cycle Part
+
+      override func awakeFromNib() {
+          super.awakeFromNib()
+      }
+
+      override func setSelected(_ selected: Bool, animated: Bool) {
+          super.setSelected(selected, animated: animated)
+
+      }
+      
+    // MARK: - IBAction Part
+
+    
+    // MARK: - Custom Method Part
+
+    
+    // MARK: - @objc Function Part
+
+  }
+
+  // MARK: - Extension Part
+
