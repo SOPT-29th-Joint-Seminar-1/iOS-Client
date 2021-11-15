@@ -94,3 +94,11 @@ iOSInjectionProject/
 *.docx
 *.pdf
 *.xlsx
+
+### Xcode Patch ###
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj -crlf -merge
+!*.xcodeproj/xcshareddata/
+!*.xcworkspace/contents.xcworkspacedata
+**/xcshareddata/WorkspaceSettings.xcsettings
+
