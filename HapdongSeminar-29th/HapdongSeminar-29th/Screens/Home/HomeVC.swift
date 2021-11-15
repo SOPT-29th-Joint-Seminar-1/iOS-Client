@@ -78,7 +78,7 @@ extension HomeVC: UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return 4
     }
     
     // indexPath를 활용해 TableViewcell 별로 데이터를 다르게 지정할 수 있다.
@@ -100,13 +100,13 @@ extension HomeVC: UITableViewDataSource {
         else if (indexPath.section == 2) { //ReviewView
             guard let reviewTVC = tableView.dequeueReusableCell(withIdentifier: HomeReviewTVC.identifier) as?
                     HomeReviewTVC else {return UITableViewCell()}
-            
+            reviewTVC.selectionStyle = .none
             return reviewTVC
         }
         else { //NewsView
             guard let newsTVC = tableView.dequeueReusableCell(withIdentifier: HomeNewsTVC.identifier) as?
                     HomeNewsTVC else {return UITableViewCell()}
-            
+            newsTVC.selectionStyle = .none
             return newsTVC
         }
 
