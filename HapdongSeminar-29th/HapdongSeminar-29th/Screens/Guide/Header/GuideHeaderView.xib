@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideHeaderView" customModule="HapdongSeminar_29th" customModuleProvider="target">
+            <connections>
+                <outlet property="addressArrowIcon" destination="NXh-2d-wNC" id="uEQ-yS-0gv"/>
+                <outlet property="addressButton" destination="z3j-H7-KTt" id="kLR-6C-18q"/>
+                <outlet property="addressLabel" destination="6mf-YJ-W4G" id="6g0-FF-FUS"/>
+                <outlet property="backButton" destination="hmb-9q-TSd" id="o5x-PC-6gE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="77"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJy-5M-Ujy">
+                    <rect key="frame" x="0.0" y="76" width="380" height="1"/>
+                    <color key="backgroundColor" name="grey4"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="ThR-CQ-NYv"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_back" translatesAutoresizingMaskIntoConstraints="NO" id="JgI-Ay-e02">
+                    <rect key="frame" x="21" y="47" width="14.5" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19" id="5D2-WO-q03"/>
+                        <constraint firstAttribute="width" constant="14.5" id="jc6-1W-lkA"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="서울 마포구 양화로 183 822호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6mf-YJ-W4G">
+                    <rect key="frame" x="107" y="42" width="150" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="97S-nj-Stq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_down_black" translatesAutoresizingMaskIntoConstraints="NO" id="NXh-2d-wNC">
+                    <rect key="frame" x="266" y="49" width="14" height="10"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3j-H7-KTt">
+                    <rect key="frame" x="107" y="42" width="173" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmb-9q-TSd">
+                    <rect key="frame" x="11" y="37" width="34.5" height="39"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hmb-9q-TSd" firstAttribute="trailing" secondItem="JgI-Ay-e02" secondAttribute="trailing" constant="10" id="BJH-Nt-GdT"/>
+                <constraint firstAttribute="bottom" secondItem="uJy-5M-Ujy" secondAttribute="bottom" id="H0t-5c-OZU"/>
+                <constraint firstItem="uJy-5M-Ujy" firstAttribute="top" secondItem="6mf-YJ-W4G" secondAttribute="bottom" constant="10" id="MWD-AA-TSN"/>
+                <constraint firstItem="z3j-H7-KTt" firstAttribute="leading" secondItem="6mf-YJ-W4G" secondAttribute="leading" id="N4c-kJ-MCP"/>
+                <constraint firstItem="NXh-2d-wNC" firstAttribute="centerY" secondItem="6mf-YJ-W4G" secondAttribute="centerY" id="R37-ul-rOu"/>
+                <constraint firstItem="z3j-H7-KTt" firstAttribute="trailing" secondItem="NXh-2d-wNC" secondAttribute="trailing" id="RT7-0b-YgA"/>
+                <constraint firstItem="NXh-2d-wNC" firstAttribute="leading" secondItem="6mf-YJ-W4G" secondAttribute="trailing" constant="9" id="VT1-UW-6uf"/>
+                <constraint firstItem="z3j-H7-KTt" firstAttribute="bottom" secondItem="6mf-YJ-W4G" secondAttribute="bottom" id="Y9A-dz-IEg"/>
+                <constraint firstItem="JgI-Ay-e02" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="21" id="YE4-1V-3w4"/>
+                <constraint firstItem="hmb-9q-TSd" firstAttribute="bottom" secondItem="JgI-Ay-e02" secondAttribute="bottom" constant="10" id="YW1-ly-Hfa"/>
+                <constraint firstAttribute="trailing" secondItem="uJy-5M-Ujy" secondAttribute="trailing" id="Z5X-Pa-VRF"/>
+                <constraint firstItem="hmb-9q-TSd" firstAttribute="top" secondItem="JgI-Ay-e02" secondAttribute="top" constant="-10" id="dSE-jU-flx"/>
+                <constraint firstItem="z3j-H7-KTt" firstAttribute="top" secondItem="6mf-YJ-W4G" secondAttribute="top" id="f2f-bu-wU9"/>
+                <constraint firstItem="uJy-5M-Ujy" firstAttribute="top" secondItem="JgI-Ay-e02" secondAttribute="bottom" constant="10" id="gwu-wq-bN1"/>
+                <constraint firstItem="hmb-9q-TSd" firstAttribute="leading" secondItem="JgI-Ay-e02" secondAttribute="leading" constant="-10" id="jOp-3Q-gdv"/>
+                <constraint firstItem="uJy-5M-Ujy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pIV-tQ-2vv"/>
+                <constraint firstItem="6mf-YJ-W4G" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" constant="-8" id="ymr-PM-DlH"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="107.24637681159422" y="-122.87946428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_back" width="14.5" height="19"/>
+        <image name="icon_down_black" width="14" height="10"/>
+        <namedColor name="grey4">
+            <color red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

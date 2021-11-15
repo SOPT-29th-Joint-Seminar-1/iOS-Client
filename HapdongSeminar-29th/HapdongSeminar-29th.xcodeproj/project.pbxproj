@@ -12,6 +12,11 @@
 		F2A8E0A32741727000A15287 /* SpoqaHanSansNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2A8E0A22741727000A15287 /* SpoqaHanSansNeo-Bold.ttf */; };
 		F2A8E0A527417F4000A15287 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A8E0A427417F4000A15287 /* Home.storyboard */; };
 		F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8E0A62741898F00A15287 /* HomeVC.swift */; };
+		FD3183802742DECA0037C140 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD31837F2742DECA0037C140 /* Guide.storyboard */; };
+		FD3183832742DEF70037C140 /* GuideHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD3183822742DEF70037C140 /* GuideHeaderView.xib */; };
+		FD3183852742DF030037C140 /* GuideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3183842742DF030037C140 /* GuideHeaderView.swift */; };
+		FD3183872742DF760037C140 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3183862742DF760037C140 /* Colors.xcassets */; };
+		FD3183892742E4CA0037C140 /* addSubViewFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3183882742E4CA0037C140 /* addSubViewFromNib.swift */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -44,6 +49,11 @@
 		F2A8E0A22741727000A15287 /* SpoqaHanSansNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.ttf"; sourceTree = "<group>"; };
 		F2A8E0A427417F4000A15287 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F2A8E0A62741898F00A15287 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		FD31837F2742DECA0037C140 /* Guide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
+		FD3183822742DEF70037C140 /* GuideHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideHeaderView.xib; sourceTree = "<group>"; };
+		FD3183842742DF030037C140 /* GuideHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideHeaderView.swift; sourceTree = "<group>"; };
+		FD3183862742DF760037C140 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		FD3183882742E4CA0037C140 /* addSubViewFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSubViewFromNib.swift; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -99,6 +109,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FD3183812742DEED0037C140 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				FD3183822742DEF70037C140 /* GuideHeaderView.xib */,
+				FD3183842742DF030037C140 /* GuideHeaderView.swift */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
 		FDCDE5FF273FA34B00B2F413 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,7 +134,9 @@
 		FDCDE600273FA36500B2F413 /* Guide */ = {
 			isa = PBXGroup;
 			children = (
+				FD3183812742DEED0037C140 /* Header */,
 				FDCDE603273FA3B600B2F413 /* GuideVC.swift */,
+				FD31837F2742DECA0037C140 /* Guide.storyboard */,
 			);
 			path = Guide;
 			sourceTree = "<group>";
@@ -223,6 +244,7 @@
 				FDD3AD24273F6E5B00A72451 /* getClassName + UIViewController.swift */,
 				FDD3AD26273F6E7A00A72451 /* makeAlert + UIViewController.swift */,
 				FDD3AD28273F6E8A00A72451 /* press + UIButton.swift */,
+				FD3183882742E4CA0037C140 /* addSubViewFromNib.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -233,6 +255,7 @@
 				FDD3AD0B273F6C3100A72451 /* Assets.xcassets */,
 				F2A8E0A22741727000A15287 /* SpoqaHanSansNeo-Bold.ttf */,
 				F2A8E0A02741722700A15287 /* SpoqaHanSansNeo-Regular.ttf */,
+				FD3183862742DF760037C140 /* Colors.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -341,12 +364,15 @@
 			files = (
 				FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */,
 				F2A8E0A527417F4000A15287 /* Home.storyboard in Resources */,
+				FD3183872742DF760037C140 /* Colors.xcassets in Resources */,
+				FD3183832742DEF70037C140 /* GuideHeaderView.xib in Resources */,
 				FDD3AD0F273F6C3100A72451 /* LaunchScreen.storyboard in Resources */,
 				FDD3AD0C273F6C3100A72451 /* Assets.xcassets in Resources */,
 				FDCDE61A273FA48100B2F413 /* HomeNewsTVC.xib in Resources */,
 				F2A8E0A12741722700A15287 /* SpoqaHanSansNeo-Regular.ttf in Resources */,
 				FDD3AD0A273F6C2E00A72451 /* Main.storyboard in Resources */,
 				F2A8E0A32741727000A15287 /* SpoqaHanSansNeo-Bold.ttf in Resources */,
+				FD3183802742DECA0037C140 /* Guide.storyboard in Resources */,
 				FDCDE616273FA47600B2F413 /* HomeReviewTVC.xib in Resources */,
 				FDCDE612273FA46800B2F413 /* HomeEventTVC.xib in Resources */,
 			);
@@ -403,6 +429,7 @@
 			files = (
 				FDD3AD2D273F6EAD00A72451 /* applyShadow.swift in Sources */,
 				FDCDE611273FA46800B2F413 /* HomeEventTVC.swift in Sources */,
+				FD3183852742DF030037C140 /* GuideHeaderView.swift in Sources */,
 				FDD3AD25273F6E5B00A72451 /* getClassName + UIViewController.swift in Sources */,
 				FDD3AD27273F6E7A00A72451 /* makeAlert + UIViewController.swift in Sources */,
 				FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */,
@@ -411,6 +438,7 @@
 				FDD3AD07273F6C2E00A72451 /* ViewController.swift in Sources */,
 				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
 				F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */,
+				FD3183892742E4CA0037C140 /* addSubViewFromNib.swift in Sources */,
 				FDCDE615273FA47600B2F413 /* HomeReviewTVC.swift in Sources */,
 				FDD3AD23273F6E4700A72451 /* sampleComponents.swift in Sources */,
 				FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */,
