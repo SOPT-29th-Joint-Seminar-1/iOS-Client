@@ -122,7 +122,7 @@
                     <size key="freeformSize" width="375" height="1600"/>
                     <connections>
                         <outlet property="addressBtn" destination="oGz-BG-I4E" id="kMw-E3-OPT"/>
-                        <outlet property="homeTV" destination="Jcp-yx-jWP" id="Bmm-Yy-rIn"/>
+                        <outlet property="homeTV" destination="Jcp-yx-jWP" id="gvv-Pb-bB7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
