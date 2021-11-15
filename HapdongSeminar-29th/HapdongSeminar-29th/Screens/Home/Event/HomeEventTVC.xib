@@ -5,7 +5,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -29,16 +28,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bCn-Zp-atP">
-                        <rect key="frame" x="0.0" y="83" width="375" height="201"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7Vs-9c-Ffb">
-                            <size key="itemSize" width="128" height="128"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                    </collectionView>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mgR-fh-rp4">
                         <rect key="frame" x="109.5" y="286" width="156" height="26"/>
                         <color key="pageIndicatorTintColor" name="grey2"/>
@@ -47,21 +36,24 @@
                             <action selector="pageChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="F93-tR-c84"/>
                         </connections>
                     </pageControl>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygX-jJ-hdp">
+                        <rect key="frame" x="0.0" y="83" width="375" height="200"/>
+                    </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottom" secondItem="bCn-Zp-atP" secondAttribute="bottom" constant="20" id="0CJ-Ov-9aS"/>
-                    <constraint firstItem="bCn-Zp-atP" firstAttribute="top" secondItem="yoC-Ws-bOI" secondAttribute="bottom" constant="20" id="IHc-Fd-2Vt"/>
+                    <constraint firstItem="mgR-fh-rp4" firstAttribute="top" secondItem="ygX-jJ-hdp" secondAttribute="bottom" constant="3" id="3ge-Su-hk4"/>
+                    <constraint firstItem="ygX-jJ-hdp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AMF-EB-mAI"/>
                     <constraint firstItem="mgR-fh-rp4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Tcf-Zq-Srh"/>
+                    <constraint firstAttribute="trailing" secondItem="ygX-jJ-hdp" secondAttribute="trailing" id="VTq-dV-yJ0"/>
                     <constraint firstItem="yoC-Ws-bOI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="g4d-nM-KuW"/>
-                    <constraint firstAttribute="trailing" secondItem="bCn-Zp-atP" secondAttribute="trailing" id="iIM-wE-Mea"/>
-                    <constraint firstItem="mgR-fh-rp4" firstAttribute="top" secondItem="bCn-Zp-atP" secondAttribute="bottom" constant="2" id="sde-zd-8WV"/>
+                    <constraint firstAttribute="bottom" secondItem="ygX-jJ-hdp" secondAttribute="bottom" constant="21" id="igT-A3-BWu"/>
+                    <constraint firstItem="ygX-jJ-hdp" firstAttribute="top" secondItem="yoC-Ws-bOI" secondAttribute="bottom" constant="20" id="nsb-Dp-WtB"/>
                     <constraint firstItem="yoC-Ws-bOI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ulk-bb-2P0"/>
-                    <constraint firstItem="bCn-Zp-atP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="wR6-vX-cNn"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="eventCollectionView" destination="bCn-Zp-atP" id="Fyd-T5-vje"/>
+                <outlet property="eventImgView" destination="ygX-jJ-hdp" id="4ou-g3-IJ9"/>
                 <outlet property="pager" destination="mgR-fh-rp4" id="tcA-tj-XB0"/>
             </connections>
             <point key="canvasLocation" x="131.15942028985509" y="79.6875"/>
@@ -74,8 +66,5 @@
         <namedColor name="grey2">
             <color red="0.91399997472763062" green="0.91399997472763062" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
