@@ -84,11 +84,11 @@ extension GuideDataModel{
 
         case .total :
           let totalList = loadDummyProductList(category: .clothes) +
+          loadDummyProductList(category: .living) +
           loadDummyProductList(category: .bedding) +
           loadDummyProductList(category: .shoes) +
           loadDummyProductList(category: .leather) +
-          loadDummyProductList(category: .repair) +
-          loadDummyProductList(category: .total)
+          loadDummyProductList(category: .repair)
           
           return totalList
 

@@ -31,6 +31,7 @@ class GuideCategoryNameCVC: UICollectionViewCell,UICollectionViewRegisterable {
   // MARK: - Custom Method Parts
   
   func setName(name : String, isClicked : Bool){
+    nameLabel.text = name
     self.contentView.backgroundColor = isClicked ? .blue1 : .white
     self.nameLabel.font = isClicked ? .boldSystemFont(ofSize: 14) : .systemFont(ofSize: 14)
     self.nameLabel.textColor = isClicked ? .white : .blue1

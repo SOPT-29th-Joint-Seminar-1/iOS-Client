@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,18 +18,18 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반가워요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vw9-LU-L1Z">
-                        <rect key="frame" x="20" y="31" width="91" height="24"/>
+                        <rect key="frame" x="20" y="31" width="91" height="27"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="24" id="5EQ-TV-sfd"/>
+                            <constraint firstAttribute="height" constant="27" id="5EQ-TV-sfd"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세탁특공대가 처음이세요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpu-6f-yBE">
-                        <rect key="frame" x="20" y="63" width="246.5" height="24"/>
+                        <rect key="frame" x="20" y="64" width="246.5" height="27"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="24" id="gLA-2Z-Y6Z"/>
+                            <constraint firstAttribute="height" constant="27" id="gLA-2Z-Y6Z"/>
                         </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                         <nil key="textColor"/>
@@ -38,9 +39,9 @@
                 <constraints>
                     <constraint firstItem="Vw9-LU-L1Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="31" id="7KL-va-CWN"/>
                     <constraint firstItem="Hpu-6f-yBE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Cc6-T2-iP3"/>
-                    <constraint firstItem="Hpu-6f-yBE" firstAttribute="top" secondItem="Vw9-LU-L1Z" secondAttribute="bottom" constant="8" id="Glo-f5-L64"/>
+                    <constraint firstItem="Hpu-6f-yBE" firstAttribute="top" secondItem="Vw9-LU-L1Z" secondAttribute="bottom" constant="6" id="Glo-f5-L64"/>
                     <constraint firstItem="Vw9-LU-L1Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="WrU-xb-Ae3"/>
-                    <constraint firstAttribute="bottomMargin" secondItem="Hpu-6f-yBE" secondAttribute="bottom" constant="17" id="wUc-7a-FqV"/>
+                    <constraint firstAttribute="bottom" secondItem="Hpu-6f-yBE" secondAttribute="bottom" constant="17" id="wUc-7a-FqV"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
