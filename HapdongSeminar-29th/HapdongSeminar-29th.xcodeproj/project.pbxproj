@@ -23,6 +23,8 @@
 		FD4C55A1274348020051BCC9 /* GuideHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C559F274348020051BCC9 /* GuideHeaderTVC.xib */; };
 		FD4C55A527434D430051BCC9 /* GuideSearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55A327434D430051BCC9 /* GuideSearchTVC.swift */; };
 		FD4C55A627434D430051BCC9 /* GuideSearchTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55A427434D430051BCC9 /* GuideSearchTVC.xib */; };
+		FD4C55AA2743709C0051BCC9 /* Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55A92743709C0051BCC9 /* Literals.swift */; };
+		FD4C55AC274370B00051BCC9 /* Images + Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55AB274370B00051BCC9 /* Images + Literals.swift */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -66,6 +68,8 @@
 		FD4C559F274348020051BCC9 /* GuideHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideHeaderTVC.xib; sourceTree = "<group>"; };
 		FD4C55A327434D430051BCC9 /* GuideSearchTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSearchTVC.swift; sourceTree = "<group>"; };
 		FD4C55A427434D430051BCC9 /* GuideSearchTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideSearchTVC.xib; sourceTree = "<group>"; };
+		FD4C55A92743709C0051BCC9 /* Literals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Literals.swift; sourceTree = "<group>"; };
+		FD4C55AB274370B00051BCC9 /* Images + Literals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images + Literals.swift"; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -297,6 +301,8 @@
 		FDD3AD1B273F6DCB00A72451 /* Literals */ = {
 			isa = PBXGroup;
 			children = (
+				FD4C55A92743709C0051BCC9 /* Literals.swift */,
+				FD4C55AB274370B00051BCC9 /* Images + Literals.swift */,
 			);
 			path = Literals;
 			sourceTree = "<group>";
@@ -470,6 +476,7 @@
 				FD3183852742DF030037C140 /* GuideHeaderView.swift in Sources */,
 				FDD3AD25273F6E5B00A72451 /* getClassName + UIViewController.swift in Sources */,
 				FDD3AD27273F6E7A00A72451 /* makeAlert + UIViewController.swift in Sources */,
+				FD4C55AC274370B00051BCC9 /* Images + Literals.swift in Sources */,
 				FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */,
 				FDD3AD20273F6E1A00A72451 /* APIConstants.swift in Sources */,
 				FDD3AD29273F6E8A00A72451 /* press + UIButton.swift in Sources */,
@@ -481,6 +488,7 @@
 				FDD3AD23273F6E4700A72451 /* sampleComponents.swift in Sources */,
 				FD4C55A527434D430051BCC9 /* GuideSearchTVC.swift in Sources */,
 				FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */,
+				FD4C55AA2743709C0051BCC9 /* Literals.swift in Sources */,
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
 				FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */,
 				FDCDE619273FA48100B2F413 /* HomeNewsTVC.swift in Sources */,
