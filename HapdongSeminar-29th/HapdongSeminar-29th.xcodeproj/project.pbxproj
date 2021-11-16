@@ -51,6 +51,10 @@
 		FDB75E6D2744021600ACED22 /* GuideWarningTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E6B2744021600ACED22 /* GuideWarningTVC.swift */; };
 		FDB75E6E2744021600ACED22 /* GuideWarningTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E6C2744021600ACED22 /* GuideWarningTVC.xib */; };
 		FDB75E702744041B00ACED22 /* Text + Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E6F2744041B00ACED22 /* Text + Literals.swift */; };
+		FDB75E742744152F00ACED22 /* GuideProcessTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E722744152F00ACED22 /* GuideProcessTVC.swift */; };
+		FDB75E752744152F00ACED22 /* GuideProcessTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E732744152F00ACED22 /* GuideProcessTVC.xib */; };
+		FDB75E792744187A00ACED22 /* GuideProcessPageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E772744187A00ACED22 /* GuideProcessPageCVC.swift */; };
+		FDB75E7A2744187A00ACED22 /* GuideProcessPageCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E782744187A00ACED22 /* GuideProcessPageCVC.xib */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -122,6 +126,10 @@
 		FDB75E6B2744021600ACED22 /* GuideWarningTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideWarningTVC.swift; sourceTree = "<group>"; };
 		FDB75E6C2744021600ACED22 /* GuideWarningTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideWarningTVC.xib; sourceTree = "<group>"; };
 		FDB75E6F2744041B00ACED22 /* Text + Literals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text + Literals.swift"; sourceTree = "<group>"; };
+		FDB75E722744152F00ACED22 /* GuideProcessTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideProcessTVC.swift; sourceTree = "<group>"; };
+		FDB75E732744152F00ACED22 /* GuideProcessTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideProcessTVC.xib; sourceTree = "<group>"; };
+		FDB75E772744187A00ACED22 /* GuideProcessPageCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideProcessPageCVC.swift; sourceTree = "<group>"; };
+		FDB75E782744187A00ACED22 /* GuideProcessPageCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideProcessPageCVC.xib; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -300,6 +308,25 @@
 			path = WarningCell;
 			sourceTree = "<group>";
 		};
+		FDB75E712744151400ACED22 /* ProcessCell */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E762744184B00ACED22 /* Pages */,
+				FDB75E722744152F00ACED22 /* GuideProcessTVC.swift */,
+				FDB75E732744152F00ACED22 /* GuideProcessTVC.xib */,
+			);
+			path = ProcessCell;
+			sourceTree = "<group>";
+		};
+		FDB75E762744184B00ACED22 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E772744187A00ACED22 /* GuideProcessPageCVC.swift */,
+				FDB75E782744187A00ACED22 /* GuideProcessPageCVC.xib */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
 		FDCDE5FF273FA34B00B2F413 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -322,6 +349,7 @@
 				FD4C55BE274392ED0051BCC9 /* CategoryCell */,
 				FDB75E602743E69500ACED22 /* ManualCell */,
 				FDB75E6A2744020500ACED22 /* WarningCell */,
+				FDB75E712744151400ACED22 /* ProcessCell */,
 				FDCDE603273FA3B600B2F413 /* GuideVC.swift */,
 				FD31837F2742DECA0037C140 /* Guide.storyboard */,
 			);
@@ -572,6 +600,7 @@
 				FD4C55C2274393400051BCC9 /* GuideCategoryContainerTVC.xib in Resources */,
 				FD4C55B6274387FA0051BCC9 /* Spoqa Han Sans Neo Regular.otf in Resources */,
 				FDD3AD0F273F6C3100A72451 /* LaunchScreen.storyboard in Resources */,
+				FDB75E752744152F00ACED22 /* GuideProcessTVC.xib in Resources */,
 				FD4C55CE27439B5B0051BCC9 /* GuideCategoryNameCVC.xib in Resources */,
 				FDD3AD0C273F6C3100A72451 /* Assets.xcassets in Resources */,
 				FD4C55B8274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf in Resources */,
@@ -581,6 +610,7 @@
 				FD4C55A1274348020051BCC9 /* GuideHeaderTVC.xib in Resources */,
 				FDB75E6E2744021600ACED22 /* GuideWarningTVC.xib in Resources */,
 				FD4C55B9274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf in Resources */,
+				FDB75E7A2744187A00ACED22 /* GuideProcessPageCVC.xib in Resources */,
 				F24DCC9A2742E47A001E0791 /* HomeReviewCVC.xib in Resources */,
 				FD3183802742DECA0037C140 /* Guide.storyboard in Resources */,
 				FDCDE616273FA47600B2F413 /* HomeReviewTVC.xib in Resources */,
@@ -637,6 +667,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB75E742744152F00ACED22 /* GuideProcessTVC.swift in Sources */,
 				FDB75E532743C32900ACED22 /* UICollectionViewRegisterable.swift in Sources */,
 				F24DCC992742E47A001E0791 /* HomeReviewCVC.swift in Sources */,
 				FDB75E5F2743DB8900ACED22 /* calculateTopInset.swift in Sources */,
@@ -658,6 +689,7 @@
 				FD4C55BB274389210051BCC9 /* makeSpoqaFont.swift in Sources */,
 				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
 				F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */,
+				FDB75E792744187A00ACED22 /* GuideProcessPageCVC.swift in Sources */,
 				FDB75E552743C35800ACED22 /* UITableViewRegisterable.swift in Sources */,
 				FD3183892742E4CA0037C140 /* addSubViewFromNib.swift in Sources */,
 				FDCDE615273FA47600B2F413 /* HomeReviewTVC.swift in Sources */,

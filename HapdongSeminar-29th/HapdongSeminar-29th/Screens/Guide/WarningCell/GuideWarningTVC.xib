@@ -1087,7 +1087,7 @@ Cg
                 <outlet property="containerHeightConstraint" destination="r08-lv-Y7s" id="ynT-B3-GC8"/>
                 <outlet property="downIconImageView" destination="sZc-FF-Ycv" id="Td0-ko-s4O"/>
                 <outlet property="upIconImageView" destination="RLd-h1-ngo" id="wqR-az-F2Q"/>
-                <outlet property="warningTextContainerView" destination="RLd-h1-ngo" id="Q0P-g4-euI"/>
+                <outlet property="warningTextContainerView" destination="EQX-5B-9HD" id="ogZ-i5-C2C"/>
                 <outlet property="warningTextView" destination="LD6-oh-0zo" id="iC7-fG-uiz"/>
             </connections>
             <point key="canvasLocation" x="256.52173913043481" y="199.55357142857142"/>

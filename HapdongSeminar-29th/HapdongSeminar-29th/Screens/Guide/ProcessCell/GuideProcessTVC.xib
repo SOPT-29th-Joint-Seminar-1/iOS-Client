@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="495" id="KGk-i7-Jjw" customClass="GuideProcessTVC" customModule="HapdongSeminar_29th" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="508" height="495"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="508" height="495"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세탁과정" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Ue-fc-0cH">
+                        <rect key="frame" x="20" y="52" width="62.5" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="2J8-w6-8dC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="category_process" translatesAutoresizingMaskIntoConstraints="NO" id="21h-uN-2rj">
+                        <rect key="frame" x="90.5" y="52" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="hHJ-5G-YHp"/>
+                            <constraint firstAttribute="width" constant="25" id="ijg-wb-klg"/>
+                        </constraints>
+                    </imageView>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Uzc-co-9Fl">
+                        <rect key="frame" x="0.0" y="100" width="508" height="250"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="250" id="TpD-FG-iHC"/>
+                        </constraints>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="iGV-jA-kYx">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="fMb-WV-kcW">
+                        <rect key="frame" x="168" y="367" width="172.5" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="GGD-0q-ujd"/>
+                        </constraints>
+                        <color key="pageIndicatorTintColor" name="grey2"/>
+                        <color key="currentPageIndicatorTintColor" name="blue1"/>
+                    </pageControl>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="21h-uN-2rj" firstAttribute="leading" secondItem="7Ue-fc-0cH" secondAttribute="trailing" constant="8" id="0Ml-Kg-tJL"/>
+                    <constraint firstItem="fMb-WV-kcW" firstAttribute="top" secondItem="Uzc-co-9Fl" secondAttribute="bottom" constant="17" id="0Or-CQ-KXh"/>
+                    <constraint firstAttribute="trailing" secondItem="Uzc-co-9Fl" secondAttribute="trailing" id="1be-OG-rTX"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="fMb-WV-kcW" secondAttribute="bottom" constant="41" id="7tT-XT-l5Q"/>
+                    <constraint firstItem="7Ue-fc-0cH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="52" id="Kaf-tB-NtV"/>
+                    <constraint firstItem="fMb-WV-kcW" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="ONh-IF-fZA"/>
+                    <constraint firstItem="7Ue-fc-0cH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ULx-JH-5MK"/>
+                    <constraint firstItem="Uzc-co-9Fl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="bHF-I4-OSL"/>
+                    <constraint firstItem="21h-uN-2rj" firstAttribute="centerY" secondItem="7Ue-fc-0cH" secondAttribute="centerY" id="ufD-u6-vQ4"/>
+                    <constraint firstItem="Uzc-co-9Fl" firstAttribute="top" secondItem="21h-uN-2rj" secondAttribute="bottom" constant="23" id="yTc-xY-GRN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bannerCV" destination="Uzc-co-9Fl" id="jCi-td-h2C"/>
+                <outlet property="bannerCVHeightConstraint" destination="TpD-FG-iHC" id="jPL-06-OIw"/>
+                <outlet property="pageControl" destination="fMb-WV-kcW" id="bmT-EE-15z"/>
+                <outlet property="titleLabel" destination="7Ue-fc-0cH" id="so6-eR-Hro"/>
+            </connections>
+            <point key="canvasLocation" x="266.66666666666669" y="280.91517857142856"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="category_process" width="25" height="25"/>
+        <namedColor name="blue1">
+            <color red="0.16099999845027924" green="0.38400000333786011" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="grey2">
+            <color red="0.91399997472763062" green="0.91399997472763062" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

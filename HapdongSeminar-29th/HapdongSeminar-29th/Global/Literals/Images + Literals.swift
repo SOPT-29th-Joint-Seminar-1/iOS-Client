@@ -22,6 +22,11 @@ extension Literals{
       
       static let warningArrowDown = UIImage(named: "icon_down_red")!
       static let warningArrowUp = UIImage(named: "icon_up_red")!
+      
+      static let processStep_1 = UIImage(named: "box_process1")!
+      static let processStep_2 = UIImage(named: "box_process2")!
+      static let processStep_3 = UIImage(named: "box_process3")!
+      static let processStep_4 = UIImage(named: "box_process4")!
     }
   }
 }
