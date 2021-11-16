@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00CF3ACF320382DB0297F8B3 /* Pods_HapdongSeminar_29th.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */; };
-		F24916492743D78100C8F9A7 /* HomeReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24916482743D78100C8F9A7 /* HomeReviewModel.swift */; };
+		F249164D274418A400C8F9A7 /* HomeReviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24916482743D78100C8F9A7 /* HomeReviewData.swift */; };
 		F24DCC992742E47A001E0791 /* HomeReviewCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */; };
 		F24DCC9A2742E47A001E0791 /* HomeReviewCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */; };
 		F2A8E0A527417F4000A15287 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A8E0A427417F4000A15287 /* Home.storyboard */; };
@@ -77,7 +77,7 @@
 		6938CA4CB75B346EC9F4916B /* Pods-HapdongSeminar-29th.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapdongSeminar-29th.release.xcconfig"; path = "Target Support Files/Pods-HapdongSeminar-29th/Pods-HapdongSeminar-29th.release.xcconfig"; sourceTree = "<group>"; };
 		8D7FA74EF68D1610B6C3459B /* Pods-HapdongSeminar-29th.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapdongSeminar-29th.debug.xcconfig"; path = "Target Support Files/Pods-HapdongSeminar-29th/Pods-HapdongSeminar-29th.debug.xcconfig"; sourceTree = "<group>"; };
 		98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapdongSeminar_29th.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F24916482743D78100C8F9A7 /* HomeReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewModel.swift; sourceTree = "<group>"; };
+		F24916482743D78100C8F9A7 /* HomeReviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewData.swift; sourceTree = "<group>"; };
 		F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewCVC.swift; sourceTree = "<group>"; };
 		F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeReviewCVC.xib; sourceTree = "<group>"; };
 		F2A8E0A427417F4000A15287 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -176,6 +176,7 @@
 		F249164C2744162500C8F9A7 /* ReviewItem */ = {
 			isa = PBXGroup;
 			children = (
+				F24916482743D78100C8F9A7 /* HomeReviewData.swift */,
 				F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */,
 				F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */,
 			);
@@ -347,7 +348,6 @@
 				F249164C2744162500C8F9A7 /* ReviewItem */,
 				FDCDE613273FA47600B2F413 /* HomeReviewTVC.swift */,
 				FDCDE614273FA47600B2F413 /* HomeReviewTVC.xib */,
-				F24916482743D78100C8F9A7 /* HomeReviewModel.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -664,6 +664,7 @@
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
 				FD4C55BD27438C6A0051BCC9 /* setCharacterSpacing.swift in Sources */,
 				FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */,
+				F249164D274418A400C8F9A7 /* HomeReviewData.swift in Sources */,
 				FDCDE619273FA48100B2F413 /* HomeNewsTVC.swift in Sources */,
 				FDB75E682743EC3800ACED22 /* GuideManualStepCVC.swift in Sources */,
 				FDB75E5B2743C61F00ACED22 /* GuideProductDataModel.swift in Sources */,

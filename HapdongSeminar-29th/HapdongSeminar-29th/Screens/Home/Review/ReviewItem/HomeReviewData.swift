@@ -7,7 +7,8 @@
 
 import UIKit
 
-struct HomeReviewModel {
+struct HomeReviewData {
+    
     var image : String
     var userId : String
     var numOfUse : String

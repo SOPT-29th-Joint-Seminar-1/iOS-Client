@@ -33,13 +33,13 @@ class HomeReviewCVC: UICollectionViewCell {
 
 
   // MARK: - Custom Method Part
-    func setData(project: HomeReviewModel){
-        self.reviewImageView.image = project.makeItemImage()
-        self.userIdLabel.text = project.userId
-        self.numOfUseLabel.text = project.numOfUse
-        self.dateLabel.text = project.date
-        self.reviewLabel.text = project.review
-        self.likeLabel.text = project.like
+    func setData(appData: HomeReviewData ){
+        self.reviewImageView.image = appData.makeItemImage()
+        self.userIdLabel.text = appData.userId
+        self.numOfUseLabel.text = appData.numOfUse
+        self.dateLabel.text = appData.date
+        self.reviewLabel.text = appData.review
+        self.likeLabel.text = appData.like
     }
 
 
