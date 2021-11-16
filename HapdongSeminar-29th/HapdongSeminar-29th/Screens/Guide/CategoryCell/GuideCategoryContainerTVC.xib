@@ -49,7 +49,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="cateogoryCV" destination="1i4-rd-Em5" id="Wqb-pr-q5u"/>
+                <outlet property="categoryCV" destination="1i4-rd-Em5" id="Wqb-pr-q5u"/>
                 <outlet property="productListTV" destination="1wD-Ov-Zkh" id="FVN-hc-Fz2"/>
             </connections>
             <point key="canvasLocation" x="291.304347826087" y="178.45982142857142"/>

@@ -7,10 +7,11 @@
 
 import UIKit
 
-class GuideProductListTVC: UITableViewCell {
-  
+class GuideProductListTVC: UITableViewCell,UITableViewRegisterable {
+
+
   // MARK: - Vars & Lets Part
-  
+  static var isFromNib:  = true
   
   // MARK: - UI Component Part
   

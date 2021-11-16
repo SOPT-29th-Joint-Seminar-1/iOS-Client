@@ -7,12 +7,12 @@
 
 import UIKit
 
-class GuideCategoryNameCVC: UICollectionViewCell {
-  
+class GuideCategoryNameCVC: UICollectionViewCell,UICollectionViewRegisterable {
   
   // MARK: - Vars & Lets Part
   
-  
+  static var isFromNib = true
+
   // MARK: - UI Component Part
   
   @IBOutlet weak var nameLabel: UILabel!{
