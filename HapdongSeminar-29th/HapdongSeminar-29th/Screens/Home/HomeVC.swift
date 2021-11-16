@@ -72,7 +72,7 @@ extension HomeVC: UITableViewDelegate {
             return 305
         }
         else { //NewsView
-            return 609
+            return 464
         }
     }
 }
@@ -89,7 +89,7 @@ extension HomeVC: UITableViewDataSource {
     
     // indexPath를 활용해 TableViewcell 별로 데이터를 다르게 지정할 수 있다.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if (indexPath.section == 0) { //HeaderView
+        if indexPath.section == 0 { //HeaderView
             guard let headerTVC = tableView.dequeueReusableCell(withIdentifier: HomeHeaderTVC.identifier) as?
                     HomeHeaderTVC else {return UITableViewCell()}
             
@@ -97,13 +97,13 @@ extension HomeVC: UITableViewDataSource {
             headerTVC.selectionStyle = .none
             return headerTVC
         }
-        else if (indexPath.section == 1) { //EventView
+        else if indexPath.section == 1 { //EventView
             guard let eventTVC = tableView.dequeueReusableCell(withIdentifier: HomeEventTVC.identifier) as?
                     HomeEventTVC else {return UITableViewCell()}
             eventTVC.selectionStyle = .none
             return eventTVC
         }
-        else if (indexPath.section == 2) { //ReviewView
+        else if indexPath.section == 2 { //ReviewView
             guard let reviewTVC = tableView.dequeueReusableCell(withIdentifier: HomeReviewTVC.identifier) as?
                     HomeReviewTVC else {return UITableViewCell()}
             reviewTVC.selectionStyle = .none

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SpoqaHanSansNeo-Bold.ttf">
+        <array key="Spoqa Han Sans Neo Bold.otf">
             <string>SpoqaHanSansNeo-Bold</string>
         </array>
-        <array key="SpoqaHanSansNeo-Regular.ttf">
+        <array key="Spoqa Han Sans Neo Regular.otf">
             <string>SpoqaHanSansNeo-Regular</string>
         </array>
     </customFonts>
@@ -20,20 +20,20 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HomeNewsTVC" customModule="HapdongSeminar_29th" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="609"/>
+            <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="375" height="609"/>
+                <rect key="frame" x="0.0" y="0.0" width="375" height="464"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세특 발견" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy9-y7-Ecn">
-                        <rect key="frame" x="20" y="39" width="70.5" height="23"/>
+                        <rect key="frame" x="20" y="39" width="70.5" height="22"/>
                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_card" translatesAutoresizingMaskIntoConstraints="NO" id="JDC-Ka-RuP">
-                        <rect key="frame" x="20" y="87" width="335" height="212"/>
+                        <rect key="frame" x="20" y="86" width="335" height="212"/>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RI5-pC-iB0">
                         <rect key="frame" x="20" y="314" width="335" height="150"/>
@@ -45,13 +45,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="67"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세특이 처음이라면 무조건 반값!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uX-Bi-UYz">
-                                        <rect key="frame" x="75" y="4" width="234.5" height="23"/>
+                                        <rect key="frame" x="75" y="4" width="234.5" height="22"/>
                                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신규회원 첫주문 이벤트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-yg-EF2">
-                                        <rect key="frame" x="75" y="32" width="116" height="15.5"/>
+                                        <rect key="frame" x="75" y="31" width="116" height="14.5"/>
                                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="12"/>
                                         <color key="textColor" name="grey_text"/>
                                         <nil key="highlightedColor"/>
@@ -74,13 +74,13 @@
                                         <rect key="frame" x="0.0" y="8" width="66" height="67"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핑크색 머리 스티브잡스의 옷장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ss-of-JEE">
-                                        <rect key="frame" x="75" y="12" width="228" height="23"/>
+                                        <rect key="frame" x="75" y="12" width="228" height="22"/>
                                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스타트업 영업이사 ・ 뮤지션 이병현의 옷 이야기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRo-0i-nGl">
-                                        <rect key="frame" x="75" y="40" width="238" height="15.5"/>
+                                        <rect key="frame" x="75" y="39" width="238" height="14.5"/>
                                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="12"/>
                                         <color key="textColor" name="grey_text"/>
                                         <nil key="highlightedColor"/>
@@ -104,10 +104,9 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="Oy9-y7-Ecn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="3Gm-jc-JX4"/>
-                    <constraint firstAttribute="bottom" secondItem="RI5-pC-iB0" secondAttribute="bottom" constant="145" id="8TH-OI-3rp"/>
+                    <constraint firstAttribute="bottom" secondItem="RI5-pC-iB0" secondAttribute="bottom" id="773-5R-1Kf"/>
                     <constraint firstItem="RI5-pC-iB0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8dk-PG-F9Z"/>
                     <constraint firstAttribute="trailing" secondItem="RI5-pC-iB0" secondAttribute="trailing" constant="20" id="Ran-Sr-EIF"/>
-                    <constraint firstItem="RI5-pC-iB0" firstAttribute="top" secondItem="JDC-Ka-RuP" secondAttribute="bottom" constant="15" id="Tzb-c8-GRx"/>
                     <constraint firstItem="JDC-Ka-RuP" firstAttribute="top" secondItem="Oy9-y7-Ecn" secondAttribute="bottom" constant="25" id="iYt-rj-gXj"/>
                     <constraint firstAttribute="trailing" secondItem="JDC-Ka-RuP" secondAttribute="trailing" constant="20" id="ncc-Pe-urQ"/>
                     <constraint firstItem="JDC-Ka-RuP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="saZ-kd-oQb"/>
