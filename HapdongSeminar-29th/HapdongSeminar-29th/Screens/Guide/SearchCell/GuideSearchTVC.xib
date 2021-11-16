@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,7 +19,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가격표" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edP-v0-KnG">
-                        <rect key="frame" x="20" y="21" width="47" height="22"/>
+                        <rect key="frame" x="20" y="21" width="47" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="B7N-T0-kqM"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -27,7 +31,7 @@
                         <rect key="frame" x="72" y="21" width="31" height="23"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g53-cp-avb">
-                        <rect key="frame" x="118" y="16" width="217" height="36"/>
+                        <rect key="frame" x="118" y="15" width="217" height="36"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="검색어를 입력해주세요." textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="ySv-WI-y24">
                                 <rect key="frame" x="15" y="9" width="152" height="18.5"/>
@@ -56,11 +60,11 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="g53-cp-avb" secondAttribute="bottom" id="3vI-eR-71f"/>
                     <constraint firstItem="dsn-BU-KMj" firstAttribute="leading" secondItem="edP-v0-KnG" secondAttribute="trailing" constant="5" id="Adg-Q1-Drh"/>
-                    <constraint firstItem="g53-cp-avb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="Bks-q8-Kon"/>
                     <constraint firstItem="edP-v0-KnG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="HVJ-Au-15B"/>
                     <constraint firstItem="g53-cp-avb" firstAttribute="leading" secondItem="dsn-BU-KMj" secondAttribute="trailing" constant="15" id="NjH-iU-bCm"/>
                     <constraint firstItem="edP-v0-KnG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="OKk-On-pxa"/>
                     <constraint firstAttribute="trailing" secondItem="g53-cp-avb" secondAttribute="trailing" constant="25" id="VC6-MT-VXT"/>
+                    <constraint firstItem="g53-cp-avb" firstAttribute="centerY" secondItem="edP-v0-KnG" secondAttribute="centerY" id="d2p-ln-0zK"/>
                     <constraint firstItem="dsn-BU-KMj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="ujt-Pt-Rsf"/>
                 </constraints>
             </tableViewCellContentView>

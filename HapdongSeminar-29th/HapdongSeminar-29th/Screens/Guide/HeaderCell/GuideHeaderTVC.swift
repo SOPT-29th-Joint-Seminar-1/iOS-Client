@@ -7,8 +7,11 @@
 
 import UIKit
 
-class GuideHeaderTVC: UITableViewCell {
+class GuideHeaderTVC: UITableViewCell,UITableViewRegisterable {
 
+  // MARK: - Vars & Lets Part
+
+  static let isFromNib = true
   
   // MARK: - UI Component Part
 

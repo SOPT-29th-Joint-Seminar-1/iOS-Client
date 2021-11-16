@@ -13,7 +13,7 @@ class GuideCategoryContainerTVC: UITableViewCell,UITableViewRegisterable {
   
   static var isFromNib: Bool = true
   private let categoryList = GuideDataModel.Category.getCategorylist()
-  private var productList : [GuideDataModel.Product] = []
+  private var productList : [GuideDataModel.Product] = GuideDataModel.Product.loadDummyProductList(category: .total)
 
   private var currentCategory : GuideDataModel.CategoryList = .total{
     didSet{
@@ -43,13 +43,14 @@ class GuideCategoryContainerTVC: UITableViewCell,UITableViewRegisterable {
   // MARK: - Custom Method Parts
   
   private func setCells(){
-    GuideCategoryContainerTVC.register(target: productListTV)
+    GuideProductListTVC.register(target: productListTV)
     GuideCategoryNameCVC.register(target: categoryCV)
   }
   
   private func setCategoryCV(){
     categoryCV.delegate = self
     categoryCV.dataSource = self
+    categoryCV.reloadData()
   }
   
   private func setProductListTV(){
@@ -59,6 +60,7 @@ class GuideCategoryContainerTVC: UITableViewCell,UITableViewRegisterable {
     productListTV.separatorColor = .blue5
     productListTV.layer.cornerRadius = 10
     productListTV.backgroundView = UIImageView.init(image: Literals.Image.Guide.productListBackground)
+    productListTV.reloadData()
   }
   
 }
@@ -82,6 +84,7 @@ extension GuideCategoryContainerTVC : UITableViewDataSource{
     productCell.selectionStyle = .none
     productCell.setCellData(productName: productList[indexPath.row].name,
                             price: productList[indexPath.row].price)
+    productCell.backgroundColor = .clear
     return productCell
   }
   
@@ -110,7 +113,9 @@ extension GuideCategoryContainerTVC : UICollectionViewDataSource{
     categoryCV.setName(name: categoryList[indexPath.row].case.rawValue,
                        isClicked: currentCategory == categoryList[indexPath.row].case ? true : false)
     categoryCV.layer.cornerRadius = 15
-    
+    categoryCV.layer.borderColor = UIColor.blue1.cgColor
+    categoryCV.layer.borderWidth = 1
+
     return categoryCV
   }
   
@@ -124,7 +129,7 @@ extension GuideCategoryContainerTVC : UICollectionViewDelegateFlowLayout{
     label.text = categoryList[indexPath.row].case.rawValue
     label.sizeToFit()
     
-    return CGSize(width: label.frame.width + 28, height: 30)
+    return CGSize(width: label.frame.width + 30, height: 30)
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
@@ -132,7 +137,7 @@ extension GuideCategoryContainerTVC : UICollectionViewDelegateFlowLayout{
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-    0
+    4
   }
   
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
