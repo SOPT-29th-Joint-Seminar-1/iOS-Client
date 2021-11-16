@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GuideHeaderTVC" rowHeight="220" id="KGk-i7-Jjw" customClass="GuideHeaderTVC" customModule="HapdongSeminar_29th" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="379" height="220"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="379" height="220"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="반가워요!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vw9-LU-L1Z">
+                        <rect key="frame" x="20" y="31" width="91" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="5EQ-TV-sfd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세탁특공대가 처음이세요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hpu-6f-yBE">
+                        <rect key="frame" x="20" y="63" width="246.5" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="gLA-2Z-Y6Z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Vw9-LU-L1Z" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="31" id="7KL-va-CWN"/>
+                    <constraint firstItem="Hpu-6f-yBE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Cc6-T2-iP3"/>
+                    <constraint firstItem="Hpu-6f-yBE" firstAttribute="top" secondItem="Vw9-LU-L1Z" secondAttribute="bottom" constant="8" id="Glo-f5-L64"/>
+                    <constraint firstItem="Vw9-LU-L1Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="WrU-xb-Ae3"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Hpu-6f-yBE" secondAttribute="bottom" constant="17" id="wUc-7a-FqV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bottomGuideLabel" destination="Hpu-6f-yBE" id="Lcr-nu-eHP"/>
+                <outlet property="topGuideLabel" destination="Vw9-LU-L1Z" id="8Gy-Ra-lht"/>
+            </connections>
+            <point key="canvasLocation" x="174.63768115942031" y="179.46428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
