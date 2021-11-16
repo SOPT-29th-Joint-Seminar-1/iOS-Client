@@ -30,6 +30,7 @@
 		FD4C55B8274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55B3274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf */; };
 		FD4C55B9274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55B4274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf */; };
 		FD4C55BB274389210051BCC9 /* makeSpoqaFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55BA274389210051BCC9 /* makeSpoqaFont.swift */; };
+		FD4C55BD27438C6A0051BCC9 /* setCharacterSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55BC27438C6A0051BCC9 /* setCharacterSpacing.swift */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -80,6 +81,7 @@
 		FD4C55B3274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Bold.otf"; sourceTree = "<group>"; };
 		FD4C55B4274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Light.otf"; sourceTree = "<group>"; };
 		FD4C55BA274389210051BCC9 /* makeSpoqaFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeSpoqaFont.swift; sourceTree = "<group>"; };
+		FD4C55BC27438C6A0051BCC9 /* setCharacterSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setCharacterSpacing.swift; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -335,6 +337,7 @@
 				FDD3AD2C273F6EAD00A72451 /* applyShadow.swift */,
 				FD4C55AD274383D30051BCC9 /* setDefaultFont.swift */,
 				FD4C55BA274389210051BCC9 /* makeSpoqaFont.swift */,
+				FD4C55BC27438C6A0051BCC9 /* setCharacterSpacing.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -518,6 +521,7 @@
 				FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */,
 				FD4C55AA2743709C0051BCC9 /* Literals.swift in Sources */,
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
+				FD4C55BD27438C6A0051BCC9 /* setCharacterSpacing.swift in Sources */,
 				FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */,
 				FDCDE619273FA48100B2F413 /* HomeNewsTVC.swift in Sources */,
 				FD4C55A0274348020051BCC9 /* GuideHeaderTVC.swift in Sources */,
