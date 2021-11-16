@@ -11,6 +11,11 @@ class HomeHeaderTVC: UITableViewCell {
 
     // MARK: - Vars & Lets Part
     static let identifier = "HomeHeaderTVC"
+    @IBOutlet weak var mainHeaderLabel: UILabel!{
+        didSet{
+            mainHeaderLabel.setCharacterSpacing()
+        }
+    }
     @IBOutlet weak var deliveryInfoBtn: UIButton!
     @IBOutlet weak var firstUserBtn: UIButton!
     @IBOutlet weak var originUserBtn: UIButton!
