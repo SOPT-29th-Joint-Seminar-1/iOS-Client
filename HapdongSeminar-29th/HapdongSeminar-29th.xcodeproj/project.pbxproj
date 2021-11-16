@@ -19,6 +19,8 @@
 		FD3183852742DF030037C140 /* GuideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3183842742DF030037C140 /* GuideHeaderView.swift */; };
 		FD3183872742DF760037C140 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3183862742DF760037C140 /* Colors.xcassets */; };
 		FD3183892742E4CA0037C140 /* addSubViewFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3183882742E4CA0037C140 /* addSubViewFromNib.swift */; };
+		FD4C55A0274348020051BCC9 /* GuideHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C559E274348020051BCC9 /* GuideHeaderTVC.swift */; };
+		FD4C55A1274348020051BCC9 /* GuideHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C559F274348020051BCC9 /* GuideHeaderTVC.xib */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -58,6 +60,8 @@
 		FD3183842742DF030037C140 /* GuideHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideHeaderView.swift; sourceTree = "<group>"; };
 		FD3183862742DF760037C140 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FD3183882742E4CA0037C140 /* addSubViewFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSubViewFromNib.swift; sourceTree = "<group>"; };
+		FD4C559E274348020051BCC9 /* GuideHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideHeaderTVC.swift; sourceTree = "<group>"; };
+		FD4C559F274348020051BCC9 /* GuideHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideHeaderTVC.xib; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -113,13 +117,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FD3183812742DEED0037C140 /* Header */ = {
+		FD3183812742DEED0037C140 /* NaviBar */ = {
 			isa = PBXGroup;
 			children = (
 				FD3183822742DEF70037C140 /* GuideHeaderView.xib */,
 				FD3183842742DF030037C140 /* GuideHeaderView.swift */,
 			);
-			path = Header;
+			path = NaviBar;
+			sourceTree = "<group>";
+		};
+		FD4C559D274347DD0051BCC9 /* HeaderCell */ = {
+			isa = PBXGroup;
+			children = (
+				FD4C559E274348020051BCC9 /* GuideHeaderTVC.swift */,
+				FD4C559F274348020051BCC9 /* GuideHeaderTVC.xib */,
+			);
+			path = HeaderCell;
 			sourceTree = "<group>";
 		};
 		FDCDE5FF273FA34B00B2F413 /* Home */ = {
@@ -138,7 +151,8 @@
 		FDCDE600273FA36500B2F413 /* Guide */ = {
 			isa = PBXGroup;
 			children = (
-				FD3183812742DEED0037C140 /* Header */,
+				FD3183812742DEED0037C140 /* NaviBar */,
+				FD4C559D274347DD0051BCC9 /* HeaderCell */,
 				FDCDE603273FA3B600B2F413 /* GuideVC.swift */,
 				FD31837F2742DECA0037C140 /* Guide.storyboard */,
 			);
@@ -377,6 +391,7 @@
 				FDCDE61A273FA48100B2F413 /* HomeNewsTVC.xib in Resources */,
 				F2A8E0A12741722700A15287 /* SpoqaHanSansNeo-Regular.ttf in Resources */,
 				FDD3AD0A273F6C2E00A72451 /* Main.storyboard in Resources */,
+				FD4C55A1274348020051BCC9 /* GuideHeaderTVC.xib in Resources */,
 				F24DCC9A2742E47A001E0791 /* HomeReviewCVC.xib in Resources */,
 				F2A8E0A32741727000A15287 /* SpoqaHanSansNeo-Bold.ttf in Resources */,
 				FD3183802742DECA0037C140 /* Guide.storyboard in Resources */,
@@ -453,6 +468,7 @@
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
 				FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */,
 				FDCDE619273FA48100B2F413 /* HomeNewsTVC.swift in Sources */,
+				FD4C55A0274348020051BCC9 /* GuideHeaderTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
