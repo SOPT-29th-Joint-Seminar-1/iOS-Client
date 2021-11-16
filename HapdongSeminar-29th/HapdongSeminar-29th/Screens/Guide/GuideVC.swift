@@ -33,7 +33,11 @@ class GuideVC: UIViewController {
   @IBOutlet weak var topNaviBar: GuideHeaderView!
   @IBOutlet weak var mainTV: UITableView!
   @IBOutlet weak var bottomCTAButton: UIButton!
-  
+  @IBOutlet weak var shortCutView: GuideShortCutView!{
+    didSet{
+      shortCutView.delegate = self
+    }
+  }
   
   // MARK: - Constraint Part
 
@@ -77,6 +81,20 @@ class GuideVC: UIViewController {
 }
 // MARK: - Extension Part
 extension GuideVC : UITableViewDelegate{
+  
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    if let lastIndex = mainTV.indexPathsForVisibleRows?.last{
+      if lastIndex.row == 5{
+        shortCutView.currentIndex = 2
+      }else{
+        if mainTV.contentOffset.y <= 400{
+          shortCutView.currentIndex = 0
+        }else{
+          shortCutView.currentIndex = 1
+        }
+      }
+    }
+  }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableView.automaticDimension
@@ -165,4 +183,12 @@ extension GuideVC : GuideWarningDelegate{
   }
   
   
+}
+
+
+extension GuideVC : GuideShortCutDelegate{
+  func buttonClicked(index: Int) {
+    var row = index * 2 + 1
+    mainTV.scrollToRow(at: IndexPath(row: row, section: 0), at: .top, animated: true)
+  }
 }

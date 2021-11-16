@@ -36,6 +36,13 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" backgroundImage="ctabutton_apply"/>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6L1-X0-SyR" customClass="GuideShortCutView" customModule="HapdongSeminar_29th" customModuleProvider="target">
+                                <rect key="frame" x="350" y="652" width="49" height="155"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="49" id="RUh-K2-tcA"/>
+                                    <constraint firstAttribute="height" constant="155" id="hwr-9D-4Uk"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -45,10 +52,12 @@
                             <constraint firstItem="Na9-2z-MUa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="E4T-f9-eDy"/>
                             <constraint firstItem="cVU-6c-G73" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="XgK-UK-Ygw"/>
                             <constraint firstItem="cVU-6c-G73" firstAttribute="top" secondItem="l5o-js-0cL" secondAttribute="bottom" id="btb-Xq-LGQ"/>
+                            <constraint firstItem="cVU-6c-G73" firstAttribute="top" secondItem="6L1-X0-SyR" secondAttribute="bottom" constant="15" id="iKO-uL-plw"/>
                             <constraint firstItem="l5o-js-0cL" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="iss-Nc-1fQ"/>
                             <constraint firstItem="Na9-2z-MUa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-44" id="kpt-QT-eOF"/>
                             <constraint firstItem="l5o-js-0cL" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="mRL-Zl-IxF"/>
                             <constraint firstAttribute="trailing" secondItem="cVU-6c-G73" secondAttribute="trailing" id="syt-ZN-pTB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="6L1-X0-SyR" secondAttribute="trailing" constant="15" id="wsL-KT-Erg"/>
                             <constraint firstItem="Na9-2z-MUa" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="zTT-Qv-cZd"/>
                         </constraints>
                     </view>
@@ -56,6 +65,7 @@
                         <outlet property="bottomCTAButton" destination="cVU-6c-G73" id="wrj-hw-XbA"/>
                         <outlet property="mainTV" destination="l5o-js-0cL" id="R75-5I-yTV"/>
                         <outlet property="naviTopConstraint" destination="kpt-QT-eOF" id="1l0-sq-o0f"/>
+                        <outlet property="shortCutView" destination="6L1-X0-SyR" id="2Be-u1-vcM"/>
                         <outlet property="topNaviBar" destination="Na9-2z-MUa" id="a44-wp-zVI"/>
                     </connections>
                 </viewController>

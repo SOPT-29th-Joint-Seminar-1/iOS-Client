@@ -27,6 +27,13 @@ extension Literals{
       static let processStep_2 = UIImage(named: "box_process2")!
       static let processStep_3 = UIImage(named: "box_process3")!
       static let processStep_4 = UIImage(named: "box_process4")!
+      
+      static let shortcutPrice_active = UIImage(named: "btn_price_active")!
+      static let shortcutPrice_inactive = UIImage(named: "btn_price_inactive")!
+      static let shortcutManual_active = UIImage(named: "btn_use_active")!
+      static let shortcutManual_inactive = UIImage(named: "btn_use_inactive")!
+      static let shortcutProcess_active = UIImage(named: "btn_process_active")!
+      static let shortcutProcess_inactive = UIImage(named: "btn_process_inactive")!
     }
   }
 }

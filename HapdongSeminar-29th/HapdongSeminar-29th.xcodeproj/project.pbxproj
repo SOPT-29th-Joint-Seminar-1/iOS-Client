@@ -55,6 +55,8 @@
 		FDB75E752744152F00ACED22 /* GuideProcessTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E732744152F00ACED22 /* GuideProcessTVC.xib */; };
 		FDB75E792744187A00ACED22 /* GuideProcessPageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E772744187A00ACED22 /* GuideProcessPageCVC.swift */; };
 		FDB75E7A2744187A00ACED22 /* GuideProcessPageCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E782744187A00ACED22 /* GuideProcessPageCVC.xib */; };
+		FDB75E7D274428B600ACED22 /* GuideShortCutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E7C274428B600ACED22 /* GuideShortCutView.swift */; };
+		FDB75E7F274428C000ACED22 /* GuideShortCutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E7E274428C000ACED22 /* GuideShortCutView.xib */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -130,6 +132,8 @@
 		FDB75E732744152F00ACED22 /* GuideProcessTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideProcessTVC.xib; sourceTree = "<group>"; };
 		FDB75E772744187A00ACED22 /* GuideProcessPageCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideProcessPageCVC.swift; sourceTree = "<group>"; };
 		FDB75E782744187A00ACED22 /* GuideProcessPageCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideProcessPageCVC.xib; sourceTree = "<group>"; };
+		FDB75E7C274428B600ACED22 /* GuideShortCutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideShortCutView.swift; sourceTree = "<group>"; };
+		FDB75E7E274428C000ACED22 /* GuideShortCutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideShortCutView.xib; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -327,6 +331,15 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
+		FDB75E7B274428A600ACED22 /* Shortcut */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E7C274428B600ACED22 /* GuideShortCutView.swift */,
+				FDB75E7E274428C000ACED22 /* GuideShortCutView.xib */,
+			);
+			path = Shortcut;
+			sourceTree = "<group>";
+		};
 		FDCDE5FF273FA34B00B2F413 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +363,7 @@
 				FDB75E602743E69500ACED22 /* ManualCell */,
 				FDB75E6A2744020500ACED22 /* WarningCell */,
 				FDB75E712744151400ACED22 /* ProcessCell */,
+				FDB75E7B274428A600ACED22 /* Shortcut */,
 				FDCDE603273FA3B600B2F413 /* GuideVC.swift */,
 				FD31837F2742DECA0037C140 /* Guide.storyboard */,
 			);
@@ -603,6 +617,7 @@
 				FDB75E752744152F00ACED22 /* GuideProcessTVC.xib in Resources */,
 				FD4C55CE27439B5B0051BCC9 /* GuideCategoryNameCVC.xib in Resources */,
 				FDD3AD0C273F6C3100A72451 /* Assets.xcassets in Resources */,
+				FDB75E7F274428C000ACED22 /* GuideShortCutView.xib in Resources */,
 				FD4C55B8274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf in Resources */,
 				FD4C55B5274387FA0051BCC9 /* Spoqa Han Sans Neo Medium.otf in Resources */,
 				FDCDE61A273FA48100B2F413 /* HomeNewsTVC.xib in Resources */,
@@ -671,6 +686,7 @@
 				FDB75E532743C32900ACED22 /* UICollectionViewRegisterable.swift in Sources */,
 				F24DCC992742E47A001E0791 /* HomeReviewCVC.swift in Sources */,
 				FDB75E5F2743DB8900ACED22 /* calculateTopInset.swift in Sources */,
+				FDB75E7D274428B600ACED22 /* GuideShortCutView.swift in Sources */,
 				FDB75E632743E6B900ACED22 /* GuideManualTVC.swift in Sources */,
 				FDD3AD2D273F6EAD00A72451 /* applyShadow.swift in Sources */,
 				FDCDE611273FA46800B2F413 /* HomeEventTVC.swift in Sources */,
