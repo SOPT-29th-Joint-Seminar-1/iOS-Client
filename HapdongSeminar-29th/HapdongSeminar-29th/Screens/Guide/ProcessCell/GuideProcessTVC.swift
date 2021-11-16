@@ -9,8 +9,8 @@ import UIKit
 
 class GuideProcessTVC: UITableViewCell,UITableViewRegisterable{
   // MARK: - Vars & Lets Part
+  private var currentIndex : CGFloat = 0
   static var isFromNib = true
-  
   
   // MARK: - UI Component Part
   
@@ -48,10 +48,20 @@ class GuideProcessTVC: UITableViewCell,UITableViewRegisterable{
   // MARK: - Custom Method Part
   
   private func setBannerCV(){
+    let screenWidth = UIScreen.main.bounds.width
+    let cellWidth = (300/375) * screenWidth
+    let cellHeight = cellWidth * (329/300)
+    
+    let insetX = (10/375) * screenWidth
+    let layout = bannerCV.collectionViewLayout as! UICollectionViewFlowLayout
+    layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+    layout.minimumLineSpacing = 10
+    layout.scrollDirection = .horizontal
+    bannerCV.contentInset = UIEdgeInsets(top: 0, left: insetX, bottom: 0, right: insetX)
+    bannerCV.decelerationRate = .fast
     bannerCV.delegate = self
     bannerCV.dataSource = self
     bannerCV.backgroundColor = .clear
-    bannerCV.isPagingEnabled = true
   }
   
   private func registerCell(){
@@ -61,7 +71,22 @@ class GuideProcessTVC: UITableViewCell,UITableViewRegisterable{
   
 }
 extension GuideProcessTVC : UICollectionViewDelegate{
+  func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+    let page = Int(targetContentOffset.pointee.x / self.frame.width)
+    let layout = bannerCV.collectionViewLayout as! UICollectionViewFlowLayout
+    let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
+    
+    var offSet = targetContentOffset.pointee
+    let index = (offSet.x + scrollView.contentInset.left) / cellWidthIncludingSpacing
+    let roundedIndex = round(index)
+    
 
+    
+    offSet = CGPoint(x: roundedIndex * cellWidthIncludingSpacing - scrollView.contentInset.left,
+                     y: -scrollView.contentInset.top)
+    targetContentOffset.pointee = offSet
+    self.pageControl.currentPage = Int(roundedIndex)
+  }
 }
 
 extension GuideProcessTVC : UICollectionViewDataSource{
@@ -95,11 +120,4 @@ extension GuideProcessTVC : UICollectionViewDelegateFlowLayout{
     return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
   }
   
-}
-
-extension GuideProcessTVC : UIScrollViewDelegate{
-  func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-    let page = Int(targetContentOffset.pointee.x / self.frame.width)
-    self.pageControl.currentPage = page
-  }
 }

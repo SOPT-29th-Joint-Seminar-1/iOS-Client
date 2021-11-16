@@ -68,7 +68,7 @@ class GuideVC: UIViewController {
     GuideCategoryContainerTVC.register(target: mainTV)
     GuideManualTVC.register(target: mainTV)
     GuideWarningTVC.register(target: mainTV)
-    
+    GuideProcessTVC.register(target: mainTV)
   }
   
   
@@ -85,7 +85,7 @@ extension GuideVC : UITableViewDelegate{
 
 extension GuideVC : UITableViewDataSource{
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 5
+    return 6
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -128,7 +128,10 @@ extension GuideVC : UITableViewDataSource{
         return warningCell
 
       case .process:
-        return UITableViewCell()
+        guard let processCell = tableView.dequeueReusableCell(withIdentifier: GuideProcessTVC.className, for: indexPath)
+                as? GuideProcessTVC else {return UITableViewCell()}
+        processCell.selectionStyle = .none
+        return processCell
     }
   }
   
