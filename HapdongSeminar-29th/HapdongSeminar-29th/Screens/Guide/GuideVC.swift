@@ -61,6 +61,7 @@ class GuideVC: UIViewController {
     GuideHeaderTVC.register(target: mainTV)
     GuideSearchTVC.register(target: mainTV)
     GuideCategoryContainerTVC.register(target: mainTV)
+    GuideManualTVC.register(target: mainTV)
   }
   
   
@@ -77,7 +78,7 @@ extension GuideVC : UITableViewDelegate{
 
 extension GuideVC : UITableViewDataSource{
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 3
+    return 4
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -106,7 +107,10 @@ extension GuideVC : UITableViewDataSource{
         return categoryCell
         
       case .manual:
-        return UITableViewCell()
+        guard let manualCell = tableView.dequeueReusableCell(withIdentifier: GuideManualTVC.className, for: indexPath)
+                as? GuideManualTVC else {return UITableViewCell()}
+        manualCell.selectionStyle = .none
+        return manualCell
 
       case .warning:
         return UITableViewCell()
