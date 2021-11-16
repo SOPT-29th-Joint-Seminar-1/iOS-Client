@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -24,12 +25,18 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세탁특공대, 세특의 이벤트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoC-Ws-bOI">
                         <rect key="frame" x="20" y="40" width="195" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="nNP-GZ-sdR"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="mgR-fh-rp4">
                         <rect key="frame" x="109.5" y="286" width="156" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="A9G-1v-KVJ"/>
+                        </constraints>
                         <color key="pageIndicatorTintColor" name="grey2"/>
                         <color key="currentPageIndicatorTintColor" name="blue1"/>
                         <connections>
@@ -45,6 +52,7 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="ygX-jJ-hdp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AMF-EB-mAI"/>
+                    <constraint firstAttribute="bottom" secondItem="mgR-fh-rp4" secondAttribute="bottom" constant="-8" id="POp-wc-OpB"/>
                     <constraint firstItem="mgR-fh-rp4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Tcf-Zq-Srh"/>
                     <constraint firstAttribute="trailing" secondItem="ygX-jJ-hdp" secondAttribute="trailing" id="VTq-dV-yJ0"/>
                     <constraint firstItem="mgR-fh-rp4" firstAttribute="top" secondItem="ygX-jJ-hdp" secondAttribute="bottom" constant="9" id="eNX-RU-6Lb"/>

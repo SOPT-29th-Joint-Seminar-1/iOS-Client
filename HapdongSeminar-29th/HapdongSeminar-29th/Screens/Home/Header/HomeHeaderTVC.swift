@@ -51,7 +51,14 @@ class HomeHeaderTVC: UITableViewCell {
     // MARK: - Custom Method Part
     func setUI(){
         firstUserBtn.contentHorizontalAlignment = .left
+//        firstUserBtn.layer.cornerRadius = 10
+//        firstUserBtn.backgroundColor = .blue1
+//        firstUserBtn.setTitleColor(.white, for: .normal)
+
         originUserBtn.contentHorizontalAlignment = .left
+//        originUserBtn.layer.cornerRadius = 10
+//        originUserBtn.backgroundColor = .darkgrey4
+//        originUserBtn.setTitleColor(.white, for: .normal)
     }
     
     // MARK: - @objc Function Part

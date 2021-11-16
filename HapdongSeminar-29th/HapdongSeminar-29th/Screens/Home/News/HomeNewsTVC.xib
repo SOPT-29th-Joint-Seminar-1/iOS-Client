@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -28,12 +29,18 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세특 발견" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oy9-y7-Ecn">
                         <rect key="frame" x="20" y="39" width="70.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="QfY-vz-Qbf"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_card" translatesAutoresizingMaskIntoConstraints="NO" id="JDC-Ka-RuP">
                         <rect key="frame" x="20" y="86" width="335" height="212"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="212" id="s4g-t1-7ih"/>
+                        </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="RI5-pC-iB0">
                         <rect key="frame" x="20" y="314" width="335" height="150"/>
@@ -43,15 +50,24 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Mask Group-1" translatesAutoresizingMaskIntoConstraints="NO" id="gtl-MV-clc">
                                         <rect key="frame" x="0.0" y="0.0" width="66" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="67" id="ri6-Dp-qaJ"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세특이 처음이라면 무조건 반값!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uX-Bi-UYz">
                                         <rect key="frame" x="75" y="4" width="234.5" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="jKa-Nt-uNZ"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신규회원 첫주문 이벤트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCJ-yg-EF2">
                                         <rect key="frame" x="75" y="31" width="116" height="14.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14.5" id="hWS-R8-KFs"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="12"/>
                                         <color key="textColor" name="grey_text"/>
                                         <nil key="highlightedColor"/>
@@ -63,6 +79,7 @@
                                     <constraint firstItem="8uX-Bi-UYz" firstAttribute="top" secondItem="owm-7R-pM4" secondAttribute="top" constant="4" id="ao5-1z-dKX"/>
                                     <constraint firstItem="qCJ-yg-EF2" firstAttribute="leading" secondItem="gtl-MV-clc" secondAttribute="trailing" constant="9" id="dcV-lq-UlT"/>
                                     <constraint firstItem="8uX-Bi-UYz" firstAttribute="leading" secondItem="gtl-MV-clc" secondAttribute="trailing" constant="9" id="eht-ZM-2uC"/>
+                                    <constraint firstAttribute="height" constant="75" id="m8c-Vb-gph"/>
                                     <constraint firstItem="qCJ-yg-EF2" firstAttribute="top" secondItem="8uX-Bi-UYz" secondAttribute="bottom" constant="5" id="ouz-Ya-nwE"/>
                                     <constraint firstAttribute="bottom" secondItem="gtl-MV-clc" secondAttribute="bottom" constant="8" id="xre-se-ACi"/>
                                 </constraints>
@@ -72,15 +89,24 @@
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_find_3" translatesAutoresizingMaskIntoConstraints="NO" id="oVG-oe-AZX">
                                         <rect key="frame" x="0.0" y="8" width="66" height="67"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="67" id="wMm-Fi-42a"/>
+                                        </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="핑크색 머리 스티브잡스의 옷장" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ss-of-JEE">
                                         <rect key="frame" x="75" y="12" width="228" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="M7Q-A4-UTx"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스타트업 영업이사 ・ 뮤지션 이병현의 옷 이야기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRo-0i-nGl">
                                         <rect key="frame" x="75" y="39" width="238" height="14.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="14.5" id="bnG-mw-OEP"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="12"/>
                                         <color key="textColor" name="grey_text"/>
                                         <nil key="highlightedColor"/>
@@ -93,11 +119,13 @@
                                     <constraint firstItem="hRo-0i-nGl" firstAttribute="leading" secondItem="oVG-oe-AZX" secondAttribute="trailing" constant="9" id="FXr-3Y-AEq"/>
                                     <constraint firstItem="oVG-oe-AZX" firstAttribute="leading" secondItem="LOP-cD-nqs" secondAttribute="leading" id="QMN-kO-it0"/>
                                     <constraint firstItem="5ss-of-JEE" firstAttribute="top" secondItem="LOP-cD-nqs" secondAttribute="top" constant="12" id="Qgl-q2-Ysg"/>
+                                    <constraint firstAttribute="height" constant="75" id="Wcn-Nh-9f9"/>
                                     <constraint firstItem="oVG-oe-AZX" firstAttribute="top" secondItem="LOP-cD-nqs" secondAttribute="top" constant="8" id="kEe-lz-37b"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="LOP-cD-nqs" secondAttribute="bottom" id="2bf-oT-QkI"/>
                             <constraint firstAttribute="height" constant="150" id="wAF-N2-gRy"/>
                         </constraints>
                     </stackView>
@@ -107,6 +135,7 @@
                     <constraint firstAttribute="bottom" secondItem="RI5-pC-iB0" secondAttribute="bottom" id="773-5R-1Kf"/>
                     <constraint firstItem="RI5-pC-iB0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8dk-PG-F9Z"/>
                     <constraint firstAttribute="trailing" secondItem="RI5-pC-iB0" secondAttribute="trailing" constant="20" id="Ran-Sr-EIF"/>
+                    <constraint firstItem="RI5-pC-iB0" firstAttribute="top" secondItem="JDC-Ka-RuP" secondAttribute="bottom" constant="16" id="elN-sC-O1d"/>
                     <constraint firstItem="JDC-Ka-RuP" firstAttribute="top" secondItem="Oy9-y7-Ecn" secondAttribute="bottom" constant="25" id="iYt-rj-gXj"/>
                     <constraint firstAttribute="trailing" secondItem="JDC-Ka-RuP" secondAttribute="trailing" constant="20" id="ncc-Pe-urQ"/>
                     <constraint firstItem="JDC-Ka-RuP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="saZ-kd-oQb"/>

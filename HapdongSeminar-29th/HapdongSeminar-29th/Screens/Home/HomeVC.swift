@@ -74,18 +74,7 @@ class HomeVC: UIViewController {
 extension HomeVC: UITableViewDelegate {
     // 높이 지정 index별
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if (indexPath.section == 0) { //HeaderView
-            return 252
-        }
-        else if (indexPath.section == 1) { //EventView
-            return 304
-        }
-        else if (indexPath.section == 2) { //ReviewView
-            return 305
-        }
-        else { //NewsView
-            return 464
-        }
+        return UITableView.automaticDimension
     }
 }
 
