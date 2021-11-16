@@ -11,10 +11,11 @@ protocol GuideSearchDelegate{
   func searchButtonClicked(keyword : String)
 }
 
-class GuideSearchTVC: UITableViewCell {
+class GuideSearchTVC: UITableViewCell,UITableViewRegisterable {
   
   // MARK: - Vars & Lets Part
   
+  static let isFromNib = true
   var delegate : GuideSearchDelegate?
   
   // MARK: - UI Component Part
@@ -46,6 +47,7 @@ class GuideSearchTVC: UITableViewCell {
   
   private func setContainerLayer(){
     searchContainerView.layer.cornerRadius = 18
+    searchContainerView.backgroundColor = .grey1
   }
   
 }

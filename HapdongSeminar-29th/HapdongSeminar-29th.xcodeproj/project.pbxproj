@@ -32,6 +32,23 @@
 		FD4C55B9274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55B4274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf */; };
 		FD4C55BB274389210051BCC9 /* makeSpoqaFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55BA274389210051BCC9 /* makeSpoqaFont.swift */; };
 		FD4C55BD27438C6A0051BCC9 /* setCharacterSpacing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55BC27438C6A0051BCC9 /* setCharacterSpacing.swift */; };
+		FD4C55C1274393400051BCC9 /* GuideCategoryContainerTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55BF274393400051BCC9 /* GuideCategoryContainerTVC.swift */; };
+		FD4C55C2274393400051BCC9 /* GuideCategoryContainerTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55C0274393400051BCC9 /* GuideCategoryContainerTVC.xib */; };
+		FD4C55C7274397030051BCC9 /* GuideProductListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55C5274397030051BCC9 /* GuideProductListTVC.swift */; };
+		FD4C55C8274397030051BCC9 /* GuideProductListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55C6274397030051BCC9 /* GuideProductListTVC.xib */; };
+		FD4C55CD27439B5B0051BCC9 /* GuideCategoryNameCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55CB27439B5B0051BCC9 /* GuideCategoryNameCVC.swift */; };
+		FD4C55CE27439B5B0051BCC9 /* GuideCategoryNameCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55CC27439B5B0051BCC9 /* GuideCategoryNameCVC.xib */; };
+		FDB75E512743BFDF00ACED22 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E502743BFDF00ACED22 /* ColorPalette.swift */; };
+		FDB75E532743C32900ACED22 /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E522743C32900ACED22 /* UICollectionViewRegisterable.swift */; };
+		FDB75E552743C35800ACED22 /* UITableViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E542743C35800ACED22 /* UITableViewRegisterable.swift */; };
+		FDB75E592743C5BE00ACED22 /* GuideDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E582743C5BE00ACED22 /* GuideDataModel.swift */; };
+		FDB75E5B2743C61F00ACED22 /* GuideProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E5A2743C61F00ACED22 /* GuideProductDataModel.swift */; };
+		FDB75E5D2743C6ED00ACED22 /* GuideCategoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E5C2743C6ED00ACED22 /* GuideCategoryDataModel.swift */; };
+		FDB75E5F2743DB8900ACED22 /* calculateTopInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E5E2743DB8900ACED22 /* calculateTopInset.swift */; };
+		FDB75E632743E6B900ACED22 /* GuideManualTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E612743E6B900ACED22 /* GuideManualTVC.swift */; };
+		FDB75E642743E6B900ACED22 /* GuideManualTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E622743E6B900ACED22 /* GuideManualTVC.xib */; };
+		FDB75E682743EC3800ACED22 /* GuideManualStepCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E662743EC3800ACED22 /* GuideManualStepCVC.swift */; };
+		FDB75E692743EC3800ACED22 /* GuideManualStepCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E672743EC3800ACED22 /* GuideManualStepCVC.xib */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -84,6 +101,23 @@
 		FD4C55B4274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Light.otf"; sourceTree = "<group>"; };
 		FD4C55BA274389210051BCC9 /* makeSpoqaFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeSpoqaFont.swift; sourceTree = "<group>"; };
 		FD4C55BC27438C6A0051BCC9 /* setCharacterSpacing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setCharacterSpacing.swift; sourceTree = "<group>"; };
+		FD4C55BF274393400051BCC9 /* GuideCategoryContainerTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCategoryContainerTVC.swift; sourceTree = "<group>"; };
+		FD4C55C0274393400051BCC9 /* GuideCategoryContainerTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideCategoryContainerTVC.xib; sourceTree = "<group>"; };
+		FD4C55C5274397030051BCC9 /* GuideProductListTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideProductListTVC.swift; sourceTree = "<group>"; };
+		FD4C55C6274397030051BCC9 /* GuideProductListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideProductListTVC.xib; sourceTree = "<group>"; };
+		FD4C55CB27439B5B0051BCC9 /* GuideCategoryNameCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCategoryNameCVC.swift; sourceTree = "<group>"; };
+		FD4C55CC27439B5B0051BCC9 /* GuideCategoryNameCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideCategoryNameCVC.xib; sourceTree = "<group>"; };
+		FDB75E502743BFDF00ACED22 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
+		FDB75E522743C32900ACED22 /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
+		FDB75E542743C35800ACED22 /* UITableViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewRegisterable.swift; sourceTree = "<group>"; };
+		FDB75E582743C5BE00ACED22 /* GuideDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideDataModel.swift; sourceTree = "<group>"; };
+		FDB75E5A2743C61F00ACED22 /* GuideProductDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideProductDataModel.swift; sourceTree = "<group>"; };
+		FDB75E5C2743C6ED00ACED22 /* GuideCategoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCategoryDataModel.swift; sourceTree = "<group>"; };
+		FDB75E5E2743DB8900ACED22 /* calculateTopInset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculateTopInset.swift; sourceTree = "<group>"; };
+		FDB75E612743E6B900ACED22 /* GuideManualTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideManualTVC.swift; sourceTree = "<group>"; };
+		FDB75E622743E6B900ACED22 /* GuideManualTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideManualTVC.xib; sourceTree = "<group>"; };
+		FDB75E662743EC3800ACED22 /* GuideManualStepCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideManualStepCVC.swift; sourceTree = "<group>"; };
+		FDB75E672743EC3800ACED22 /* GuideManualStepCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideManualStepCVC.xib; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -187,6 +221,81 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		FD4C55BE274392ED0051BCC9 /* CategoryCell */ = {
+			isa = PBXGroup;
+			children = (
+				FD4C55C4274396E30051BCC9 /* ProductList */,
+				FD4C55C3274396DE0051BCC9 /* Category */,
+				FD4C55BF274393400051BCC9 /* GuideCategoryContainerTVC.swift */,
+				FD4C55C0274393400051BCC9 /* GuideCategoryContainerTVC.xib */,
+			);
+			path = CategoryCell;
+			sourceTree = "<group>";
+		};
+		FD4C55C3274396DE0051BCC9 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				FD4C55CB27439B5B0051BCC9 /* GuideCategoryNameCVC.swift */,
+				FD4C55CC27439B5B0051BCC9 /* GuideCategoryNameCVC.xib */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		FD4C55C4274396E30051BCC9 /* ProductList */ = {
+			isa = PBXGroup;
+			children = (
+				FD4C55C5274397030051BCC9 /* GuideProductListTVC.swift */,
+				FD4C55C6274397030051BCC9 /* GuideProductListTVC.xib */,
+			);
+			path = ProductList;
+			sourceTree = "<group>";
+		};
+		FDB75E4F2743BFD100ACED22 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				FD3183862742DF760037C140 /* Colors.xcassets */,
+				FDB75E502743BFDF00ACED22 /* ColorPalette.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		FDB75E562743C57F00ACED22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E572743C58700ACED22 /* Guide */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FDB75E572743C58700ACED22 /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E582743C5BE00ACED22 /* GuideDataModel.swift */,
+				FDB75E5A2743C61F00ACED22 /* GuideProductDataModel.swift */,
+				FDB75E5C2743C6ED00ACED22 /* GuideCategoryDataModel.swift */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		FDB75E602743E69500ACED22 /* ManualCell */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E652743EC1200ACED22 /* ManualStep */,
+				FDB75E612743E6B900ACED22 /* GuideManualTVC.swift */,
+				FDB75E622743E6B900ACED22 /* GuideManualTVC.xib */,
+			);
+			path = ManualCell;
+			sourceTree = "<group>";
+		};
+		FDB75E652743EC1200ACED22 /* ManualStep */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E662743EC3800ACED22 /* GuideManualStepCVC.swift */,
+				FDB75E672743EC3800ACED22 /* GuideManualStepCVC.xib */,
+			);
+			path = ManualStep;
+			sourceTree = "<group>";
+		};
 		FDCDE5FF273FA34B00B2F413 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +315,8 @@
 				FD3183812742DEED0037C140 /* NaviBar */,
 				FD4C559D274347DD0051BCC9 /* HeaderCell */,
 				FD4C55A227434D260051BCC9 /* SearchCell */,
+				FD4C55BE274392ED0051BCC9 /* CategoryCell */,
+				FDB75E602743E69500ACED22 /* ManualCell */,
 				FDCDE603273FA3B600B2F413 /* GuideVC.swift */,
 				FD31837F2742DECA0037C140 /* Guide.storyboard */,
 			);
@@ -291,6 +402,7 @@
 		FDD3AD17273F6D9400A72451 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				FDB75E562743C57F00ACED22 /* Models */,
 				FDD3AD21273F6E2300A72451 /* Storyboards */,
 				FDD3AD1E273F6E0C00A72451 /* Network */,
 				FDD3AD1D273F6DE400A72451 /* Supporting Files */,
@@ -318,6 +430,8 @@
 				FDD3AD26273F6E7A00A72451 /* makeAlert + UIViewController.swift */,
 				FDD3AD28273F6E8A00A72451 /* press + UIButton.swift */,
 				FD3183882742E4CA0037C140 /* addSubViewFromNib.swift */,
+				FDB75E522743C32900ACED22 /* UICollectionViewRegisterable.swift */,
+				FDB75E542743C35800ACED22 /* UITableViewRegisterable.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -325,9 +439,9 @@
 		FDD3AD1A273F6DC500A72451 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FDB75E4F2743BFD100ACED22 /* Colors */,
 				FD4C55AF274386F70051BCC9 /* Fonts */,
 				FDD3AD0B273F6C3100A72451 /* Assets.xcassets */,
-				FD3183862742DF760037C140 /* Colors.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -349,6 +463,7 @@
 				FD4C55AD274383D30051BCC9 /* setDefaultFont.swift */,
 				FD4C55BA274389210051BCC9 /* makeSpoqaFont.swift */,
 				FD4C55BC27438C6A0051BCC9 /* setCharacterSpacing.swift */,
+				FDB75E5E2743DB8900ACED22 /* calculateTopInset.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -441,12 +556,17 @@
 			files = (
 				FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */,
 				F2A8E0A527417F4000A15287 /* Home.storyboard in Resources */,
+				FDB75E642743E6B900ACED22 /* GuideManualTVC.xib in Resources */,
+				FDB75E692743EC3800ACED22 /* GuideManualStepCVC.xib in Resources */,
 				FD3183872742DF760037C140 /* Colors.xcassets in Resources */,
 				FD3183832742DEF70037C140 /* GuideHeaderView.xib in Resources */,
+				FD4C55C8274397030051BCC9 /* GuideProductListTVC.xib in Resources */,
 				FD4C55A627434D430051BCC9 /* GuideSearchTVC.xib in Resources */,
 				FD4C55B7274387FA0051BCC9 /* Spoqa Han Sans Neo Thin.otf in Resources */,
+				FD4C55C2274393400051BCC9 /* GuideCategoryContainerTVC.xib in Resources */,
 				FD4C55B6274387FA0051BCC9 /* Spoqa Han Sans Neo Regular.otf in Resources */,
 				FDD3AD0F273F6C3100A72451 /* LaunchScreen.storyboard in Resources */,
+				FD4C55CE27439B5B0051BCC9 /* GuideCategoryNameCVC.xib in Resources */,
 				FDD3AD0C273F6C3100A72451 /* Assets.xcassets in Resources */,
 				FD4C55B8274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf in Resources */,
 				FD4C55B5274387FA0051BCC9 /* Spoqa Han Sans Neo Medium.otf in Resources */,
@@ -510,32 +630,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB75E532743C32900ACED22 /* UICollectionViewRegisterable.swift in Sources */,
 				F24DCC992742E47A001E0791 /* HomeReviewCVC.swift in Sources */,
-				F24916492743D78100C8F9A7 /* HomeReviewModel.swift in Sources */,
+				FDB75E5F2743DB8900ACED22 /* calculateTopInset.swift in Sources */,
+				FDB75E632743E6B900ACED22 /* GuideManualTVC.swift in Sources */,
 				FDD3AD2D273F6EAD00A72451 /* applyShadow.swift in Sources */,
 				FDCDE611273FA46800B2F413 /* HomeEventTVC.swift in Sources */,
 				FD3183852742DF030037C140 /* GuideHeaderView.swift in Sources */,
 				FDD3AD25273F6E5B00A72451 /* getClassName + UIViewController.swift in Sources */,
+				FDB75E512743BFDF00ACED22 /* ColorPalette.swift in Sources */,
 				FDD3AD27273F6E7A00A72451 /* makeAlert + UIViewController.swift in Sources */,
 				FD4C55AC274370B00051BCC9 /* Images + Literals.swift in Sources */,
 				FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */,
+				FDB75E5D2743C6ED00ACED22 /* GuideCategoryDataModel.swift in Sources */,
+				FD4C55C7274397030051BCC9 /* GuideProductListTVC.swift in Sources */,
+				FD4C55C1274393400051BCC9 /* GuideCategoryContainerTVC.swift in Sources */,
 				FDD3AD20273F6E1A00A72451 /* APIConstants.swift in Sources */,
 				FDD3AD29273F6E8A00A72451 /* press + UIButton.swift in Sources */,
 				FDD3AD07273F6C2E00A72451 /* ViewController.swift in Sources */,
 				FD4C55BB274389210051BCC9 /* makeSpoqaFont.swift in Sources */,
 				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
 				F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */,
+				FDB75E552743C35800ACED22 /* UITableViewRegisterable.swift in Sources */,
 				FD3183892742E4CA0037C140 /* addSubViewFromNib.swift in Sources */,
 				FDCDE615273FA47600B2F413 /* HomeReviewTVC.swift in Sources */,
 				FD4C55AE274383D30051BCC9 /* setDefaultFont.swift in Sources */,
+				FDB75E592743C5BE00ACED22 /* GuideDataModel.swift in Sources */,
 				FDD3AD23273F6E4700A72451 /* sampleComponents.swift in Sources */,
 				FD4C55A527434D430051BCC9 /* GuideSearchTVC.swift in Sources */,
 				FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */,
 				FD4C55AA2743709C0051BCC9 /* Literals.swift in Sources */,
+				FD4C55CD27439B5B0051BCC9 /* GuideCategoryNameCVC.swift in Sources */,
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
 				FD4C55BD27438C6A0051BCC9 /* setCharacterSpacing.swift in Sources */,
 				FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */,
 				FDCDE619273FA48100B2F413 /* HomeNewsTVC.swift in Sources */,
+				FDB75E682743EC3800ACED22 /* GuideManualStepCVC.swift in Sources */,
+				FDB75E5B2743C61F00ACED22 /* GuideProductDataModel.swift in Sources */,
 				FD4C55A0274348020051BCC9 /* GuideHeaderTVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -613,7 +744,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -668,7 +799,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

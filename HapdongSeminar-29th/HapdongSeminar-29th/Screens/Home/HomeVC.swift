@@ -21,6 +21,7 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         makeDelegate()
         registerXib()
+        setTableView()
     }
     
   // MARK: - IBAction Part
@@ -48,6 +49,11 @@ class HomeVC: UIViewController {
         let newsTVC = UINib(nibName: HomeNewsTVC.identifier, bundle: nil)
         homeTV.register(newsTVC, forCellReuseIdentifier: HomeNewsTVC.identifier)
     }
+    
+    func setTableView() {
+        //테이블 뷰 셀 사이의 회색 선 없애기
+        homeTV.separatorStyle = UITableViewCell.SeparatorStyle.none
+    }
   
   // MARK: - @objc Function Part
 
@@ -58,15 +64,19 @@ extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 0) { //HeaderView
             return 252
+//            return UITableView.automaticDimension
         }
         else if (indexPath.section == 1) { //EventView
             return 304
+//            return UITableView.automaticDimension
         }
         else if (indexPath.section == 2) { //ReviewView
             return 305
+//            return UITableView.automaticDimension
         }
         else { //NewsView
-            return 609
+            return 464
+//            return UITableView.automaticDimension
         }
     }
 }
@@ -83,7 +93,7 @@ extension HomeVC: UITableViewDataSource {
     
     // indexPath를 활용해 TableViewcell 별로 데이터를 다르게 지정할 수 있다.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if (indexPath.section == 0) { //HeaderView
+        if indexPath.section == 0 { //HeaderView
             guard let headerTVC = tableView.dequeueReusableCell(withIdentifier: HomeHeaderTVC.identifier) as?
                     HomeHeaderTVC else {return UITableViewCell()}
             
@@ -91,13 +101,13 @@ extension HomeVC: UITableViewDataSource {
             headerTVC.selectionStyle = .none
             return headerTVC
         }
-        else if (indexPath.section == 1) { //EventView
+        else if indexPath.section == 1 { //EventView
             guard let eventTVC = tableView.dequeueReusableCell(withIdentifier: HomeEventTVC.identifier) as?
                     HomeEventTVC else {return UITableViewCell()}
             eventTVC.selectionStyle = .none
             return eventTVC
         }
-        else if (indexPath.section == 2) { //ReviewView
+        else if indexPath.section == 2 { //ReviewView
             guard let reviewTVC = tableView.dequeueReusableCell(withIdentifier: HomeReviewTVC.identifier) as?
                     HomeReviewTVC else {return UITableViewCell()}
             reviewTVC.selectionStyle = .none

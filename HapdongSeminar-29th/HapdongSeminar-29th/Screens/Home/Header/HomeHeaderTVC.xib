@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SpoqaHanSansNeo-Bold.ttf">
+        <array key="Spoqa Han Sans Neo Bold.otf">
             <string>SpoqaHanSansNeo-Bold</string>
         </array>
     </customFonts>
@@ -22,7 +22,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 신청하면 월요일 새벽 배송" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojA-vA-47A">
-                        <rect key="frame" x="20" y="30" width="165" height="60.5"/>
+                        <rect key="frame" x="20" y="30" width="165" height="58"/>
                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -84,6 +84,7 @@
             <connections>
                 <outlet property="deliveryInfoBtn" destination="152-ui-wKQ" id="Buu-7K-8Xz"/>
                 <outlet property="firstUserBtn" destination="HQk-p0-VVr" id="AZc-jT-yJ8"/>
+                <outlet property="mainHeaderLabel" destination="ojA-vA-47A" id="cnu-bc-gcO"/>
                 <outlet property="originUserBtn" destination="9Bm-VP-YlU" id="foa-Cj-0c7"/>
             </connections>
             <point key="canvasLocation" x="126.81159420289856" y="45.535714285714285"/>
