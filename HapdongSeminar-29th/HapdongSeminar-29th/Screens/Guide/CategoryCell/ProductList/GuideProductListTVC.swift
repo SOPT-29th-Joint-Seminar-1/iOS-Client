@@ -8,16 +8,25 @@
 import UIKit
 
 class GuideProductListTVC: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
+  
+  // MARK: - Vars & Lets Part
+  
+  
+  // MARK: - UI Component Part
+  
+  
+  // MARK: - Life Cycle Parts
+  override func awakeFromNib() {
+    super.awakeFromNib()
+    // Initialization code
+  }
+  
+  override func setSelected(_ selected: Bool, animated: Bool) {
+    super.setSelected(selected, animated: animated)
     
+  }
+  
+  // MARK: - Custom Method Parts
+
+  
 }

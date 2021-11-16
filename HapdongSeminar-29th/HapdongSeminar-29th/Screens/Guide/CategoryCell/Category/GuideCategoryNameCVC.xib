@@ -30,6 +30,9 @@
                 <constraint firstItem="XSh-2U-yah" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="qRH-P7-3Fe"/>
             </constraints>
             <size key="customSize" width="166" height="89"/>
+            <connections>
+                <outlet property="nameLabel" destination="XSh-2U-yah" id="tu1-bH-YkA"/>
+            </connections>
             <point key="canvasLocation" x="215.94202898550725" y="84.040178571428569"/>
         </collectionViewCell>
     </objects>

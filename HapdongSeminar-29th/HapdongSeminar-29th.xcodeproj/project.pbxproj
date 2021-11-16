@@ -37,6 +37,7 @@
 		FD4C55C8274397030051BCC9 /* GuideProductListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55C6274397030051BCC9 /* GuideProductListTVC.xib */; };
 		FD4C55CD27439B5B0051BCC9 /* GuideCategoryNameCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55CB27439B5B0051BCC9 /* GuideCategoryNameCVC.swift */; };
 		FD4C55CE27439B5B0051BCC9 /* GuideCategoryNameCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55CC27439B5B0051BCC9 /* GuideCategoryNameCVC.xib */; };
+		FDB75E512743BFDF00ACED22 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E502743BFDF00ACED22 /* ColorPalette.swift */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -94,6 +95,7 @@
 		FD4C55C6274397030051BCC9 /* GuideProductListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideProductListTVC.xib; sourceTree = "<group>"; };
 		FD4C55CB27439B5B0051BCC9 /* GuideCategoryNameCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCategoryNameCVC.swift; sourceTree = "<group>"; };
 		FD4C55CC27439B5B0051BCC9 /* GuideCategoryNameCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideCategoryNameCVC.xib; sourceTree = "<group>"; };
+		FDB75E502743BFDF00ACED22 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -215,6 +217,15 @@
 				FD4C55C6274397030051BCC9 /* GuideProductListTVC.xib */,
 			);
 			path = ProductList;
+			sourceTree = "<group>";
+		};
+		FDB75E4F2743BFD100ACED22 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				FD3183862742DF760037C140 /* Colors.xcassets */,
+				FDB75E502743BFDF00ACED22 /* ColorPalette.swift */,
+			);
+			path = Colors;
 			sourceTree = "<group>";
 		};
 		FDCDE5FF273FA34B00B2F413 /* Home */ = {
@@ -356,9 +367,9 @@
 		FDD3AD1A273F6DC500A72451 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FDB75E4F2743BFD100ACED22 /* Colors */,
 				FD4C55AF274386F70051BCC9 /* Fonts */,
 				FDD3AD0B273F6C3100A72451 /* Assets.xcassets */,
-				FD3183862742DF760037C140 /* Colors.xcassets */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -549,6 +560,7 @@
 				FDCDE611273FA46800B2F413 /* HomeEventTVC.swift in Sources */,
 				FD3183852742DF030037C140 /* GuideHeaderView.swift in Sources */,
 				FDD3AD25273F6E5B00A72451 /* getClassName + UIViewController.swift in Sources */,
+				FDB75E512743BFDF00ACED22 /* ColorPalette.swift in Sources */,
 				FDD3AD27273F6E7A00A72451 /* makeAlert + UIViewController.swift in Sources */,
 				FD4C55AC274370B00051BCC9 /* Images + Literals.swift in Sources */,
 				FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */,
