@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00CF3ACF320382DB0297F8B3 /* Pods_HapdongSeminar_29th.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */; };
+		F24916492743D78100C8F9A7 /* HomeReviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24916482743D78100C8F9A7 /* HomeReviewModel.swift */; };
 		F24DCC992742E47A001E0791 /* HomeReviewCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */; };
 		F24DCC9A2742E47A001E0791 /* HomeReviewCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */; };
 		F2A8E0A527417F4000A15287 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A8E0A427417F4000A15287 /* Home.storyboard */; };
@@ -59,6 +60,7 @@
 		6938CA4CB75B346EC9F4916B /* Pods-HapdongSeminar-29th.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapdongSeminar-29th.release.xcconfig"; path = "Target Support Files/Pods-HapdongSeminar-29th/Pods-HapdongSeminar-29th.release.xcconfig"; sourceTree = "<group>"; };
 		8D7FA74EF68D1610B6C3459B /* Pods-HapdongSeminar-29th.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HapdongSeminar-29th.debug.xcconfig"; path = "Target Support Files/Pods-HapdongSeminar-29th/Pods-HapdongSeminar-29th.debug.xcconfig"; sourceTree = "<group>"; };
 		98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapdongSeminar_29th.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24916482743D78100C8F9A7 /* HomeReviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewModel.swift; sourceTree = "<group>"; };
 		F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewCVC.swift; sourceTree = "<group>"; };
 		F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeReviewCVC.xib; sourceTree = "<group>"; };
 		F2A8E0A427417F4000A15287 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
@@ -135,6 +137,15 @@
 				98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F249164C2744162500C8F9A7 /* ReviewItem */ = {
+			isa = PBXGroup;
+			children = (
+				F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */,
+				F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */,
+			);
+			path = ReviewItem;
 			sourceTree = "<group>";
 		};
 		FD3183812742DEED0037C140 /* NaviBar */ = {
@@ -222,10 +233,10 @@
 		FDCDE609273FA41A00B2F413 /* Review */ = {
 			isa = PBXGroup;
 			children = (
+				F249164C2744162500C8F9A7 /* ReviewItem */,
 				FDCDE613273FA47600B2F413 /* HomeReviewTVC.swift */,
 				FDCDE614273FA47600B2F413 /* HomeReviewTVC.xib */,
-				F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */,
-				F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */,
+				F24916482743D78100C8F9A7 /* HomeReviewModel.swift */,
 			);
 			path = Review;
 			sourceTree = "<group>";
@@ -500,6 +511,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F24DCC992742E47A001E0791 /* HomeReviewCVC.swift in Sources */,
+				F24916492743D78100C8F9A7 /* HomeReviewModel.swift in Sources */,
 				FDD3AD2D273F6EAD00A72451 /* applyShadow.swift in Sources */,
 				FDCDE611273FA46800B2F413 /* HomeEventTVC.swift in Sources */,
 				FD3183852742DF030037C140 /* GuideHeaderView.swift in Sources */,
