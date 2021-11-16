@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SpoqaHanSansNeo-Bold.ttf">
+        <array key="Spoqa Han Sans Neo Bold.otf">
             <string>SpoqaHanSansNeo-Bold</string>
         </array>
     </customFonts>
@@ -85,6 +85,7 @@
             <connections>
                 <outlet property="deliveryInfoBtn" destination="152-ui-wKQ" id="Buu-7K-8Xz"/>
                 <outlet property="firstUserBtn" destination="HQk-p0-VVr" id="AZc-jT-yJ8"/>
+                <outlet property="mainHeaderLabel" destination="ojA-vA-47A" id="cnu-bc-gcO"/>
                 <outlet property="originUserBtn" destination="9Bm-VP-YlU" id="foa-Cj-0c7"/>
             </connections>
             <point key="canvasLocation" x="126.81159420289856" y="45.535714285714285"/>

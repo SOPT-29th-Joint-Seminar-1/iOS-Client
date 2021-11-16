@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SpoqaHanSansNeo-Bold.ttf">
+        <array key="Spoqa Han Sans Neo Bold.otf">
             <string>SpoqaHanSansNeo-Bold</string>
         </array>
     </customFonts>
@@ -23,7 +23,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세탁특공대, 세특의 이벤트" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yoC-Ws-bOI">
-                        <rect key="frame" x="20" y="40" width="195" height="23"/>
+                        <rect key="frame" x="20" y="40" width="195" height="22"/>
                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -37,17 +37,19 @@
                         </connections>
                     </pageControl>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygX-jJ-hdp">
-                        <rect key="frame" x="0.0" y="83" width="375" height="200"/>
+                        <rect key="frame" x="0.0" y="77" width="375" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="ygX-jJ-hdp" secondAttribute="height" multiplier="375:200" id="TYb-Zr-Ohs"/>
+                        </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="mgR-fh-rp4" firstAttribute="top" secondItem="ygX-jJ-hdp" secondAttribute="bottom" constant="3" id="3ge-Su-hk4"/>
                     <constraint firstItem="ygX-jJ-hdp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AMF-EB-mAI"/>
                     <constraint firstItem="mgR-fh-rp4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Tcf-Zq-Srh"/>
                     <constraint firstAttribute="trailing" secondItem="ygX-jJ-hdp" secondAttribute="trailing" id="VTq-dV-yJ0"/>
+                    <constraint firstItem="mgR-fh-rp4" firstAttribute="top" secondItem="ygX-jJ-hdp" secondAttribute="bottom" constant="9" id="eNX-RU-6Lb"/>
                     <constraint firstItem="yoC-Ws-bOI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="g4d-nM-KuW"/>
-                    <constraint firstAttribute="bottom" secondItem="ygX-jJ-hdp" secondAttribute="bottom" constant="21" id="igT-A3-BWu"/>
-                    <constraint firstItem="ygX-jJ-hdp" firstAttribute="top" secondItem="yoC-Ws-bOI" secondAttribute="bottom" constant="20" id="nsb-Dp-WtB"/>
+                    <constraint firstItem="ygX-jJ-hdp" firstAttribute="top" secondItem="yoC-Ws-bOI" secondAttribute="bottom" constant="15" id="mff-VP-LSZ"/>
                     <constraint firstItem="yoC-Ws-bOI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ulk-bb-2P0"/>
                 </constraints>
             </tableViewCellContentView>
