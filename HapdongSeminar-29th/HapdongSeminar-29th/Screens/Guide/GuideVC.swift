@@ -21,6 +21,11 @@ class GuideVC: UIViewController {
   
   // MARK: - Vars & Lets Part
   
+  private var isWarningFolded = true{
+    didSet{
+      mainTV.reloadData()
+    }
+  }
   private let cellCaseList: [GuideCellCase] = [.header,.search,.category,.manual,.warning,.process]
   
   // MARK: - UI Component Part
@@ -62,6 +67,8 @@ class GuideVC: UIViewController {
     GuideSearchTVC.register(target: mainTV)
     GuideCategoryContainerTVC.register(target: mainTV)
     GuideManualTVC.register(target: mainTV)
+    GuideWarningTVC.register(target: mainTV)
+    
   }
   
   
@@ -78,7 +85,7 @@ extension GuideVC : UITableViewDelegate{
 
 extension GuideVC : UITableViewDataSource{
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 4
+    return 5
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -113,7 +120,12 @@ extension GuideVC : UITableViewDataSource{
         return manualCell
 
       case .warning:
-        return UITableViewCell()
+        guard let warningCell = tableView.dequeueReusableCell(withIdentifier: GuideWarningTVC.className, for: indexPath)
+                as? GuideWarningTVC else {return UITableViewCell()}
+        warningCell.selectionStyle = .none
+        warningCell.delegate = self
+        warningCell.setFold(isWarningFolded)
+        return warningCell
 
       case .process:
         return UITableViewCell()
@@ -138,6 +150,15 @@ extension GuideVC : GuideHeaderDelegate{
 extension GuideVC : GuideSearchDelegate{
   func searchButtonClicked(keyword: String) {
     self.view.endEditing(true)
+  }
+  
+  
+}
+
+extension GuideVC : GuideWarningDelegate{
+  func buttonClicked(isFolded: Bool) {
+    makeVibrate()
+    isWarningFolded = !isWarningFolded
   }
   
   
