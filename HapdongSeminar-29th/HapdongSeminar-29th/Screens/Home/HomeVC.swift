@@ -21,6 +21,7 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         makeDelegate()
         registerXib()
+        setTableView()
     }
     
   // MARK: - IBAction Part
@@ -47,6 +48,11 @@ class HomeVC: UIViewController {
         
         let newsTVC = UINib(nibName: HomeNewsTVC.identifier, bundle: nil)
         homeTV.register(newsTVC, forCellReuseIdentifier: HomeNewsTVC.identifier)
+    }
+    
+    func setTableView() {
+        //테이블 뷰 셀 사이의 회색 선 없애기
+        homeTV.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
   
   // MARK: - @objc Function Part
