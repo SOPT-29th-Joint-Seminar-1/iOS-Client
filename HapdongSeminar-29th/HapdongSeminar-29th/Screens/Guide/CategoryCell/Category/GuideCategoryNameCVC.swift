@@ -23,8 +23,6 @@ class GuideCategoryNameCVC: UICollectionViewCell {
   
   // MARK: - Life Cycle Parts
 
-  
-  
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
