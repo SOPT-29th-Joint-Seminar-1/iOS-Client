@@ -64,15 +64,19 @@ extension HomeVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if (indexPath.section == 0) { //HeaderView
             return 252
+//            return UITableView.automaticDimension
         }
         else if (indexPath.section == 1) { //EventView
             return 304
+//            return UITableView.automaticDimension
         }
         else if (indexPath.section == 2) { //ReviewView
             return 305
+//            return UITableView.automaticDimension
         }
         else { //NewsView
             return 464
+//            return UITableView.automaticDimension
         }
     }
 }
