@@ -10,6 +10,19 @@ import UIKit
 extension Literals{
   struct Image{
     
+    struct Base {
+      static let homeIcon = UIImage(named: "icon_home_inactive")!
+      static let homeIconSelected = UIImage(named: "icon_home_active")!
+      static let membershipIcon = UIImage(named: "icon_membership_inactive")!
+      static let membershipIconSelected = UIImage(named: "icon_membership_active")!
+      static let useIcon = UIImage(named: "icon_use_inactive")!
+      static let useIconSelected = UIImage(named: "icon_use_active")!
+      static let mypageIcon = UIImage(named: "icon_mypage_inactive")!
+      static let mypageIconSelected = UIImage(named: "icon_mypage_active")!
+      
+      static let plusIcon = UIImage(named: "icon_plus")!
+    }
+    
     struct Guide {
       static let searchIcon = UIImage(named: "icon_search")!
       static let searchIconSelected = UIImage(named: "icon_search_selected")!

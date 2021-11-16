@@ -57,6 +57,8 @@
 		FDB75E7A2744187A00ACED22 /* GuideProcessPageCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E782744187A00ACED22 /* GuideProcessPageCVC.xib */; };
 		FDB75E7D274428B600ACED22 /* GuideShortCutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E7C274428B600ACED22 /* GuideShortCutView.swift */; };
 		FDB75E7F274428C000ACED22 /* GuideShortCutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E7E274428C000ACED22 /* GuideShortCutView.xib */; };
+		FDB75E82274435EB00ACED22 /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E81274435EB00ACED22 /* Base.storyboard */; };
+		FDB75E84274435F800ACED22 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E83274435F800ACED22 /* BaseVC.swift */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -134,6 +136,8 @@
 		FDB75E782744187A00ACED22 /* GuideProcessPageCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideProcessPageCVC.xib; sourceTree = "<group>"; };
 		FDB75E7C274428B600ACED22 /* GuideShortCutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideShortCutView.swift; sourceTree = "<group>"; };
 		FDB75E7E274428C000ACED22 /* GuideShortCutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideShortCutView.xib; sourceTree = "<group>"; };
+		FDB75E81274435EB00ACED22 /* Base.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
+		FDB75E83274435F800ACED22 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -340,6 +344,15 @@
 			path = Shortcut;
 			sourceTree = "<group>";
 		};
+		FDB75E80274435DD00ACED22 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E81274435EB00ACED22 /* Base.storyboard */,
+				FDB75E83274435F800ACED22 /* BaseVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		FDCDE5FF273FA34B00B2F413 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,6 +452,7 @@
 		FDD3AD16273F6D8F00A72451 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FDB75E80274435DD00ACED22 /* Base */,
 				FDCDE600273FA36500B2F413 /* Guide */,
 				FDCDE5FF273FA34B00B2F413 /* Home */,
 				FDD3AD06273F6C2E00A72451 /* ViewController.swift */,
@@ -602,6 +616,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB75E82274435EB00ACED22 /* Base.storyboard in Resources */,
 				FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */,
 				F2A8E0A527417F4000A15287 /* Home.storyboard in Resources */,
 				FDB75E642743E6B900ACED22 /* GuideManualTVC.xib in Resources */,
@@ -705,6 +720,7 @@
 				FD4C55BB274389210051BCC9 /* makeSpoqaFont.swift in Sources */,
 				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
 				F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */,
+				FDB75E84274435F800ACED22 /* BaseVC.swift in Sources */,
 				FDB75E792744187A00ACED22 /* GuideProcessPageCVC.swift in Sources */,
 				FDB75E552743C35800ACED22 /* UITableViewRegisterable.swift in Sources */,
 				FD3183892742E4CA0037C140 /* addSubViewFromNib.swift in Sources */,
