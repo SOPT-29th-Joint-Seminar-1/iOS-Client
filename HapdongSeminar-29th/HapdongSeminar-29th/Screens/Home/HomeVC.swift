@@ -74,7 +74,11 @@ extension HomeVC: UITableViewDelegate {
 extension HomeVC: UITableViewDataSource {
      //한 section마다 몇개의 row를 넣어야하는지 지정하는 함수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1 //한 섹션의 한개의 row니까
+        return 1
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
     }
     
     // indexPath를 활용해 TableViewcell 별로 데이터를 다르게 지정할 수 있다.
@@ -84,12 +88,13 @@ extension HomeVC: UITableViewDataSource {
                     HomeHeaderTVC else {return UITableViewCell()}
             
     //        headertvc.setData(rank: indexPath.row, appData: appContentList[indexPath.row])
+            headerTVC.selectionStyle = .none
             return headerTVC
         }
         else if (indexPath.section == 1) { //EventView
             guard let eventTVC = tableView.dequeueReusableCell(withIdentifier: HomeEventTVC.identifier) as?
                     HomeEventTVC else {return UITableViewCell()}
-            
+            eventTVC.selectionStyle = .none
             return eventTVC
         }
         else if (indexPath.section == 2) { //ReviewView
