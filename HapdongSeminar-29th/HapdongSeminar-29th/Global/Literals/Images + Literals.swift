@@ -12,6 +12,7 @@ extension Literals{
     struct Guide {
       static let searchIcon = UIImage(named: "icon_search")!
       static let searchIconSelected = UIImage(named: "icon_search_selectd")!
+      static let productListBackground = UIImage(named: "bg_productList")!
     }
   }
 }
