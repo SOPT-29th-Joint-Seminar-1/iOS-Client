@@ -20,5 +20,17 @@ extension GuideDataModel{
   }
   struct Category{
     var `case` : GuideDataModel.CategoryList
+    
+    static func getCategorylist() -> [GuideDataModel.Category]{
+      return [
+        Category(case: .total),
+        Category(case: .clothes),
+        Category(case: .living),
+        Category(case: .bedding),
+        Category(case: .shoes),
+        Category(case: .leather),
+        Category(case: .repair)
+      ]
+    }
   }
 }
