@@ -12,7 +12,7 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="GuideHeaderTVC" rowHeight="220" id="KGk-i7-Jjw" customClass="GuideHeaderTVC" customModule="HapdongSeminar_29th" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="379" height="220"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="379" height="220"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -40,6 +40,7 @@
                     <constraint firstItem="Hpu-6f-yBE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Cc6-T2-iP3"/>
                     <constraint firstItem="Hpu-6f-yBE" firstAttribute="top" secondItem="Vw9-LU-L1Z" secondAttribute="bottom" constant="8" id="Glo-f5-L64"/>
                     <constraint firstItem="Vw9-LU-L1Z" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="WrU-xb-Ae3"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Hpu-6f-yBE" secondAttribute="bottom" constant="17" id="wUc-7a-FqV"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
