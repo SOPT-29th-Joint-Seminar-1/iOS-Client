@@ -54,13 +54,13 @@
                             <color key="baseBackgroundColor" name="darkgrey4"/>
                         </buttonConfiguration>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="152-ui-wKQ">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="152-ui-wKQ">
                         <rect key="frame" x="177" y="50" width="32" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="32" id="KqU-kQ-6Ew"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="question_mark"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        <state key="normal" title="Button" image="question_mark"/>
                         <connections>
                             <action selector="touchUpToShowInfo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GcU-0l-shb"/>
                         </connections>

@@ -111,6 +111,8 @@ extension HomeVC: UITableViewDataSource {
             guard let reviewTVC = tableView.dequeueReusableCell(withIdentifier: HomeReviewTVC.identifier) as?
                     HomeReviewTVC else {return UITableViewCell()}
             reviewTVC.selectionStyle = .none
+            
+            
             return reviewTVC
         }
         else { //NewsView
