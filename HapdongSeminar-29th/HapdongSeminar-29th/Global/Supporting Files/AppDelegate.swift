@@ -10,7 +10,14 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+  override init(){
+    super.init()
+    UIFont.overrideInitialize()
+    UIFont.familyNames.forEach({ familyName in
+          let fontNames = UIFont.fontNames(forFamilyName: familyName)
+          print(familyName, fontNames)
+      })
+  }
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.

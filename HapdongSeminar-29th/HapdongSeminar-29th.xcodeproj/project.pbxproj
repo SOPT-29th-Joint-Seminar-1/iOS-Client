@@ -10,8 +10,6 @@
 		00CF3ACF320382DB0297F8B3 /* Pods_HapdongSeminar_29th.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */; };
 		F24DCC992742E47A001E0791 /* HomeReviewCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */; };
 		F24DCC9A2742E47A001E0791 /* HomeReviewCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */; };
-		F2A8E0A12741722700A15287 /* SpoqaHanSansNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2A8E0A02741722700A15287 /* SpoqaHanSansNeo-Regular.ttf */; };
-		F2A8E0A32741727000A15287 /* SpoqaHanSansNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F2A8E0A22741727000A15287 /* SpoqaHanSansNeo-Bold.ttf */; };
 		F2A8E0A527417F4000A15287 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A8E0A427417F4000A15287 /* Home.storyboard */; };
 		F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8E0A62741898F00A15287 /* HomeVC.swift */; };
 		FD3183802742DECA0037C140 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD31837F2742DECA0037C140 /* Guide.storyboard */; };
@@ -25,6 +23,13 @@
 		FD4C55A627434D430051BCC9 /* GuideSearchTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55A427434D430051BCC9 /* GuideSearchTVC.xib */; };
 		FD4C55AA2743709C0051BCC9 /* Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55A92743709C0051BCC9 /* Literals.swift */; };
 		FD4C55AC274370B00051BCC9 /* Images + Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55AB274370B00051BCC9 /* Images + Literals.swift */; };
+		FD4C55AE274383D30051BCC9 /* setDefaultFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55AD274383D30051BCC9 /* setDefaultFont.swift */; };
+		FD4C55B5274387FA0051BCC9 /* Spoqa Han Sans Neo Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55B0274387FA0051BCC9 /* Spoqa Han Sans Neo Medium.otf */; };
+		FD4C55B6274387FA0051BCC9 /* Spoqa Han Sans Neo Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55B1274387FA0051BCC9 /* Spoqa Han Sans Neo Regular.otf */; };
+		FD4C55B7274387FA0051BCC9 /* Spoqa Han Sans Neo Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55B2274387FA0051BCC9 /* Spoqa Han Sans Neo Thin.otf */; };
+		FD4C55B8274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55B3274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf */; };
+		FD4C55B9274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55B4274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf */; };
+		FD4C55BB274389210051BCC9 /* makeSpoqaFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55BA274389210051BCC9 /* makeSpoqaFont.swift */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -55,8 +60,6 @@
 		98E4029761443DB2E7045580 /* Pods_HapdongSeminar_29th.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HapdongSeminar_29th.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewCVC.swift; sourceTree = "<group>"; };
 		F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeReviewCVC.xib; sourceTree = "<group>"; };
-		F2A8E0A02741722700A15287 /* SpoqaHanSansNeo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Regular.ttf"; sourceTree = "<group>"; };
-		F2A8E0A22741727000A15287 /* SpoqaHanSansNeo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SpoqaHanSansNeo-Bold.ttf"; sourceTree = "<group>"; };
 		F2A8E0A427417F4000A15287 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F2A8E0A62741898F00A15287 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FD31837F2742DECA0037C140 /* Guide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
@@ -70,6 +73,13 @@
 		FD4C55A427434D430051BCC9 /* GuideSearchTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideSearchTVC.xib; sourceTree = "<group>"; };
 		FD4C55A92743709C0051BCC9 /* Literals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Literals.swift; sourceTree = "<group>"; };
 		FD4C55AB274370B00051BCC9 /* Images + Literals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Images + Literals.swift"; sourceTree = "<group>"; };
+		FD4C55AD274383D30051BCC9 /* setDefaultFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setDefaultFont.swift; sourceTree = "<group>"; };
+		FD4C55B0274387FA0051BCC9 /* Spoqa Han Sans Neo Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Medium.otf"; sourceTree = "<group>"; };
+		FD4C55B1274387FA0051BCC9 /* Spoqa Han Sans Neo Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Regular.otf"; sourceTree = "<group>"; };
+		FD4C55B2274387FA0051BCC9 /* Spoqa Han Sans Neo Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Thin.otf"; sourceTree = "<group>"; };
+		FD4C55B3274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Bold.otf"; sourceTree = "<group>"; };
+		FD4C55B4274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spoqa Han Sans Neo Light.otf"; sourceTree = "<group>"; };
+		FD4C55BA274389210051BCC9 /* makeSpoqaFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeSpoqaFont.swift; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -150,6 +160,18 @@
 				FD4C55A427434D430051BCC9 /* GuideSearchTVC.xib */,
 			);
 			path = SearchCell;
+			sourceTree = "<group>";
+		};
+		FD4C55AF274386F70051BCC9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				FD4C55B3274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf */,
+				FD4C55B4274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf */,
+				FD4C55B0274387FA0051BCC9 /* Spoqa Han Sans Neo Medium.otf */,
+				FD4C55B1274387FA0051BCC9 /* Spoqa Han Sans Neo Regular.otf */,
+				FD4C55B2274387FA0051BCC9 /* Spoqa Han Sans Neo Thin.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		FDCDE5FF273FA34B00B2F413 /* Home */ = {
@@ -290,9 +312,8 @@
 		FDD3AD1A273F6DC500A72451 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				FD4C55AF274386F70051BCC9 /* Fonts */,
 				FDD3AD0B273F6C3100A72451 /* Assets.xcassets */,
-				F2A8E0A22741727000A15287 /* SpoqaHanSansNeo-Bold.ttf */,
-				F2A8E0A02741722700A15287 /* SpoqaHanSansNeo-Regular.ttf */,
 				FD3183862742DF760037C140 /* Colors.xcassets */,
 			);
 			path = Resource;
@@ -312,6 +333,8 @@
 			children = (
 				FDD3AD2A273F6EA000A72451 /* makeVibrate.swift */,
 				FDD3AD2C273F6EAD00A72451 /* applyShadow.swift */,
+				FD4C55AD274383D30051BCC9 /* setDefaultFont.swift */,
+				FD4C55BA274389210051BCC9 /* makeSpoqaFont.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -407,14 +430,17 @@
 				FD3183872742DF760037C140 /* Colors.xcassets in Resources */,
 				FD3183832742DEF70037C140 /* GuideHeaderView.xib in Resources */,
 				FD4C55A627434D430051BCC9 /* GuideSearchTVC.xib in Resources */,
+				FD4C55B7274387FA0051BCC9 /* Spoqa Han Sans Neo Thin.otf in Resources */,
+				FD4C55B6274387FA0051BCC9 /* Spoqa Han Sans Neo Regular.otf in Resources */,
 				FDD3AD0F273F6C3100A72451 /* LaunchScreen.storyboard in Resources */,
 				FDD3AD0C273F6C3100A72451 /* Assets.xcassets in Resources */,
+				FD4C55B8274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf in Resources */,
+				FD4C55B5274387FA0051BCC9 /* Spoqa Han Sans Neo Medium.otf in Resources */,
 				FDCDE61A273FA48100B2F413 /* HomeNewsTVC.xib in Resources */,
-				F2A8E0A12741722700A15287 /* SpoqaHanSansNeo-Regular.ttf in Resources */,
 				FDD3AD0A273F6C2E00A72451 /* Main.storyboard in Resources */,
 				FD4C55A1274348020051BCC9 /* GuideHeaderTVC.xib in Resources */,
+				FD4C55B9274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf in Resources */,
 				F24DCC9A2742E47A001E0791 /* HomeReviewCVC.xib in Resources */,
-				F2A8E0A32741727000A15287 /* SpoqaHanSansNeo-Bold.ttf in Resources */,
 				FD3183802742DECA0037C140 /* Guide.storyboard in Resources */,
 				FDCDE616273FA47600B2F413 /* HomeReviewTVC.xib in Resources */,
 				FDCDE612273FA46800B2F413 /* HomeEventTVC.xib in Resources */,
@@ -481,10 +507,12 @@
 				FDD3AD20273F6E1A00A72451 /* APIConstants.swift in Sources */,
 				FDD3AD29273F6E8A00A72451 /* press + UIButton.swift in Sources */,
 				FDD3AD07273F6C2E00A72451 /* ViewController.swift in Sources */,
+				FD4C55BB274389210051BCC9 /* makeSpoqaFont.swift in Sources */,
 				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
 				F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */,
 				FD3183892742E4CA0037C140 /* addSubViewFromNib.swift in Sources */,
 				FDCDE615273FA47600B2F413 /* HomeReviewTVC.swift in Sources */,
+				FD4C55AE274383D30051BCC9 /* setDefaultFont.swift in Sources */,
 				FDD3AD23273F6E4700A72451 /* sampleComponents.swift in Sources */,
 				FD4C55A527434D430051BCC9 /* GuideSearchTVC.swift in Sources */,
 				FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */,
