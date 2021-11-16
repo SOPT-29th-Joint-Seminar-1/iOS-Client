@@ -49,6 +49,17 @@
 		FDB75E642743E6B900ACED22 /* GuideManualTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E622743E6B900ACED22 /* GuideManualTVC.xib */; };
 		FDB75E682743EC3800ACED22 /* GuideManualStepCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E662743EC3800ACED22 /* GuideManualStepCVC.swift */; };
 		FDB75E692743EC3800ACED22 /* GuideManualStepCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E672743EC3800ACED22 /* GuideManualStepCVC.xib */; };
+		FDB75E6D2744021600ACED22 /* GuideWarningTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E6B2744021600ACED22 /* GuideWarningTVC.swift */; };
+		FDB75E6E2744021600ACED22 /* GuideWarningTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E6C2744021600ACED22 /* GuideWarningTVC.xib */; };
+		FDB75E702744041B00ACED22 /* Text + Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E6F2744041B00ACED22 /* Text + Literals.swift */; };
+		FDB75E742744152F00ACED22 /* GuideProcessTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E722744152F00ACED22 /* GuideProcessTVC.swift */; };
+		FDB75E752744152F00ACED22 /* GuideProcessTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E732744152F00ACED22 /* GuideProcessTVC.xib */; };
+		FDB75E792744187A00ACED22 /* GuideProcessPageCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E772744187A00ACED22 /* GuideProcessPageCVC.swift */; };
+		FDB75E7A2744187A00ACED22 /* GuideProcessPageCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E782744187A00ACED22 /* GuideProcessPageCVC.xib */; };
+		FDB75E7D274428B600ACED22 /* GuideShortCutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E7C274428B600ACED22 /* GuideShortCutView.swift */; };
+		FDB75E7F274428C000ACED22 /* GuideShortCutView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E7E274428C000ACED22 /* GuideShortCutView.xib */; };
+		FDB75E82274435EB00ACED22 /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E81274435EB00ACED22 /* Base.storyboard */; };
+		FDB75E84274435F800ACED22 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E83274435F800ACED22 /* BaseVC.swift */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -118,6 +129,17 @@
 		FDB75E622743E6B900ACED22 /* GuideManualTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideManualTVC.xib; sourceTree = "<group>"; };
 		FDB75E662743EC3800ACED22 /* GuideManualStepCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideManualStepCVC.swift; sourceTree = "<group>"; };
 		FDB75E672743EC3800ACED22 /* GuideManualStepCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideManualStepCVC.xib; sourceTree = "<group>"; };
+		FDB75E6B2744021600ACED22 /* GuideWarningTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideWarningTVC.swift; sourceTree = "<group>"; };
+		FDB75E6C2744021600ACED22 /* GuideWarningTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideWarningTVC.xib; sourceTree = "<group>"; };
+		FDB75E6F2744041B00ACED22 /* Text + Literals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text + Literals.swift"; sourceTree = "<group>"; };
+		FDB75E722744152F00ACED22 /* GuideProcessTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideProcessTVC.swift; sourceTree = "<group>"; };
+		FDB75E732744152F00ACED22 /* GuideProcessTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideProcessTVC.xib; sourceTree = "<group>"; };
+		FDB75E772744187A00ACED22 /* GuideProcessPageCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideProcessPageCVC.swift; sourceTree = "<group>"; };
+		FDB75E782744187A00ACED22 /* GuideProcessPageCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideProcessPageCVC.xib; sourceTree = "<group>"; };
+		FDB75E7C274428B600ACED22 /* GuideShortCutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideShortCutView.swift; sourceTree = "<group>"; };
+		FDB75E7E274428C000ACED22 /* GuideShortCutView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideShortCutView.xib; sourceTree = "<group>"; };
+		FDB75E81274435EB00ACED22 /* Base.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
+		FDB75E83274435F800ACED22 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -297,6 +319,52 @@
 			path = ManualStep;
 			sourceTree = "<group>";
 		};
+		FDB75E6A2744020500ACED22 /* WarningCell */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E6B2744021600ACED22 /* GuideWarningTVC.swift */,
+				FDB75E6C2744021600ACED22 /* GuideWarningTVC.xib */,
+			);
+			path = WarningCell;
+			sourceTree = "<group>";
+		};
+		FDB75E712744151400ACED22 /* ProcessCell */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E762744184B00ACED22 /* Pages */,
+				FDB75E722744152F00ACED22 /* GuideProcessTVC.swift */,
+				FDB75E732744152F00ACED22 /* GuideProcessTVC.xib */,
+			);
+			path = ProcessCell;
+			sourceTree = "<group>";
+		};
+		FDB75E762744184B00ACED22 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E772744187A00ACED22 /* GuideProcessPageCVC.swift */,
+				FDB75E782744187A00ACED22 /* GuideProcessPageCVC.xib */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		FDB75E7B274428A600ACED22 /* Shortcut */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E7C274428B600ACED22 /* GuideShortCutView.swift */,
+				FDB75E7E274428C000ACED22 /* GuideShortCutView.xib */,
+			);
+			path = Shortcut;
+			sourceTree = "<group>";
+		};
+		FDB75E80274435DD00ACED22 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E81274435EB00ACED22 /* Base.storyboard */,
+				FDB75E83274435F800ACED22 /* BaseVC.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		FDCDE5FF273FA34B00B2F413 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -318,6 +386,9 @@
 				FD4C55A227434D260051BCC9 /* SearchCell */,
 				FD4C55BE274392ED0051BCC9 /* CategoryCell */,
 				FDB75E602743E69500ACED22 /* ManualCell */,
+				FDB75E6A2744020500ACED22 /* WarningCell */,
+				FDB75E712744151400ACED22 /* ProcessCell */,
+				FDB75E7B274428A600ACED22 /* Shortcut */,
 				FDCDE603273FA3B600B2F413 /* GuideVC.swift */,
 				FD31837F2742DECA0037C140 /* Guide.storyboard */,
 			);
@@ -392,6 +463,7 @@
 		FDD3AD16273F6D8F00A72451 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				FDB75E80274435DD00ACED22 /* Base */,
 				FDCDE600273FA36500B2F413 /* Guide */,
 				FDCDE5FF273FA34B00B2F413 /* Home */,
 				FDD3AD06273F6C2E00A72451 /* ViewController.swift */,
@@ -451,6 +523,7 @@
 			children = (
 				FD4C55A92743709C0051BCC9 /* Literals.swift */,
 				FD4C55AB274370B00051BCC9 /* Images + Literals.swift */,
+				FDB75E6F2744041B00ACED22 /* Text + Literals.swift */,
 			);
 			path = Literals;
 			sourceTree = "<group>";
@@ -554,6 +627,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB75E82274435EB00ACED22 /* Base.storyboard in Resources */,
 				FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */,
 				F2A8E0A527417F4000A15287 /* Home.storyboard in Resources */,
 				FDB75E642743E6B900ACED22 /* GuideManualTVC.xib in Resources */,
@@ -566,14 +640,18 @@
 				FD4C55C2274393400051BCC9 /* GuideCategoryContainerTVC.xib in Resources */,
 				FD4C55B6274387FA0051BCC9 /* Spoqa Han Sans Neo Regular.otf in Resources */,
 				FDD3AD0F273F6C3100A72451 /* LaunchScreen.storyboard in Resources */,
+				FDB75E752744152F00ACED22 /* GuideProcessTVC.xib in Resources */,
 				FD4C55CE27439B5B0051BCC9 /* GuideCategoryNameCVC.xib in Resources */,
 				FDD3AD0C273F6C3100A72451 /* Assets.xcassets in Resources */,
+				FDB75E7F274428C000ACED22 /* GuideShortCutView.xib in Resources */,
 				FD4C55B8274387FA0051BCC9 /* Spoqa Han Sans Neo Bold.otf in Resources */,
 				FD4C55B5274387FA0051BCC9 /* Spoqa Han Sans Neo Medium.otf in Resources */,
 				FDCDE61A273FA48100B2F413 /* HomeNewsTVC.xib in Resources */,
 				FDD3AD0A273F6C2E00A72451 /* Main.storyboard in Resources */,
 				FD4C55A1274348020051BCC9 /* GuideHeaderTVC.xib in Resources */,
+				FDB75E6E2744021600ACED22 /* GuideWarningTVC.xib in Resources */,
 				FD4C55B9274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf in Resources */,
+				FDB75E7A2744187A00ACED22 /* GuideProcessPageCVC.xib in Resources */,
 				F24DCC9A2742E47A001E0791 /* HomeReviewCVC.xib in Resources */,
 				FD3183802742DECA0037C140 /* Guide.storyboard in Resources */,
 				FDCDE616273FA47600B2F413 /* HomeReviewTVC.xib in Resources */,
@@ -630,9 +708,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB75E742744152F00ACED22 /* GuideProcessTVC.swift in Sources */,
 				FDB75E532743C32900ACED22 /* UICollectionViewRegisterable.swift in Sources */,
 				F24DCC992742E47A001E0791 /* HomeReviewCVC.swift in Sources */,
 				FDB75E5F2743DB8900ACED22 /* calculateTopInset.swift in Sources */,
+				FDB75E7D274428B600ACED22 /* GuideShortCutView.swift in Sources */,
 				FDB75E632743E6B900ACED22 /* GuideManualTVC.swift in Sources */,
 				FDD3AD2D273F6EAD00A72451 /* applyShadow.swift in Sources */,
 				FDCDE611273FA46800B2F413 /* HomeEventTVC.swift in Sources */,
@@ -651,6 +731,8 @@
 				FD4C55BB274389210051BCC9 /* makeSpoqaFont.swift in Sources */,
 				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
 				F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */,
+				FDB75E84274435F800ACED22 /* BaseVC.swift in Sources */,
+				FDB75E792744187A00ACED22 /* GuideProcessPageCVC.swift in Sources */,
 				FDB75E552743C35800ACED22 /* UITableViewRegisterable.swift in Sources */,
 				FD3183892742E4CA0037C140 /* addSubViewFromNib.swift in Sources */,
 				FDCDE615273FA47600B2F413 /* HomeReviewTVC.swift in Sources */,
@@ -662,6 +744,8 @@
 				FD4C55AA2743709C0051BCC9 /* Literals.swift in Sources */,
 				FD4C55CD27439B5B0051BCC9 /* GuideCategoryNameCVC.swift in Sources */,
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
+				FDB75E702744041B00ACED22 /* Text + Literals.swift in Sources */,
+				FDB75E6D2744021600ACED22 /* GuideWarningTVC.swift in Sources */,
 				FD4C55BD27438C6A0051BCC9 /* setCharacterSpacing.swift in Sources */,
 				FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */,
 				F249164D274418A400C8F9A7 /* HomeReviewData.swift in Sources */,

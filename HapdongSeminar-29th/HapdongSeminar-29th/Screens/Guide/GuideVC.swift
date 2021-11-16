@@ -21,6 +21,11 @@ class GuideVC: UIViewController {
   
   // MARK: - Vars & Lets Part
   
+  private var isWarningFolded = true{
+    didSet{
+      mainTV.reloadData()
+    }
+  }
   private let cellCaseList: [GuideCellCase] = [.header,.search,.category,.manual,.warning,.process]
   
   // MARK: - UI Component Part
@@ -28,7 +33,11 @@ class GuideVC: UIViewController {
   @IBOutlet weak var topNaviBar: GuideHeaderView!
   @IBOutlet weak var mainTV: UITableView!
   @IBOutlet weak var bottomCTAButton: UIButton!
-  
+  @IBOutlet weak var shortCutView: GuideShortCutView!{
+    didSet{
+      shortCutView.delegate = self
+    }
+  }
   
   // MARK: - Constraint Part
 
@@ -62,6 +71,8 @@ class GuideVC: UIViewController {
     GuideSearchTVC.register(target: mainTV)
     GuideCategoryContainerTVC.register(target: mainTV)
     GuideManualTVC.register(target: mainTV)
+    GuideWarningTVC.register(target: mainTV)
+    GuideProcessTVC.register(target: mainTV)
   }
   
   
@@ -71,6 +82,20 @@ class GuideVC: UIViewController {
 // MARK: - Extension Part
 extension GuideVC : UITableViewDelegate{
   
+  func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    if let lastIndex = mainTV.indexPathsForVisibleRows?.last{
+      if lastIndex.row == 5{
+        shortCutView.currentIndex = 2
+      }else{
+        if mainTV.contentOffset.y <= 400{
+          shortCutView.currentIndex = 0
+        }else{
+          shortCutView.currentIndex = 1
+        }
+      }
+    }
+  }
+  
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
     return UITableView.automaticDimension
   }
@@ -78,7 +103,7 @@ extension GuideVC : UITableViewDelegate{
 
 extension GuideVC : UITableViewDataSource{
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 4
+    return 6
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -113,10 +138,18 @@ extension GuideVC : UITableViewDataSource{
         return manualCell
 
       case .warning:
-        return UITableViewCell()
+        guard let warningCell = tableView.dequeueReusableCell(withIdentifier: GuideWarningTVC.className, for: indexPath)
+                as? GuideWarningTVC else {return UITableViewCell()}
+        warningCell.selectionStyle = .none
+        warningCell.delegate = self
+        warningCell.setFold(isWarningFolded)
+        return warningCell
 
       case .process:
-        return UITableViewCell()
+        guard let processCell = tableView.dequeueReusableCell(withIdentifier: GuideProcessTVC.className, for: indexPath)
+                as? GuideProcessTVC else {return UITableViewCell()}
+        processCell.selectionStyle = .none
+        return processCell
     }
   }
   
@@ -141,4 +174,21 @@ extension GuideVC : GuideSearchDelegate{
   }
   
   
+}
+
+extension GuideVC : GuideWarningDelegate{
+  func buttonClicked(isFolded: Bool) {
+    makeVibrate()
+    isWarningFolded = !isWarningFolded
+  }
+  
+  
+}
+
+
+extension GuideVC : GuideShortCutDelegate{
+  func buttonClicked(index: Int) {
+    var row = index * 2 + 1
+    mainTV.scrollToRow(at: IndexPath(row: row, section: 0), at: .top, animated: true)
+  }
 }
