@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="GuideShortCutView" customModule="HapdongSeminar_29th" customModuleProvider="target">
+            <connections>
+                <outlet property="manualButton" destination="6Mm-Tv-coS" id="3IT-nt-Dam"/>
+                <outlet property="priceButton" destination="f17-Mp-Pdy" id="TE8-UM-Ckf"/>
+                <outlet property="processButton" destination="gQq-yT-EYZ" id="UGG-80-b58"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="202" height="343"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3hU-IQ-Xhh">
+                    <rect key="frame" x="0.0" y="0.0" width="202" height="343"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f17-Mp-Pdy">
+                            <rect key="frame" x="0.0" y="0.0" width="202" height="111.5"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mm-Tv-coS">
+                            <rect key="frame" x="0.0" y="115.5" width="202" height="112"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQq-yT-EYZ">
+                            <rect key="frame" x="0.0" y="231.5" width="202" height="111.5"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3hU-IQ-Xhh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1pf-3j-GKY"/>
+                <constraint firstAttribute="trailing" secondItem="3hU-IQ-Xhh" secondAttribute="trailing" id="4g9-86-0fI"/>
+                <constraint firstAttribute="bottom" secondItem="3hU-IQ-Xhh" secondAttribute="bottom" id="uQa-1S-QUL"/>
+                <constraint firstItem="3hU-IQ-Xhh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ym8-88-kj7"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-21.739130434782609" y="-54.575892857142854"/>
+        </view>
+    </objects>
+</document>
