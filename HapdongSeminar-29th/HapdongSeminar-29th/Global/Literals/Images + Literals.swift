@@ -9,6 +9,7 @@ import UIKit
 
 extension Literals{
   struct Image{
+    
     struct Guide {
       static let searchIcon = UIImage(named: "icon_search")!
       static let searchIconSelected = UIImage(named: "icon_search_selected")!
@@ -19,6 +20,8 @@ extension Literals{
       static let manualStep_3 = UIImage(named: "step3")!
       static let manualStep_4 = UIImage(named: "step4")!
       
+      static let warningArrowDown = UIImage(named: "icon_down_red")!
+      static let warningArrowUp = UIImage(named: "icon_up_red")!
     }
   }
 }

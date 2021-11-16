@@ -27,7 +27,6 @@ class GuideCategoryContainerTVC: UITableViewCell,UITableViewRegisterable {
   @IBOutlet weak var productListTV: UITableView!
   
   
-  
   // MARK: - Life Cycle Parts
   override func awakeFromNib() {
     super.awakeFromNib()

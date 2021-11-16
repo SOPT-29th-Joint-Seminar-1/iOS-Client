@@ -48,6 +48,9 @@
 		FDB75E642743E6B900ACED22 /* GuideManualTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E622743E6B900ACED22 /* GuideManualTVC.xib */; };
 		FDB75E682743EC3800ACED22 /* GuideManualStepCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E662743EC3800ACED22 /* GuideManualStepCVC.swift */; };
 		FDB75E692743EC3800ACED22 /* GuideManualStepCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E672743EC3800ACED22 /* GuideManualStepCVC.xib */; };
+		FDB75E6D2744021600ACED22 /* GuideWarningTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E6B2744021600ACED22 /* GuideWarningTVC.swift */; };
+		FDB75E6E2744021600ACED22 /* GuideWarningTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDB75E6C2744021600ACED22 /* GuideWarningTVC.xib */; };
+		FDB75E702744041B00ACED22 /* Text + Literals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E6F2744041B00ACED22 /* Text + Literals.swift */; };
 		FDCDE604273FA3B600B2F413 /* GuideVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE603273FA3B600B2F413 /* GuideVC.swift */; };
 		FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */; };
 		FDCDE60E273FA45700B2F413 /* HomeHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */; };
@@ -116,6 +119,9 @@
 		FDB75E622743E6B900ACED22 /* GuideManualTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideManualTVC.xib; sourceTree = "<group>"; };
 		FDB75E662743EC3800ACED22 /* GuideManualStepCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideManualStepCVC.swift; sourceTree = "<group>"; };
 		FDB75E672743EC3800ACED22 /* GuideManualStepCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideManualStepCVC.xib; sourceTree = "<group>"; };
+		FDB75E6B2744021600ACED22 /* GuideWarningTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideWarningTVC.swift; sourceTree = "<group>"; };
+		FDB75E6C2744021600ACED22 /* GuideWarningTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideWarningTVC.xib; sourceTree = "<group>"; };
+		FDB75E6F2744041B00ACED22 /* Text + Literals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text + Literals.swift"; sourceTree = "<group>"; };
 		FDCDE603273FA3B600B2F413 /* GuideVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideVC.swift; sourceTree = "<group>"; };
 		FDCDE60B273FA45700B2F413 /* HomeHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderTVC.swift; sourceTree = "<group>"; };
 		FDCDE60C273FA45700B2F413 /* HomeHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderTVC.xib; sourceTree = "<group>"; };
@@ -285,6 +291,15 @@
 			path = ManualStep;
 			sourceTree = "<group>";
 		};
+		FDB75E6A2744020500ACED22 /* WarningCell */ = {
+			isa = PBXGroup;
+			children = (
+				FDB75E6B2744021600ACED22 /* GuideWarningTVC.swift */,
+				FDB75E6C2744021600ACED22 /* GuideWarningTVC.xib */,
+			);
+			path = WarningCell;
+			sourceTree = "<group>";
+		};
 		FDCDE5FF273FA34B00B2F413 /* Home */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +321,7 @@
 				FD4C55A227434D260051BCC9 /* SearchCell */,
 				FD4C55BE274392ED0051BCC9 /* CategoryCell */,
 				FDB75E602743E69500ACED22 /* ManualCell */,
+				FDB75E6A2744020500ACED22 /* WarningCell */,
 				FDCDE603273FA3B600B2F413 /* GuideVC.swift */,
 				FD31837F2742DECA0037C140 /* Guide.storyboard */,
 			);
@@ -440,6 +456,7 @@
 			children = (
 				FD4C55A92743709C0051BCC9 /* Literals.swift */,
 				FD4C55AB274370B00051BCC9 /* Images + Literals.swift */,
+				FDB75E6F2744041B00ACED22 /* Text + Literals.swift */,
 			);
 			path = Literals;
 			sourceTree = "<group>";
@@ -562,6 +579,7 @@
 				FDCDE61A273FA48100B2F413 /* HomeNewsTVC.xib in Resources */,
 				FDD3AD0A273F6C2E00A72451 /* Main.storyboard in Resources */,
 				FD4C55A1274348020051BCC9 /* GuideHeaderTVC.xib in Resources */,
+				FDB75E6E2744021600ACED22 /* GuideWarningTVC.xib in Resources */,
 				FD4C55B9274387FA0051BCC9 /* Spoqa Han Sans Neo Light.otf in Resources */,
 				F24DCC9A2742E47A001E0791 /* HomeReviewCVC.xib in Resources */,
 				FD3183802742DECA0037C140 /* Guide.storyboard in Resources */,
@@ -651,6 +669,8 @@
 				FD4C55AA2743709C0051BCC9 /* Literals.swift in Sources */,
 				FD4C55CD27439B5B0051BCC9 /* GuideCategoryNameCVC.swift in Sources */,
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
+				FDB75E702744041B00ACED22 /* Text + Literals.swift in Sources */,
+				FDB75E6D2744021600ACED22 /* GuideWarningTVC.swift in Sources */,
 				FD4C55BD27438C6A0051BCC9 /* setCharacterSpacing.swift in Sources */,
 				FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */,
 				FDCDE619273FA48100B2F413 /* HomeNewsTVC.swift in Sources */,

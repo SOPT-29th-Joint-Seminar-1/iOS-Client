@@ -8,11 +8,13 @@
 import UIKit
 
 class GuideProductListTVC: UITableViewCell,UITableViewRegisterable {
+  
 
 
   // MARK: - Vars & Lets Part
-  static var isFromNib = true
   
+  static var isFromNib: Bool = true
+
   // MARK: - UI Component Part
   
   @IBOutlet weak var productNameLabel: UILabel!
