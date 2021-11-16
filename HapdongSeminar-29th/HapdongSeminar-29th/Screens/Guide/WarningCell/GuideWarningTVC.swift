@@ -48,7 +48,7 @@ class GuideWarningTVC: UITableViewCell,UITableViewRegisterable {
   
   func setFold(_ isFolded: Bool){
     if isFolded{
-      containerHeightConstraint.constant = 32
+      containerHeightConstraint.constant = 40
       upIconImageView.alpha = 0
       downIconImageView.alpha = 1
     }else{
