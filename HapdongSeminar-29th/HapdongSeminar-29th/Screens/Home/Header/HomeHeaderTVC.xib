@@ -24,7 +24,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 신청하면 월요일 새벽 배송" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojA-vA-47A">
-                        <rect key="frame" x="20" y="30" width="165" height="58"/>
+                        <rect key="frame" x="20" y="30" width="165" height="56"/>
                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -32,16 +32,6 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04e-jN-mjG">
                         <rect key="frame" x="20" y="117" width="335" height="64"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQk-p0-VVr">
-                                <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="touchUpToGoGiudeView:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yP7-Ru-hWo"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세탁 특공대가 처음이세요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3i-Y3-aip">
                                 <rect key="frame" x="18" y="15" width="148" height="17"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
@@ -54,12 +44,22 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQk-p0-VVr">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="64"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpToGoGiudeView:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yP7-Ru-hWo"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="blue1"/>
                         <constraints>
                             <constraint firstItem="A3i-Y3-aip" firstAttribute="leading" secondItem="04e-jN-mjG" secondAttribute="leading" constant="18" id="3l9-6F-SxH"/>
-                            <constraint firstItem="TX7-zD-VAu" firstAttribute="top" secondItem="HQk-p0-VVr" secondAttribute="bottom" constant="8" id="65y-y6-TIe"/>
-                            <constraint firstAttribute="bottom" secondItem="HQk-p0-VVr" secondAttribute="bottom" constant="34" id="ZWx-Mo-KSn"/>
+                            <constraint firstItem="TX7-zD-VAu" firstAttribute="top" secondItem="A3i-Y3-aip" secondAttribute="bottom" constant="6" id="65y-y6-TIe"/>
+                            <constraint firstAttribute="bottom" secondItem="HQk-p0-VVr" secondAttribute="bottom" id="ZWx-Mo-KSn"/>
                             <constraint firstItem="HQk-p0-VVr" firstAttribute="top" secondItem="04e-jN-mjG" secondAttribute="top" id="buq-V3-1g2"/>
                             <constraint firstItem="A3i-Y3-aip" firstAttribute="top" secondItem="04e-jN-mjG" secondAttribute="top" constant="15" id="guh-2g-RBX"/>
                             <constraint firstAttribute="height" constant="64" id="kly-ds-z1E"/>

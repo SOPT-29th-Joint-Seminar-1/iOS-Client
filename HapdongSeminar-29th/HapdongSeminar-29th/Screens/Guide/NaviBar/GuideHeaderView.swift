@@ -16,7 +16,7 @@ class GuideHeaderView: UIView {
 
   // MARK: - Vars & Lets Part
 
-  private var headerDelegate : GuideHeaderDelegate?
+  var headerDelegate : GuideHeaderDelegate?
 
   // MARK: - UI Component Part
 

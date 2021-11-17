@@ -48,7 +48,8 @@ class HomeHeaderTVC: UITableViewCell {
     }
     
     @IBAction func touchUpToGoGiudeView(_ sender: Any) {
-        //가이드뷰로 고고씽
+      print("Clicked")
+      NotificationCenter.default.post(name: NSNotification.Name("goToGuideView"), object: nil)
     }
     
     

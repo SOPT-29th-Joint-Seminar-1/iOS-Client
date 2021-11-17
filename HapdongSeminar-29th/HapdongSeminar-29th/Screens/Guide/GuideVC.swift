@@ -30,7 +30,11 @@ class GuideVC: UIViewController {
   
   // MARK: - UI Component Part
   
-  @IBOutlet weak var topNaviBar: GuideHeaderView!
+  @IBOutlet weak var topNaviBar: GuideHeaderView!{
+    didSet{
+      topNaviBar.headerDelegate = self
+    }
+  }
   @IBOutlet weak var mainTV: UITableView!
   @IBOutlet weak var bottomCTAButton: UIButton!
   @IBOutlet weak var shortCutView: GuideShortCutView!{
@@ -60,6 +64,8 @@ class GuideVC: UIViewController {
   
   // MARK: - Custom Method Part
   
+
+  
   private func setMainTV(){
     mainTV.delegate = self
     mainTV.dataSource = self
@@ -77,6 +83,7 @@ class GuideVC: UIViewController {
   
   
   // MARK: - @objc Function Part
+
   
 }
 // MARK: - Extension Part

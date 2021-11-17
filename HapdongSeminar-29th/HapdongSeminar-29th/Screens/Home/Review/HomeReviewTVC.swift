@@ -10,14 +10,26 @@ import UIKit
 class HomeReviewTVC: UITableViewCell {
 
     // MARK: - Vars & Lets Part
-    static let identifier = "HomeReviewTVC"
+  private var currentIndex : CGFloat = 0
+  static let identifier = "HomeReviewTVC"
+  var reviewContentList: [HomeReviewData] = []
+
+  
+  // MARK: - UI Component Part
+
     @IBOutlet weak var reviewCollectionView: UICollectionView!
     @IBOutlet weak var pager: UIPageControl!
-    var reviewContentList: [HomeReviewData] = []
-    
-    // MARK: - UI Component Part
-
-    
+  
+  
+  @IBOutlet weak var reviewCollectionHeightConstraint: NSLayoutConstraint!{
+    didSet{
+      let screenWidth = UIScreen.main.bounds.width
+      let cellWidth = screenWidth * (316/375)
+      let cellHeight = cellWidth * (200/316)
+      reviewCollectionHeightConstraint.constant = cellHeight
+    }
+  }
+  
     // MARK: - Life Cycle Part
 
       override func awakeFromNib() {
@@ -25,6 +37,7 @@ class HomeReviewTVC: UITableViewCell {
           initReviewDataList()
           registerCVC()
           setPager()
+        setReviewCV()
       }
 
       override func setSelected(_ selected: Bool, animated: Bool) {
@@ -40,6 +53,24 @@ class HomeReviewTVC: UITableViewCell {
     }
     
     // MARK: - Custom Method Part
+  
+  private func setReviewCV(){
+    
+    let screenWidth = UIScreen.main.bounds.width
+    let cellWidth = (316/375) * screenWidth
+    let cellHeight = cellWidth * (200/316)
+    
+    let insetX = (20/375) * screenWidth
+    let layout = reviewCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+    
+    layout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+    layout.minimumLineSpacing = 12
+    
+    layout.scrollDirection = .horizontal
+    reviewCollectionView.contentInset = UIEdgeInsets(top: 0, left: insetX, bottom: 0, right: insetX)
+    reviewCollectionView.decelerationRate = .fast
+
+  }
     func setPager() {
        //페이지 컨트롤의 전체 페이지를 배열의 전체 개수 값으로 설정
         pager.numberOfPages = reviewContentList.count
@@ -85,24 +116,44 @@ extension HomeReviewTVC: UICollectionViewDataSource {
 
 extension HomeReviewTVC: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 316, height: 200)
+      let screenWidth = UIScreen.main.bounds.width
+        let cellWidth = screenWidth * (316/375)
+        let cellHeight = cellWidth * (200/316)
+        return CGSize(width: cellWidth, height: cellHeight)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.zero
-    }
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+//      return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+//    }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        12
     }
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return 0
+        12
     }
 }
 
 
 extension HomeReviewTVC : UIScrollViewDelegate {
+  
+  func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+//    let page = Int(targetContentOffset.pointee.x / self.frame.width)
+    let layout = reviewCollectionView.collectionViewLayout as! UICollectionViewFlowLayout
+    let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
+    
+    var offSet = targetContentOffset.pointee
+    let index = (offSet.x + scrollView.contentInset.left) / cellWidthIncludingSpacing
+    let roundedIndex = round(index)
+    
+    offSet = CGPoint(x: roundedIndex * cellWidthIncludingSpacing - scrollView.contentInset.left,
+                     y: -scrollView.contentInset.top)
+    targetContentOffset.pointee = offSet
+//    self.pageControl.currentPage = Int(roundedIndex)
+  }
+  
+  
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let width = scrollView.bounds.size.width // 너비 저장
         let x = scrollView.contentOffset.x + (width / 2.0) // 현재 스크롤한 x좌표 저장

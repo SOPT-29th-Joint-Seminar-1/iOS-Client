@@ -26,6 +26,7 @@ class BaseVC: UIViewController {
     super.viewDidLoad()
     setContainerViewLayer()
     setConatainerVC()
+    addObserver()
     
   }
   
@@ -58,6 +59,10 @@ class BaseVC: UIViewController {
   
   // MARK: - Custom Method Part
   
+  private func addObserver(){
+    NotificationCenter.default.addObserver(self, selector: #selector(goToGuideView), name: NSNotification.Name("goToGuideView"), object: nil)
+  }
+  
   private func setConatainerVC(){
     if let homeVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: HomeVC.className) as? HomeVC{
       addChild(homeVC)
@@ -85,6 +90,12 @@ class BaseVC: UIViewController {
   }
   
   // MARK: - @objc Function Part
+  
+  @objc private func goToGuideView(){
+    guard let guideVC = UIStoryboard(name: "Guide", bundle: nil).instantiateViewController(withIdentifier: GuideVC.className) as? GuideVC else {return}
+    print("GuideVC")
+    self.navigationController?.pushViewController(guideVC, animated: true)
+  }
   
 }
 // MARK: - Extension Part

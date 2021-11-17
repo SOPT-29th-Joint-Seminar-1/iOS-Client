@@ -25,7 +25,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세특 고객들의 칭찬후기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyV-6M-98t">
-                        <rect key="frame" x="20" y="43" width="174" height="22"/>
+                        <rect key="frame" x="20" y="43" width="166" height="22"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="SEX-b1-aN0"/>
                         </constraints>
@@ -33,8 +33,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1cn-rQ-eVg">
-                        <rect key="frame" x="20" y="81" width="316" height="201"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1cn-rQ-eVg">
+                        <rect key="frame" x="0.0" y="81" width="375" height="201"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="201" id="Ivv-xB-al5"/>
@@ -59,20 +59,21 @@
                     </pageControl>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="1cn-rQ-eVg" secondAttribute="trailing" id="60V-dT-UCa"/>
                     <constraint firstItem="YyV-6M-98t" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="43" id="9Jy-yI-wR3"/>
-                    <constraint firstItem="1cn-rQ-eVg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Npb-Xk-XQS"/>
                     <constraint firstItem="1cn-rQ-eVg" firstAttribute="top" secondItem="YyV-6M-98t" secondAttribute="bottom" constant="16" id="XP8-vx-ITA"/>
                     <constraint firstAttribute="bottom" secondItem="1cn-rQ-eVg" secondAttribute="bottom" constant="23" id="bZo-OJ-cl8"/>
+                    <constraint firstItem="1cn-rQ-eVg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="iPK-kH-9hv"/>
                     <constraint firstItem="YyV-6M-98t" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="kF5-PH-nSu"/>
                     <constraint firstItem="4lD-RK-B6D" firstAttribute="top" secondItem="1cn-rQ-eVg" secondAttribute="bottom" constant="5" id="pkv-oa-Mgj"/>
                     <constraint firstItem="4lD-RK-B6D" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qQ0-wf-PDG"/>
-                    <constraint firstAttribute="trailing" secondItem="1cn-rQ-eVg" secondAttribute="trailing" constant="39" id="qyr-3A-y23"/>
                     <constraint firstAttribute="bottom" secondItem="4lD-RK-B6D" secondAttribute="bottom" constant="-8" id="yKQ-gA-vp7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="pager" destination="4lD-RK-B6D" id="D0F-ES-uDo"/>
+                <outlet property="reviewCollectionHeightConstraint" destination="Ivv-xB-al5" id="jGD-Xr-TKa"/>
                 <outlet property="reviewCollectionView" destination="1cn-rQ-eVg" id="yqh-rw-W9O"/>
             </connections>
             <point key="canvasLocation" x="131.15942028985509" y="89.397321428571431"/>
