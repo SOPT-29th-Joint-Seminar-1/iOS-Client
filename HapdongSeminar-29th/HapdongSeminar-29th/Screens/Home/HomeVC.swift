@@ -7,13 +7,25 @@
 
 import UIKit
 
+enum HomeCellCase{
+  case header
+  case event
+  case review
+  case news
+
+}
+
+
 class HomeVC: UIViewController {
 
   // MARK: - Vars & Lets Part
+    private let cellCaseList: [HomeCellCase] = [.header,.event,.review,.news]
+    
+    
+    
+    // MARK: - UI Component Part
     @IBOutlet weak var addressBtn: UIButton!
     @IBOutlet weak var homeTV: UITableView!
-
-    // MARK: - UI Component Part
 
   
   // MARK: - Life Cycle Part
@@ -62,22 +74,7 @@ class HomeVC: UIViewController {
 extension HomeVC: UITableViewDelegate {
     // 높이 지정 index별
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if (indexPath.section == 0) { //HeaderView
-            return 252
-//            return UITableView.automaticDimension
-        }
-        else if (indexPath.section == 1) { //EventView
-            return 304
-//            return UITableView.automaticDimension
-        }
-        else if (indexPath.section == 2) { //ReviewView
-            return 305
-//            return UITableView.automaticDimension
-        }
-        else { //NewsView
-            return 464
-//            return UITableView.automaticDimension
-        }
+        return UITableView.automaticDimension
     }
 }
 
@@ -93,34 +90,34 @@ extension HomeVC: UITableViewDataSource {
     
     // indexPath를 활용해 TableViewcell 별로 데이터를 다르게 지정할 수 있다.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.section == 0 { //HeaderView
+        let cellCase = cellCaseList[indexPath.section]
+        
+        switch(cellCase){
+            
+        case .header:
             guard let headerTVC = tableView.dequeueReusableCell(withIdentifier: HomeHeaderTVC.identifier) as?
                     HomeHeaderTVC else {return UITableViewCell()}
-            
-    //        headertvc.setData(rank: indexPath.row, appData: appContentList[indexPath.row])
             headerTVC.selectionStyle = .none
             return headerTVC
-        }
-        else if indexPath.section == 1 { //EventView
+        
+        case .event:
             guard let eventTVC = tableView.dequeueReusableCell(withIdentifier: HomeEventTVC.identifier) as?
                     HomeEventTVC else {return UITableViewCell()}
             eventTVC.selectionStyle = .none
             return eventTVC
-        }
-        else if indexPath.section == 2 { //ReviewView
+
+        case .review:
             guard let reviewTVC = tableView.dequeueReusableCell(withIdentifier: HomeReviewTVC.identifier) as?
                     HomeReviewTVC else {return UITableViewCell()}
             reviewTVC.selectionStyle = .none
-            
-            
             return reviewTVC
-        }
-        else { //NewsView
+            
+        case .news:
             guard let newsTVC = tableView.dequeueReusableCell(withIdentifier: HomeNewsTVC.identifier) as?
                     HomeNewsTVC else {return UITableViewCell()}
             newsTVC.selectionStyle = .none
             return newsTVC
+        
         }
-
     }
 }

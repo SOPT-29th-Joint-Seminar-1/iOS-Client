@@ -17,6 +17,10 @@ class HomeHeaderTVC: UITableViewCell {
         }
     }
     @IBOutlet weak var deliveryInfoBtn: UIButton!
+    
+    
+    @IBOutlet weak var firstUserLayerView: UIView!
+    @IBOutlet weak var originUserLayerView: UIView!
     @IBOutlet weak var firstUserBtn: UIButton!
     @IBOutlet weak var originUserBtn: UIButton!
     
@@ -50,8 +54,9 @@ class HomeHeaderTVC: UITableViewCell {
     
     // MARK: - Custom Method Part
     func setUI(){
-        firstUserBtn.contentHorizontalAlignment = .left
-        originUserBtn.contentHorizontalAlignment = .left
+        firstUserLayerView.layer.cornerRadius = 10
+        originUserLayerView.layer.cornerRadius = 10
+
     }
     
     // MARK: - @objc Function Part

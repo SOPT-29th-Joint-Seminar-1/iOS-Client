@@ -26,6 +26,9 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세특 고객들의 칭찬후기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyV-6M-98t">
                         <rect key="frame" x="20" y="43" width="174" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="SEX-b1-aN0"/>
+                        </constraints>
                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="18"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -33,6 +36,9 @@
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="1cn-rQ-eVg">
                         <rect key="frame" x="20" y="81" width="316" height="201"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="201" id="Ivv-xB-al5"/>
+                        </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="nxv-o9-N6h">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -42,6 +48,9 @@
                     </collectionView>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="4lD-RK-B6D">
                         <rect key="frame" x="109.5" y="287" width="156" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="oYv-JQ-Zha"/>
+                        </constraints>
                         <color key="pageIndicatorTintColor" name="grey2"/>
                         <color key="currentPageIndicatorTintColor" name="yellow"/>
                         <connections>
@@ -58,6 +67,7 @@
                     <constraint firstItem="4lD-RK-B6D" firstAttribute="top" secondItem="1cn-rQ-eVg" secondAttribute="bottom" constant="5" id="pkv-oa-Mgj"/>
                     <constraint firstItem="4lD-RK-B6D" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="qQ0-wf-PDG"/>
                     <constraint firstAttribute="trailing" secondItem="1cn-rQ-eVg" secondAttribute="trailing" constant="39" id="qyr-3A-y23"/>
+                    <constraint firstAttribute="bottom" secondItem="4lD-RK-B6D" secondAttribute="bottom" constant="-8" id="yKQ-gA-vp7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

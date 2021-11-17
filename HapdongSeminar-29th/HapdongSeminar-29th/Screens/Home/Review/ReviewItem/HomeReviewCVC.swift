@@ -26,13 +26,17 @@ class HomeReviewCVC: UICollectionViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        setUI()
     }
 
   // MARK: - IBAction Part
 
 
   // MARK: - Custom Method Part
+    func setUI(){
+        self.layer.cornerRadius = 10
+    }
+    
     func setData(appData: HomeReviewData ){
         self.reviewImageView.image = appData.makeItemImage()
         self.userIdLabel.text = appData.userId

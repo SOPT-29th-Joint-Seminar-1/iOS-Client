@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,37 +24,87 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="오늘 신청하면 월요일 새벽 배송" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ojA-vA-47A">
-                        <rect key="frame" x="20" y="30" width="165" height="56"/>
+                        <rect key="frame" x="20" y="30" width="165" height="58"/>
                         <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="24"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQk-p0-VVr">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="04e-jN-mjG">
                         <rect key="frame" x="20" y="117" width="335" height="64"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQk-p0-VVr">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="touchUpToGoGiudeView:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yP7-Ru-hWo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세탁 특공대가 처음이세요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3i-Y3-aip">
+                                <rect key="frame" x="18" y="15" width="148" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세특을 한 번도 사용해보지 않은 분들을 위해" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TX7-zD-VAu">
+                                <rect key="frame" x="18" y="38" width="174" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="blue1"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="64" id="LfP-6r-E2U"/>
+                            <constraint firstItem="A3i-Y3-aip" firstAttribute="leading" secondItem="04e-jN-mjG" secondAttribute="leading" constant="18" id="3l9-6F-SxH"/>
+                            <constraint firstItem="TX7-zD-VAu" firstAttribute="top" secondItem="HQk-p0-VVr" secondAttribute="bottom" constant="8" id="65y-y6-TIe"/>
+                            <constraint firstAttribute="bottom" secondItem="HQk-p0-VVr" secondAttribute="bottom" constant="34" id="ZWx-Mo-KSn"/>
+                            <constraint firstItem="HQk-p0-VVr" firstAttribute="top" secondItem="04e-jN-mjG" secondAttribute="top" id="buq-V3-1g2"/>
+                            <constraint firstItem="A3i-Y3-aip" firstAttribute="top" secondItem="04e-jN-mjG" secondAttribute="top" constant="15" id="guh-2g-RBX"/>
+                            <constraint firstAttribute="height" constant="64" id="kly-ds-z1E"/>
+                            <constraint firstItem="TX7-zD-VAu" firstAttribute="leading" secondItem="04e-jN-mjG" secondAttribute="leading" constant="18" id="lDa-Eg-1AA"/>
+                            <constraint firstAttribute="trailing" secondItem="HQk-p0-VVr" secondAttribute="trailing" id="qJs-iZ-JGc"/>
+                            <constraint firstItem="HQk-p0-VVr" firstAttribute="leading" secondItem="04e-jN-mjG" secondAttribute="leading" id="spZ-oY-BTc"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" title="세탁특공대가 처음이세요?" subtitle="세특을 한번도 사용해보지 않은 분들을 위해" titleAlignment="leading">
-                            <fontDescription key="titleFontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="14"/>
-                            <fontDescription key="subtitleFontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="10"/>
-                        </buttonConfiguration>
-                        <connections>
-                            <action selector="touchUpToGoGiudeView:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="yP7-Ru-hWo"/>
-                        </connections>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bm-VP-YlU">
-                        <rect key="frame" x="20" y="191" width="335" height="63"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xv9-bz-aZ3">
+                        <rect key="frame" x="20" y="190" width="335" height="64"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Bm-VP-YlU">
+                                <rect key="frame" x="0.0" y="0.0" width="335" height="64"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="지난번에도 사용하셨죠!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XzS-gf-1hK">
+                                <rect key="frame" x="18" y="15" width="130" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="꾸준히 세탁특공대를 이용하시는 분들을 위해" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YUH-36-esu">
+                                <rect key="frame" x="18" y="40" width="177" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="darkgrey4"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="63" id="PMH-c8-urD"/>
+                            <constraint firstAttribute="height" constant="64" id="7Vl-tF-Fa1"/>
+                            <constraint firstItem="9Bm-VP-YlU" firstAttribute="top" secondItem="xv9-bz-aZ3" secondAttribute="top" id="Jht-pU-pF9"/>
+                            <constraint firstItem="XzS-gf-1hK" firstAttribute="leading" secondItem="xv9-bz-aZ3" secondAttribute="leading" constant="18" id="PnJ-Gq-ZvU"/>
+                            <constraint firstAttribute="bottom" secondItem="9Bm-VP-YlU" secondAttribute="bottom" id="SqP-et-y51"/>
+                            <constraint firstItem="YUH-36-esu" firstAttribute="top" secondItem="XzS-gf-1hK" secondAttribute="bottom" constant="8" id="VCO-dm-9wo"/>
+                            <constraint firstItem="9Bm-VP-YlU" firstAttribute="leading" secondItem="xv9-bz-aZ3" secondAttribute="leading" id="VIY-jZ-lr8"/>
+                            <constraint firstItem="YUH-36-esu" firstAttribute="leading" secondItem="xv9-bz-aZ3" secondAttribute="leading" constant="18" id="oL6-HI-xcM"/>
+                            <constraint firstItem="XzS-gf-1hK" firstAttribute="top" secondItem="xv9-bz-aZ3" secondAttribute="top" constant="15" id="vaz-3K-zsI"/>
+                            <constraint firstAttribute="trailing" secondItem="9Bm-VP-YlU" secondAttribute="trailing" id="vcw-7f-i4F"/>
                         </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" title="지난번에도 사용하셨죠!" subtitle="꾸준히 세탁특공대를 이용하시는 분들을 위해" titleAlignment="leading">
-                            <fontDescription key="titleFontDescription" name="SpoqaHanSansNeo-Bold" family="Spoqa Han Sans Neo" pointSize="14"/>
-                            <fontDescription key="subtitleFontDescription" name="SpoqaHanSansNeo-Regular" family="Spoqa Han Sans Neo" pointSize="10"/>
-                            <color key="baseBackgroundColor" name="darkgrey4"/>
-                        </buttonConfiguration>
-                    </button>
+                    </view>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="152-ui-wKQ">
                         <rect key="frame" x="177" y="50" width="32" height="32"/>
                         <constraints>
@@ -67,32 +118,37 @@
                     </button>
                 </subviews>
                 <constraints>
+                    <constraint firstItem="04e-jN-mjG" firstAttribute="top" secondItem="152-ui-wKQ" secondAttribute="bottom" constant="35" id="0T0-tC-Wec"/>
                     <constraint firstItem="152-ui-wKQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="177" id="0lh-Zy-cdB"/>
                     <constraint firstItem="ojA-vA-47A" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3Nt-4d-FOj"/>
                     <constraint firstItem="152-ui-wKQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="6em-BQ-xhi"/>
+                    <constraint firstAttribute="trailing" secondItem="xv9-bz-aZ3" secondAttribute="trailing" constant="20" id="98U-RD-PV2"/>
                     <constraint firstAttribute="trailing" secondItem="ojA-vA-47A" secondAttribute="trailing" constant="190" id="CTe-Fo-gX4"/>
-                    <constraint firstItem="9Bm-VP-YlU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="IvG-xQ-7to"/>
-                    <constraint firstAttribute="bottom" secondItem="9Bm-VP-YlU" secondAttribute="bottom" id="RCl-72-tww"/>
-                    <constraint firstItem="HQk-p0-VVr" firstAttribute="top" secondItem="152-ui-wKQ" secondAttribute="bottom" constant="35" id="ZPc-as-5g3"/>
-                    <constraint firstItem="9Bm-VP-YlU" firstAttribute="top" secondItem="HQk-p0-VVr" secondAttribute="bottom" constant="10" id="Zej-Xz-wHz"/>
-                    <constraint firstItem="HQk-p0-VVr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="hSQ-I9-aUN"/>
+                    <constraint firstItem="xv9-bz-aZ3" firstAttribute="top" secondItem="04e-jN-mjG" secondAttribute="bottom" constant="9" id="KwE-g5-u5b"/>
+                    <constraint firstAttribute="trailing" secondItem="04e-jN-mjG" secondAttribute="trailing" constant="20" id="NLm-jL-LqW"/>
+                    <constraint firstAttribute="bottom" secondItem="xv9-bz-aZ3" secondAttribute="bottom" id="YyG-UV-Ugd"/>
+                    <constraint firstItem="xv9-bz-aZ3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="bz9-6l-RVZ"/>
                     <constraint firstItem="ojA-vA-47A" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="jRX-UQ-w1e"/>
-                    <constraint firstAttribute="trailing" secondItem="9Bm-VP-YlU" secondAttribute="trailing" constant="20" id="uEV-6M-Oyn"/>
-                    <constraint firstAttribute="trailing" secondItem="HQk-p0-VVr" secondAttribute="trailing" constant="20" id="wVJ-Ld-5bw"/>
+                    <constraint firstItem="04e-jN-mjG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="z9J-ca-Mtz"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="deliveryInfoBtn" destination="152-ui-wKQ" id="Buu-7K-8Xz"/>
                 <outlet property="firstUserBtn" destination="HQk-p0-VVr" id="AZc-jT-yJ8"/>
+                <outlet property="firstUserLayerView" destination="04e-jN-mjG" id="841-hh-j3z"/>
                 <outlet property="mainHeaderLabel" destination="ojA-vA-47A" id="cnu-bc-gcO"/>
                 <outlet property="originUserBtn" destination="9Bm-VP-YlU" id="foa-Cj-0c7"/>
+                <outlet property="originUserLayerView" destination="xv9-bz-aZ3" id="uT3-nQ-BoC"/>
             </connections>
             <point key="canvasLocation" x="126.81159420289856" y="45.535714285714285"/>
         </tableViewCell>
     </objects>
     <resources>
         <image name="question_mark" width="32" height="32"/>
+        <namedColor name="blue1">
+            <color red="0.16099999845027924" green="0.38400000333786011" blue="0.9649999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="darkgrey4">
             <color red="0.31000000238418579" green="0.31000000238418579" blue="0.31000000238418579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
