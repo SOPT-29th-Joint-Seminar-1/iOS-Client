@@ -1,3 +1,5 @@
-<img width="321" alt="ㅎ" src="https://user-images.githubusercontent.com/60260284/141256308-ceb10008-ea06-4321-a32f-bbc2a16059e9.png">
-
-곧 돌아올게요,,
+![Frame 1](https://user-images.githubusercontent.com/60260284/142176080-10668911-828d-4ab4-aa5f-73ad6a76b89e.png)
+![Frame 2](https://user-images.githubusercontent.com/60260284/142176091-9aed410e-abf2-4c91-801c-98471dc6bdce.png)
+![Thumbnail](https://user-images.githubusercontent.com/60260284/142176133-17fd6355-c348-4fe6-80f6-2f14c31f6beb.png)
+![Frame 3](https://user-images.githubusercontent.com/60260284/142176156-e253c08f-7c4f-4c16-aa94-0ae819d2ec55.png)
+![Frame 5](https://user-images.githubusercontent.com/60260284/142176162-754b0772-5ceb-4c89-8af0-8eb6a59e3119.png)
