@@ -19,6 +19,7 @@ enum HomeCellCase{
 class HomeVC: UIViewController {
 
   // MARK: - Vars & Lets Part
+
     private let cellCaseList: [HomeCellCase] = [.header,.event,.review,.news]
     
     
@@ -27,6 +28,11 @@ class HomeVC: UIViewController {
     @IBOutlet weak var addressBtn: UIButton!
     @IBOutlet weak var homeTV: UITableView!
 
+  @IBOutlet weak var headerTopConstraint: NSLayoutConstraint!{
+    didSet{
+      headerTopConstraint.constant = calculateTopInset()
+    }
+  }
   
   // MARK: - Life Cycle Part
     override func viewDidLoad() {
