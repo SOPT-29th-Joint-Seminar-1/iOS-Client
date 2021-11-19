@@ -37,7 +37,7 @@ class HomeReviewTVC: UITableViewCell {
           initReviewDataList()
           registerCVC()
           setPager()
-        setReviewCV()
+          setReviewCV()
       }
 
       override func setSelected(_ selected: Bool, animated: Bool) {
@@ -71,6 +71,7 @@ class HomeReviewTVC: UITableViewCell {
     reviewCollectionView.decelerationRate = .fast
 
   }
+    
     func setPager() {
        //페이지 컨트롤의 전체 페이지를 배열의 전체 개수 값으로 설정
         pager.numberOfPages = reviewContentList.count

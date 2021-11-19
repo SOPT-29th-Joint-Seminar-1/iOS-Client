@@ -25,7 +25,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="세특 고객들의 칭찬후기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YyV-6M-98t">
-                        <rect key="frame" x="20" y="43" width="166" height="22"/>
+                        <rect key="frame" x="20" y="43" width="174" height="22"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="22" id="SEX-b1-aN0"/>
                         </constraints>
