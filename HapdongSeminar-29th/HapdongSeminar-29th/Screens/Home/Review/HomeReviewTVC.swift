@@ -45,6 +45,7 @@ class HomeReviewTVC: UITableViewCell {
 
       }
       
+    
     // MARK: - IBAction Part
     @IBAction func pageChanged(_ sender: UIPageControl) {
         let indexPath = IndexPath(item: sender.currentPage, section: 0)
@@ -52,8 +53,8 @@ class HomeReviewTVC: UITableViewCell {
         reviewCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
+    
     // MARK: - Custom Method Part
-  
   private func setReviewCV(){
     
     let screenWidth = UIScreen.main.bounds.width
