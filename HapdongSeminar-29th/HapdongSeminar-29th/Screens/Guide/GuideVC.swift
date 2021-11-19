@@ -169,10 +169,8 @@ extension GuideVC : GuideHeaderDelegate{
   }
   
   func addressClicked() {
-    print("Clicked Address")
+    print("주소 버튼 눌렸어 !!")
   }
-  
-  
 }
 
 extension GuideVC : GuideSearchDelegate{

@@ -18,6 +18,8 @@
 		FD3183852742DF030037C140 /* GuideHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3183842742DF030037C140 /* GuideHeaderView.swift */; };
 		FD3183872742DF760037C140 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD3183862742DF760037C140 /* Colors.xcassets */; };
 		FD3183892742E4CA0037C140 /* addSubViewFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3183882742E4CA0037C140 /* addSubViewFromNib.swift */; };
+		FD425D1A27478EEA00A9F610 /* setImage + UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD425D1927478EEA00A9F610 /* setImage + UIImageView.swift */; };
+		FD425D1C27478F4500A9F610 /* getSuccessFailureInResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD425D1B27478F4500A9F610 /* getSuccessFailureInResult.swift */; };
 		FD4C55A0274348020051BCC9 /* GuideHeaderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C559E274348020051BCC9 /* GuideHeaderTVC.swift */; };
 		FD4C55A1274348020051BCC9 /* GuideHeaderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C559F274348020051BCC9 /* GuideHeaderTVC.xib */; };
 		FD4C55A527434D430051BCC9 /* GuideSearchTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55A327434D430051BCC9 /* GuideSearchTVC.swift */; };
@@ -98,6 +100,8 @@
 		FD3183842742DF030037C140 /* GuideHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideHeaderView.swift; sourceTree = "<group>"; };
 		FD3183862742DF760037C140 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FD3183882742E4CA0037C140 /* addSubViewFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSubViewFromNib.swift; sourceTree = "<group>"; };
+		FD425D1927478EEA00A9F610 /* setImage + UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "setImage + UIImageView.swift"; sourceTree = "<group>"; };
+		FD425D1B27478F4500A9F610 /* getSuccessFailureInResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getSuccessFailureInResult.swift; sourceTree = "<group>"; };
 		FD4C559E274348020051BCC9 /* GuideHeaderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideHeaderTVC.swift; sourceTree = "<group>"; };
 		FD4C559F274348020051BCC9 /* GuideHeaderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideHeaderTVC.xib; sourceTree = "<group>"; };
 		FD4C55A327434D430051BCC9 /* GuideSearchTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideSearchTVC.swift; sourceTree = "<group>"; };
@@ -504,6 +508,7 @@
 				FD3183882742E4CA0037C140 /* addSubViewFromNib.swift */,
 				FDB75E522743C32900ACED22 /* UICollectionViewRegisterable.swift */,
 				FDB75E542743C35800ACED22 /* UITableViewRegisterable.swift */,
+				FD425D1927478EEA00A9F610 /* setImage + UIImageView.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -537,6 +542,7 @@
 				FD4C55BA274389210051BCC9 /* makeSpoqaFont.swift */,
 				FD4C55BC27438C6A0051BCC9 /* setCharacterSpacing.swift */,
 				FDB75E5E2743DB8900ACED22 /* calculateTopInset.swift */,
+				FD425D1B27478F4500A9F610 /* getSuccessFailureInResult.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -732,6 +738,7 @@
 				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
 				F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */,
 				FDB75E84274435F800ACED22 /* BaseVC.swift in Sources */,
+				FD425D1C27478F4500A9F610 /* getSuccessFailureInResult.swift in Sources */,
 				FDB75E792744187A00ACED22 /* GuideProcessPageCVC.swift in Sources */,
 				FDB75E552743C35800ACED22 /* UITableViewRegisterable.swift in Sources */,
 				FD3183892742E4CA0037C140 /* addSubViewFromNib.swift in Sources */,
@@ -743,6 +750,7 @@
 				FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */,
 				FD4C55AA2743709C0051BCC9 /* Literals.swift in Sources */,
 				FD4C55CD27439B5B0051BCC9 /* GuideCategoryNameCVC.swift in Sources */,
+				FD425D1A27478EEA00A9F610 /* setImage + UIImageView.swift in Sources */,
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
 				FDB75E702744041B00ACED22 /* Text + Literals.swift in Sources */,
 				FDB75E6D2744021600ACED22 /* GuideWarningTVC.swift in Sources */,
