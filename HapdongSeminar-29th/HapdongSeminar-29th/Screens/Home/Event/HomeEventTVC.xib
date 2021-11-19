@@ -44,10 +44,11 @@
                             <action selector="pageChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="F93-tR-c84"/>
                         </connections>
                     </pageControl>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0xd-Gm-mAY">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0xd-Gm-mAY">
                         <rect key="frame" x="0.0" y="82" width="375" height="200"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="width" secondItem="0xd-Gm-mAY" secondAttribute="height" multiplier="375:200" id="UbA-Uz-ohi"/>
                             <constraint firstAttribute="height" constant="200" id="WOr-yS-BOE"/>
                         </constraints>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wkA-Ap-9qF">

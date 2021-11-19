@@ -36,7 +36,13 @@ class HomeEventTVC: UITableViewCell {
     // MARK: - IBAction Part
     @IBAction func pageChanged(_ sender: UIPageControl) {
         let indexPath = IndexPath(item: sender.currentPage, section: 0)
-        eventCV.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        print(indexPath.row)
+        print(indexPath.section)
+
+//        eventCV.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
+        
+        let screenWidth = CGFloat(indexPath.row) * UIScreen.main.bounds.width
+        eventCV.setContentOffset(CGPoint(x: screenWidth , y: 0), animated: true)
         
     }
     
@@ -48,7 +54,7 @@ class HomeEventTVC: UITableViewCell {
         // 페이지 컨트롤의 현재 페이지를 0으로 설정
         pager.currentPage = 0
         //페이징 가능하도록
-        eventCV.isPagingEnabled = true 
+        eventCV.isPagingEnabled = true
     }
     
     func registerCVC() {
@@ -108,19 +114,8 @@ extension HomeEventTVC: UICollectionViewDelegateFlowLayout {
 }
 
 extension HomeEventTVC: UICollectionViewDelegate {
-  
   func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
     let page = Int(targetContentOffset.pointee.x / self.frame.width)
     self.pager.currentPage = page
   }
-    
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let width = scrollView.bounds.size.width // 너비 저장
-        let x = scrollView.contentOffset.x + (width / 2.0) // 현재 스크롤한 x좌표 저장
-               
-        let newPage = Int(x / width)
-        if pager.currentPage != newPage {
-            pager.currentPage = newPage
-        }
-    }
 }
