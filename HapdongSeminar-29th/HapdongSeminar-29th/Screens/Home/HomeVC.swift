@@ -15,13 +15,12 @@ enum HomeCellCase{
 
 }
 
-
 class HomeVC: UIViewController {
 
   // MARK: - Vars & Lets Part
 
     private let cellCaseList: [HomeCellCase] = [.header,.event,.review,.news]
-    
+
     
     
     // MARK: - UI Component Part
@@ -53,15 +52,14 @@ class HomeVC: UIViewController {
     }
     
     @IBAction func touchUpToGoTop(_ sender: Any) {
-        //누르면 맨 위로 이동
-        
+        self.homeTV.scrollToRow(at: IndexPath(row: 0, section: 0), at: .top, animated: true)
     }
     
   // MARK: - Custom Method Part
     func setUI(){
         scrollToTopBtn.layer.applyShadow(color: .black, alpha: 0.1, x: 2, y: 2, blur: 10, spread: 0)
         scrollToTopBtn.layer.masksToBounds = false
-    }
+     }
     
     func makeDelegate() {
         homeTV.dataSource = self
