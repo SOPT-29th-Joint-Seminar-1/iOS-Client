@@ -50,6 +50,11 @@ class GuideHeaderView: UIView {
       self?.headerDelegate?.addressClicked()
     }
   }
+  
+  @IBAction func addressButtonClicked(){
+    self.headerDelegate?.addressClicked()
+
+  }
 
   
   // MARK: - @objc Function Part
