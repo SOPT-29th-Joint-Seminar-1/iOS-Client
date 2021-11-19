@@ -27,19 +27,24 @@ class HomeVC: UIViewController {
     // MARK: - UI Component Part
     @IBOutlet weak var addressBtn: UIButton!
     @IBOutlet weak var homeTV: UITableView!
-
+    @IBOutlet weak var scrollToTopBtn: UIButton!
+    
+    
   @IBOutlet weak var headerTopConstraint: NSLayoutConstraint!{
     didSet{
       headerTopConstraint.constant = calculateTopInset()
     }
   }
   
-  // MARK: - Life Cycle Part
+    
+    
+    // MARK: - Life Cycle Part
     override func viewDidLoad() {
         super.viewDidLoad()
         makeDelegate()
         registerXib()
         setTableView()
+        setUI()
     }
     
   // MARK: - IBAction Part
@@ -47,8 +52,17 @@ class HomeVC: UIViewController {
         //나중을 위해 언젠가.. 터치를 하면 주소를 정해야하는 팝업..? 이나 주소가..
     }
     
-  
+    @IBAction func touchUpToGoTop(_ sender: Any) {
+        //누르면 맨 위로 이동
+        
+    }
+    
   // MARK: - Custom Method Part
+    func setUI(){
+        scrollToTopBtn.layer.applyShadow(color: .black, alpha: 0.1, x: 2, y: 2, blur: 10, spread: 0)
+        scrollToTopBtn.layer.masksToBounds = false
+    }
+    
     func makeDelegate() {
         homeTV.dataSource = self
         homeTV.delegate = self
