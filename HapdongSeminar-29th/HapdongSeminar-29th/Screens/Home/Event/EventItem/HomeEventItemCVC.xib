@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HomeEventItemCVC" id="gTV-IL-0wX" customClass="HomeEventItemCVC" customModule="HapdongSeminar_29th" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="event_1" translatesAutoresizingMaskIntoConstraints="NO" id="BQ8-AS-PUj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="BQ8-AS-PUj" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kPt-zC-tWK"/>
+                <constraint firstAttribute="bottom" secondItem="BQ8-AS-PUj" secondAttribute="bottom" id="l3A-Bc-KSb"/>
+                <constraint firstItem="BQ8-AS-PUj" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mJ1-Nl-mEO"/>
+                <constraint firstAttribute="trailing" secondItem="BQ8-AS-PUj" secondAttribute="trailing" id="qEh-AN-iqj"/>
+            </constraints>
+            <connections>
+                <outlet property="eventImageView" destination="BQ8-AS-PUj" id="9kY-81-QrB"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="94"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="event_1" width="375" height="200"/>
+    </resources>
+</document>

@@ -37,7 +37,7 @@ class HomeReviewTVC: UITableViewCell {
           initReviewDataList()
           registerCVC()
           setPager()
-        setReviewCV()
+          setReviewCV()
       }
 
       override func setSelected(_ selected: Bool, animated: Bool) {
@@ -45,6 +45,7 @@ class HomeReviewTVC: UITableViewCell {
 
       }
       
+    
     // MARK: - IBAction Part
     @IBAction func pageChanged(_ sender: UIPageControl) {
         let indexPath = IndexPath(item: sender.currentPage, section: 0)
@@ -52,8 +53,8 @@ class HomeReviewTVC: UITableViewCell {
         reviewCollectionView.scrollToItem(at: indexPath, at: .centeredHorizontally, animated: true)
     }
     
+    
     // MARK: - Custom Method Part
-  
   private func setReviewCV(){
     
     let screenWidth = UIScreen.main.bounds.width
@@ -71,6 +72,7 @@ class HomeReviewTVC: UITableViewCell {
     reviewCollectionView.decelerationRate = .fast
 
   }
+    
     func setPager() {
        //페이지 컨트롤의 전체 페이지를 배열의 전체 개수 값으로 설정
         pager.numberOfPages = reviewContentList.count

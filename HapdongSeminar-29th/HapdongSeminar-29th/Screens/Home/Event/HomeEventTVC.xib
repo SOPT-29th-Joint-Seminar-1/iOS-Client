@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -43,27 +44,35 @@
                             <action selector="pageChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="F93-tR-c84"/>
                         </connections>
                     </pageControl>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygX-jJ-hdp">
-                        <rect key="frame" x="0.0" y="77" width="375" height="200"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="0xd-Gm-mAY">
+                        <rect key="frame" x="0.0" y="82" width="375" height="200"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="ygX-jJ-hdp" secondAttribute="height" multiplier="375:200" id="TYb-Zr-Ohs"/>
+                            <constraint firstAttribute="width" secondItem="0xd-Gm-mAY" secondAttribute="height" multiplier="375:200" id="UbA-Uz-ohi"/>
+                            <constraint firstAttribute="height" constant="200" id="WOr-yS-BOE"/>
                         </constraints>
-                    </imageView>
+                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="wkA-Ap-9qF">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="ygX-jJ-hdp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="AMF-EB-mAI"/>
+                    <constraint firstAttribute="trailing" secondItem="0xd-Gm-mAY" secondAttribute="trailing" id="4qi-GP-wxz"/>
                     <constraint firstAttribute="bottom" secondItem="mgR-fh-rp4" secondAttribute="bottom" constant="-8" id="POp-wc-OpB"/>
                     <constraint firstItem="mgR-fh-rp4" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Tcf-Zq-Srh"/>
-                    <constraint firstAttribute="trailing" secondItem="ygX-jJ-hdp" secondAttribute="trailing" id="VTq-dV-yJ0"/>
-                    <constraint firstItem="mgR-fh-rp4" firstAttribute="top" secondItem="ygX-jJ-hdp" secondAttribute="bottom" constant="9" id="eNX-RU-6Lb"/>
+                    <constraint firstItem="0xd-Gm-mAY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YDQ-DB-ULu"/>
                     <constraint firstItem="yoC-Ws-bOI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="g4d-nM-KuW"/>
-                    <constraint firstItem="ygX-jJ-hdp" firstAttribute="top" secondItem="yoC-Ws-bOI" secondAttribute="bottom" constant="15" id="mff-VP-LSZ"/>
+                    <constraint firstItem="mgR-fh-rp4" firstAttribute="top" secondItem="0xd-Gm-mAY" secondAttribute="bottom" constant="4" id="knF-IO-Xse"/>
                     <constraint firstItem="yoC-Ws-bOI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ulk-bb-2P0"/>
+                    <constraint firstItem="0xd-Gm-mAY" firstAttribute="top" secondItem="yoC-Ws-bOI" secondAttribute="bottom" constant="20" id="yFH-a0-BbK"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="eventImgView" destination="ygX-jJ-hdp" id="4ou-g3-IJ9"/>
+                <outlet property="eventCV" destination="0xd-Gm-mAY" id="AQu-eL-B2n"/>
                 <outlet property="pager" destination="mgR-fh-rp4" id="tcA-tj-XB0"/>
             </connections>
             <point key="canvasLocation" x="131.15942028985509" y="79.6875"/>
@@ -76,5 +85,8 @@
         <namedColor name="grey2">
             <color red="0.91399997472763062" green="0.91399997472763062" blue="0.91399997472763062" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

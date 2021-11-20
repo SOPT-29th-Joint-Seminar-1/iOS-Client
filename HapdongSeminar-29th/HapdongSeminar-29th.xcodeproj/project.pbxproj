@@ -11,6 +11,9 @@
 		F249164D274418A400C8F9A7 /* HomeReviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24916482743D78100C8F9A7 /* HomeReviewData.swift */; };
 		F24DCC992742E47A001E0791 /* HomeReviewCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */; };
 		F24DCC9A2742E47A001E0791 /* HomeReviewCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */; };
+		F288D6D82747CD7400AD6BB0 /* HomeEventItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288D6D62747CD7400AD6BB0 /* HomeEventItemCVC.swift */; };
+		F288D6D92747CD7400AD6BB0 /* HomeEventItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F288D6D72747CD7400AD6BB0 /* HomeEventItemCVC.xib */; };
+		F288D6DB2747D0E700AD6BB0 /* HomeEventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288D6DA2747D0E700AD6BB0 /* HomeEventData.swift */; };
 		F2A8E0A527417F4000A15287 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2A8E0A427417F4000A15287 /* Home.storyboard */; };
 		F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2A8E0A62741898F00A15287 /* HomeVC.swift */; };
 		FD3183802742DECA0037C140 /* Guide.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD31837F2742DECA0037C140 /* Guide.storyboard */; };
@@ -93,6 +96,9 @@
 		F24916482743D78100C8F9A7 /* HomeReviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewData.swift; sourceTree = "<group>"; };
 		F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewCVC.swift; sourceTree = "<group>"; };
 		F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeReviewCVC.xib; sourceTree = "<group>"; };
+		F288D6D62747CD7400AD6BB0 /* HomeEventItemCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventItemCVC.swift; sourceTree = "<group>"; };
+		F288D6D72747CD7400AD6BB0 /* HomeEventItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEventItemCVC.xib; sourceTree = "<group>"; };
+		F288D6DA2747D0E700AD6BB0 /* HomeEventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventData.swift; sourceTree = "<group>"; };
 		F2A8E0A427417F4000A15287 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		F2A8E0A62741898F00A15287 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		FD31837F2742DECA0037C140 /* Guide.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Guide.storyboard; sourceTree = "<group>"; };
@@ -207,6 +213,16 @@
 				F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */,
 			);
 			path = ReviewItem;
+			sourceTree = "<group>";
+		};
+		F288D6D52747CD0400AD6BB0 /* EventItem */ = {
+			isa = PBXGroup;
+			children = (
+				F288D6DA2747D0E700AD6BB0 /* HomeEventData.swift */,
+				F288D6D62747CD7400AD6BB0 /* HomeEventItemCVC.swift */,
+				F288D6D72747CD7400AD6BB0 /* HomeEventItemCVC.xib */,
+			);
+			path = EventItem;
 			sourceTree = "<group>";
 		};
 		FD3183812742DEED0037C140 /* NaviBar */ = {
@@ -411,6 +427,7 @@
 		FDCDE608273FA40D00B2F413 /* Event */ = {
 			isa = PBXGroup;
 			children = (
+				F288D6D52747CD0400AD6BB0 /* EventItem */,
 				FDCDE60F273FA46800B2F413 /* HomeEventTVC.swift */,
 				FDCDE610273FA46800B2F413 /* HomeEventTVC.xib */,
 			);
@@ -644,6 +661,7 @@
 				FD4C55A627434D430051BCC9 /* GuideSearchTVC.xib in Resources */,
 				FD4C55B7274387FA0051BCC9 /* Spoqa Han Sans Neo Thin.otf in Resources */,
 				FD4C55C2274393400051BCC9 /* GuideCategoryContainerTVC.xib in Resources */,
+				F288D6D92747CD7400AD6BB0 /* HomeEventItemCVC.xib in Resources */,
 				FD4C55B6274387FA0051BCC9 /* Spoqa Han Sans Neo Regular.otf in Resources */,
 				FDD3AD0F273F6C3100A72451 /* LaunchScreen.storyboard in Resources */,
 				FDB75E752744152F00ACED22 /* GuideProcessTVC.xib in Resources */,
@@ -737,6 +755,7 @@
 				FD4C55BB274389210051BCC9 /* makeSpoqaFont.swift in Sources */,
 				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
 				F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */,
+				F288D6D82747CD7400AD6BB0 /* HomeEventItemCVC.swift in Sources */,
 				FDB75E84274435F800ACED22 /* BaseVC.swift in Sources */,
 				FD425D1C27478F4500A9F610 /* getSuccessFailureInResult.swift in Sources */,
 				FDB75E792744187A00ACED22 /* GuideProcessPageCVC.swift in Sources */,
@@ -747,6 +766,7 @@
 				FDB75E592743C5BE00ACED22 /* GuideDataModel.swift in Sources */,
 				FDD3AD23273F6E4700A72451 /* sampleComponents.swift in Sources */,
 				FD4C55A527434D430051BCC9 /* GuideSearchTVC.swift in Sources */,
+				F288D6DB2747D0E700AD6BB0 /* HomeEventData.swift in Sources */,
 				FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */,
 				FD4C55AA2743709C0051BCC9 /* Literals.swift in Sources */,
 				FD4C55CD27439B5B0051BCC9 /* GuideCategoryNameCVC.swift in Sources */,
