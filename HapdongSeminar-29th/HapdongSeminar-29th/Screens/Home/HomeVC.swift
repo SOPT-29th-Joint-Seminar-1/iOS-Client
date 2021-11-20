@@ -57,6 +57,7 @@ class HomeVC: UIViewController {
     
   // MARK: - Custom Method Part
     func setUI(){
+        scrollToTopBtn.layer.isHidden = true
         scrollToTopBtn.layer.applyShadow(color: .black, alpha: 0.1, x: 2, y: 2, blur: 10, spread: 0)
         scrollToTopBtn.layer.masksToBounds = false
      }
@@ -136,6 +137,22 @@ extension HomeVC: UITableViewDataSource {
             newsTVC.selectionStyle = .none
             return newsTVC
         
+        }
+    }
+}
+
+
+extension HomeVC : UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if self.homeTV.contentOffset.y <= CGFloat(100) {
+            scrollToTopBtn.isEnabled = false
+            scrollToTopBtn.layer.isHidden = true
+        }
+        else {
+            scrollToTopBtn.isEnabled = true
+            scrollToTopBtn.layer.isHidden = false
+            scrollToTopBtn.layer.applyShadow(color: .black, alpha: 0.1, x: 2, y: 2, blur: 10, spread: 0)
+            scrollToTopBtn.layer.masksToBounds = false
         }
     }
 }
