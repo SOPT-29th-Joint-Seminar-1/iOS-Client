@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 enum HomeCellCase{
   case header
@@ -44,6 +45,7 @@ class HomeVC: UIViewController {
         registerXib()
         setTableView()
         setUI()
+        notificationUI()
     }
     
   // MARK: - IBAction Part
@@ -56,6 +58,13 @@ class HomeVC: UIViewController {
     }
     
   // MARK: - Custom Method Part
+    func notificationUI(){
+//        UNUserNotificationCenter.default.addObserver(self,
+//                                                     selector: #selector(""),
+//                                                     name: NSNotification.Name(""),
+//                                                     object: <#T##Any?#>)
+    }
+    
     func setUI(){
         scrollToTopBtn.layer.isHidden = true
         scrollToTopBtn.layer.applyShadow(color: .black, alpha: 0.1, x: 2, y: 2, blur: 10, spread: 0)
@@ -100,16 +109,17 @@ extension HomeVC: UITableViewDelegate {
 extension HomeVC: UITableViewDataSource {
      //한 section마다 몇개의 row를 넣어야하는지 지정하는 함수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
         return 4
     }
     
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 4
+//    }
+    
     // indexPath를 활용해 TableViewcell 별로 데이터를 다르게 지정할 수 있다.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellCase = cellCaseList[indexPath.section]
+        //section을 row로 바꿈..!
+        let cellCase = cellCaseList[indexPath.row]
         
         switch(cellCase){
             
