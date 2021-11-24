@@ -92,16 +92,18 @@ class HomeVC: UIViewController {
     func notificationUI(){
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(setPopUI),
-                                               name: NSNotification.Name(""),
+                                               name: NSNotification.Name("?Btn"),
                                                object: nil)
     }
   
   // MARK: - @objc Function Part
     @objc func setPopUI(notification : NSNotification){
         let view = UIView(frame: self.view.frame)
-            view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
-            view.alpha = 0
-            view.isHidden = true
+        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
+        view.isHidden = false
+        
+        self.view.insertSubview(view, belowSubview: howtouseImageView)
+        
         howtouseImageView.isHidden = false
     }
     

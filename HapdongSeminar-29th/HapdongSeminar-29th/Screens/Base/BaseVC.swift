@@ -27,6 +27,7 @@ class BaseVC: UIViewController {
     setContainerViewLayer()
     setConatainerVC()
     addObserver()
+//    notificationUI()
     
   }
   
@@ -58,6 +59,7 @@ class BaseVC: UIViewController {
   
   
   // MARK: - Custom Method Part
+
   
   private func addObserver(){
     NotificationCenter.default.addObserver(self, selector: #selector(goToGuideView), name: NSNotification.Name("goToGuideView"), object: nil)
@@ -88,8 +90,24 @@ class BaseVC: UIViewController {
                                           alpha: 0.08, x: 0, y: 0,
                                           blur: 15, spread: 0)
   }
+
+  private func notificationUI(){
+    NotificationCenter.default.addObserver(self,
+                                           selector: #selector(setPopUI),
+                                           name: NSNotification.Name("?Btn"),
+                                           object: nil)
+  }
   
   // MARK: - @objc Function Part
+  @objc func setPopUI(notification : NSNotification){
+    let view = UIView(frame: self.view.frame)
+    view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
+    view.isHidden = false
+        
+      self.view.addSubview(view)
+        
+
+  }
   
   @objc private func goToGuideView(){
     guard let guideVC = UIStoryboard(name: "Guide", bundle: nil).instantiateViewController(withIdentifier: GuideVC.className) as? GuideVC else {return}
