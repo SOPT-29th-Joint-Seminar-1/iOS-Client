@@ -29,6 +29,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var homeTV: UITableView!
     @IBOutlet weak var scrollToTopBtn: UIButton!
     
+    @IBOutlet weak var howtouseImageView: UIImageView!
     
   @IBOutlet weak var headerTopConstraint: NSLayoutConstraint!{
     didSet{
@@ -58,17 +59,11 @@ class HomeVC: UIViewController {
     }
     
   // MARK: - Custom Method Part
-    func notificationUI(){
-//        UNUserNotificationCenter.default.addObserver(self,
-//                                                     selector: #selector(""),
-//                                                     name: NSNotification.Name(""),
-//                                                     object: <#T##Any?#>)
-    }
-    
     func setUI(){
         scrollToTopBtn.layer.isHidden = true
         scrollToTopBtn.layer.applyShadow(color: .black, alpha: 0.1, x: 2, y: 2, blur: 10, spread: 0)
         scrollToTopBtn.layer.masksToBounds = false
+        howtouseImageView.isHidden = true
      }
     
     func makeDelegate() {
@@ -94,9 +89,22 @@ class HomeVC: UIViewController {
         //테이블 뷰 셀 사이의 회색 선 없애기
         homeTV.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
+    func notificationUI(){
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(setPopUI),
+                                               name: NSNotification.Name(""),
+                                               object: nil)
+    }
   
   // MARK: - @objc Function Part
-
+    @objc func setPopUI(notification : NSNotification){
+        let view = UIView(frame: self.view.frame)
+            view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.5)
+            view.alpha = 0
+            view.isHidden = true
+        howtouseImageView.isHidden = false
+    }
+    
 }
 // MARK: - Extension Part
 extension HomeVC: UITableViewDelegate {
