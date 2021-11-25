@@ -43,6 +43,14 @@
 		FD4C55C8274397030051BCC9 /* GuideProductListTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55C6274397030051BCC9 /* GuideProductListTVC.xib */; };
 		FD4C55CD27439B5B0051BCC9 /* GuideCategoryNameCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4C55CB27439B5B0051BCC9 /* GuideCategoryNameCVC.swift */; };
 		FD4C55CE27439B5B0051BCC9 /* GuideCategoryNameCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4C55CC27439B5B0051BCC9 /* GuideCategoryNameCVC.xib */; };
+		FD6D44522748C78C001C5331 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D44512748C78C001C5331 /* BaseAPI.swift */; };
+		FD6D44542748C81A001C5331 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D44532748C81A001C5331 /* Config.swift */; };
+		FD6D44572748C8DA001C5331 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D44562748C8DA001C5331 /* BaseService.swift */; };
+		FD6D44592748CBE0001C5331 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D44582748CBE0001C5331 /* HomeService.swift */; };
+		FD6D445B2748CBE7001C5331 /* GuideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D445A2748CBE7001C5331 /* GuideService.swift */; };
+		FD6D445E2748CC86001C5331 /* HomeBannerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D445D2748CC86001C5331 /* HomeBannerDataModel.swift */; };
+		FD6D44602748CCCB001C5331 /* HomeReviewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D445F2748CCCB001C5331 /* HomeReviewDataModel.swift */; };
+		FD6D44622748CDE7001C5331 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6D44612748CDE7001C5331 /* GenericResponse.swift */; };
 		FDB75E512743BFDF00ACED22 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E502743BFDF00ACED22 /* ColorPalette.swift */; };
 		FDB75E532743C32900ACED22 /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E522743C32900ACED22 /* UICollectionViewRegisterable.swift */; };
 		FDB75E552743C35800ACED22 /* UITableViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB75E542743C35800ACED22 /* UITableViewRegisterable.swift */; };
@@ -128,6 +136,14 @@
 		FD4C55C6274397030051BCC9 /* GuideProductListTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideProductListTVC.xib; sourceTree = "<group>"; };
 		FD4C55CB27439B5B0051BCC9 /* GuideCategoryNameCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideCategoryNameCVC.swift; sourceTree = "<group>"; };
 		FD4C55CC27439B5B0051BCC9 /* GuideCategoryNameCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideCategoryNameCVC.xib; sourceTree = "<group>"; };
+		FD6D44512748C78C001C5331 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		FD6D44532748C81A001C5331 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		FD6D44562748C8DA001C5331 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		FD6D44582748CBE0001C5331 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		FD6D445A2748CBE7001C5331 /* GuideService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideService.swift; sourceTree = "<group>"; };
+		FD6D445D2748CC86001C5331 /* HomeBannerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBannerDataModel.swift; sourceTree = "<group>"; };
+		FD6D445F2748CCCB001C5331 /* HomeReviewDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewDataModel.swift; sourceTree = "<group>"; };
+		FD6D44612748CDE7001C5331 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
 		FDB75E502743BFDF00ACED22 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		FDB75E522743C32900ACED22 /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
 		FDB75E542743C35800ACED22 /* UITableViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewRegisterable.swift; sourceTree = "<group>"; };
@@ -293,6 +309,25 @@
 			path = ProductList;
 			sourceTree = "<group>";
 		};
+		FD6D44552748C8CF001C5331 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FD6D44562748C8DA001C5331 /* BaseService.swift */,
+				FD6D44582748CBE0001C5331 /* HomeService.swift */,
+				FD6D445A2748CBE7001C5331 /* GuideService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		FD6D445C2748CC72001C5331 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FD6D445D2748CC86001C5331 /* HomeBannerDataModel.swift */,
+				FD6D445F2748CCCB001C5331 /* HomeReviewDataModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		FDB75E4F2743BFD100ACED22 /* Colors */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,7 +340,9 @@
 		FDB75E562743C57F00ACED22 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FD6D445C2748CC72001C5331 /* Home */,
 				FDB75E572743C58700ACED22 /* Guide */,
+				FD6D44612748CDE7001C5331 /* GenericResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -576,7 +613,10 @@
 		FDD3AD1E273F6E0C00A72451 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				FD6D44552748C8CF001C5331 /* Service */,
 				FDD3AD1F273F6E1A00A72451 /* APIConstants.swift */,
+				FD6D44512748C78C001C5331 /* BaseAPI.swift */,
+				FD6D44532748C81A001C5331 /* Config.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -738,6 +778,7 @@
 				FDB75E5F2743DB8900ACED22 /* calculateTopInset.swift in Sources */,
 				FDB75E7D274428B600ACED22 /* GuideShortCutView.swift in Sources */,
 				FDB75E632743E6B900ACED22 /* GuideManualTVC.swift in Sources */,
+				FD6D44622748CDE7001C5331 /* GenericResponse.swift in Sources */,
 				FDD3AD2D273F6EAD00A72451 /* applyShadow.swift in Sources */,
 				FDCDE611273FA46800B2F413 /* HomeEventTVC.swift in Sources */,
 				FD3183852742DF030037C140 /* GuideHeaderView.swift in Sources */,
@@ -751,11 +792,14 @@
 				FD4C55C1274393400051BCC9 /* GuideCategoryContainerTVC.swift in Sources */,
 				FDD3AD20273F6E1A00A72451 /* APIConstants.swift in Sources */,
 				FDD3AD29273F6E8A00A72451 /* press + UIButton.swift in Sources */,
+				FD6D44522748C78C001C5331 /* BaseAPI.swift in Sources */,
+				FD6D44572748C8DA001C5331 /* BaseService.swift in Sources */,
 				FDD3AD07273F6C2E00A72451 /* ViewController.swift in Sources */,
 				FD4C55BB274389210051BCC9 /* makeSpoqaFont.swift in Sources */,
 				FDD3AD2B273F6EA000A72451 /* makeVibrate.swift in Sources */,
 				F2A8E0A72741898F00A15287 /* HomeVC.swift in Sources */,
 				F288D6D82747CD7400AD6BB0 /* HomeEventItemCVC.swift in Sources */,
+				FD6D44602748CCCB001C5331 /* HomeReviewDataModel.swift in Sources */,
 				FDB75E84274435F800ACED22 /* BaseVC.swift in Sources */,
 				FD425D1C27478F4500A9F610 /* getSuccessFailureInResult.swift in Sources */,
 				FDB75E792744187A00ACED22 /* GuideProcessPageCVC.swift in Sources */,
@@ -765,18 +809,22 @@
 				FD4C55AE274383D30051BCC9 /* setDefaultFont.swift in Sources */,
 				FDB75E592743C5BE00ACED22 /* GuideDataModel.swift in Sources */,
 				FDD3AD23273F6E4700A72451 /* sampleComponents.swift in Sources */,
+				FD6D445B2748CBE7001C5331 /* GuideService.swift in Sources */,
 				FD4C55A527434D430051BCC9 /* GuideSearchTVC.swift in Sources */,
 				F288D6DB2747D0E700AD6BB0 /* HomeEventData.swift in Sources */,
 				FDD3AD03273F6C2E00A72451 /* AppDelegate.swift in Sources */,
 				FD4C55AA2743709C0051BCC9 /* Literals.swift in Sources */,
+				FD6D44542748C81A001C5331 /* Config.swift in Sources */,
 				FD4C55CD27439B5B0051BCC9 /* GuideCategoryNameCVC.swift in Sources */,
 				FD425D1A27478EEA00A9F610 /* setImage + UIImageView.swift in Sources */,
 				FDD3AD05273F6C2E00A72451 /* SceneDelegate.swift in Sources */,
+				FD6D445E2748CC86001C5331 /* HomeBannerDataModel.swift in Sources */,
 				FDB75E702744041B00ACED22 /* Text + Literals.swift in Sources */,
 				FDB75E6D2744021600ACED22 /* GuideWarningTVC.swift in Sources */,
 				FD4C55BD27438C6A0051BCC9 /* setCharacterSpacing.swift in Sources */,
 				FDCDE60D273FA45700B2F413 /* HomeHeaderTVC.swift in Sources */,
 				F249164D274418A400C8F9A7 /* HomeReviewData.swift in Sources */,
+				FD6D44592748CBE0001C5331 /* HomeService.swift in Sources */,
 				FDCDE619273FA48100B2F413 /* HomeNewsTVC.swift in Sources */,
 				FDB75E682743EC3800ACED22 /* GuideManualStepCVC.swift in Sources */,
 				FDB75E5B2743C61F00ACED22 /* GuideProductDataModel.swift in Sources */,
