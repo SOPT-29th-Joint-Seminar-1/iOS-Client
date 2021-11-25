@@ -27,7 +27,6 @@ class BaseVC: UIViewController {
     setContainerViewLayer()
     setConatainerVC()
     addObserver()
-//    notificationUI()
     
   }
   
@@ -63,7 +62,12 @@ class BaseVC: UIViewController {
   
   private func addObserver(){
     NotificationCenter.default.addObserver(self, selector: #selector(goToGuideView), name: NSNotification.Name("goToGuideView"), object: nil)
+    
+      //4. BaseVC에서 받는데... setPopUI 실행
+      NotificationCenter.default.addObserver(self, selector: #selector(setPopUI), name: NSNotification.Name("!Btn"), object: nil)
+     
   }
+    
   
   private func setConatainerVC(){
     if let homeVC = UIStoryboard(name: "Home", bundle: nil).instantiateViewController(withIdentifier: HomeVC.className) as? HomeVC{
@@ -91,20 +95,24 @@ class BaseVC: UIViewController {
                                           blur: 15, spread: 0)
   }
 
-  private func notificationUI(){
-    NotificationCenter.default.addObserver(self,
-                                           selector: #selector(setPopUI),
-                                           name: NSNotification.Name("?Btn"),
-                                           object: nil)
-  }
+
   
   // MARK: - @objc Function Part
   @objc func setPopUI(notification : NSNotification){
-    let view = UIView(frame: self.view.frame)
-    view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
-    view.isHidden = false
-        
-      self.view.addSubview(view)
+      
+      //5.setPopUI 실행하는데..?
+      if let yPos = notification.object as? CGFloat{
+          
+          let storyboard = UIStoryboard(name: "Home", bundle: nil)
+          guard let popupVC = storyboard.instantiateViewController(withIdentifier: HomeHelperVC.className) as? HomeHelperVC else {return}
+          
+          //6. popUpVCd의 yPosition 실행 --> HomeHelperVC로 이동
+          popupVC.yPosition = yPos
+          popupVC.modalPresentationStyle = .overCurrentContext
+          popupVC.modalTransitionStyle = .crossDissolve
+          present(popupVC, animated: true, completion: nil)
+      }
+
         
 
   }

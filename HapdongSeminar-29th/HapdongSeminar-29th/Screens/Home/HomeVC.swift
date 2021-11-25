@@ -59,6 +59,16 @@ class HomeVC: UIViewController {
     }
     
   // MARK: - Custom Method Part
+    
+    private func notificationUI(){
+        
+        //2. ?Btn과 관련된 Noti를 받는다. -> 근데 setPopUI를 실행한다.
+      NotificationCenter.default.addObserver(self,
+                                             selector: #selector(setPopUI),
+                                             name: NSNotification.Name("?Btn"),
+                                             object: nil)
+    }
+    
     func setUI(){
         scrollToTopBtn.layer.isHidden = true
         scrollToTopBtn.layer.applyShadow(color: .black, alpha: 0.1, x: 2, y: 2, blur: 10, spread: 0)
@@ -89,22 +99,18 @@ class HomeVC: UIViewController {
         //테이블 뷰 셀 사이의 회색 선 없애기
         homeTV.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
-    func notificationUI(){
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(setPopUI),
-                                               name: NSNotification.Name("?Btn"),
-                                               object: nil)
-    }
+
   
   // MARK: - @objc Function Part
     @objc func setPopUI(notification : NSNotification){
-        let view = UIView(frame: self.view.frame)
-        view.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.4)
-        view.isHidden = false
         
-        self.view.insertSubview(view, belowSubview: howtouseImageView)
+        // 3. SetPopUI 실행하는데 yPosition 값을 다시 !btn 으로 Noti를 뿌린다. --> Base VC에서 받을 거임
+        let yPosition :CGFloat = homeTV.contentOffset.y
+        NotificationCenter.default.post(name: NSNotification.Name("!Btn"), object: yPosition)
         
-        howtouseImageView.isHidden = false
+        
+
+  
     }
     
 }

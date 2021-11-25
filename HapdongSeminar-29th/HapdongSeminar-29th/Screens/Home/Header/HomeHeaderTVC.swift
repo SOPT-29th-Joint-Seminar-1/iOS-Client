@@ -42,6 +42,8 @@ class HomeHeaderTVC: UITableViewCell {
         //이미지 띄우고
         //3초 띄위기
         //다른곳 터치하면 꺼지기
+        
+        //1. ?Btn에 관련된 Notification 뿌리기
         NotificationCenter.default.post(name: NSNotification.Name("?Btn"), object: nil)
         
     }
