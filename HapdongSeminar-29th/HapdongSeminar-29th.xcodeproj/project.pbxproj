@@ -11,6 +11,7 @@
 		F249164D274418A400C8F9A7 /* HomeReviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24916482743D78100C8F9A7 /* HomeReviewData.swift */; };
 		F24DCC992742E47A001E0791 /* HomeReviewCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */; };
 		F24DCC9A2742E47A001E0791 /* HomeReviewCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */; };
+		F280A0AB274F68D600BF71A6 /* HomeHelperVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F280A0AA274F68D600BF71A6 /* HomeHelperVC.swift */; };
 		F288D6D82747CD7400AD6BB0 /* HomeEventItemCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288D6D62747CD7400AD6BB0 /* HomeEventItemCVC.swift */; };
 		F288D6D92747CD7400AD6BB0 /* HomeEventItemCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F288D6D72747CD7400AD6BB0 /* HomeEventItemCVC.xib */; };
 		F288D6DB2747D0E700AD6BB0 /* HomeEventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = F288D6DA2747D0E700AD6BB0 /* HomeEventData.swift */; };
@@ -104,6 +105,7 @@
 		F24916482743D78100C8F9A7 /* HomeReviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewData.swift; sourceTree = "<group>"; };
 		F24DCC972742E47A001E0791 /* HomeReviewCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReviewCVC.swift; sourceTree = "<group>"; };
 		F24DCC982742E47A001E0791 /* HomeReviewCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeReviewCVC.xib; sourceTree = "<group>"; };
+		F280A0AA274F68D600BF71A6 /* HomeHelperVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHelperVC.swift; sourceTree = "<group>"; };
 		F288D6D62747CD7400AD6BB0 /* HomeEventItemCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventItemCVC.swift; sourceTree = "<group>"; };
 		F288D6D72747CD7400AD6BB0 /* HomeEventItemCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeEventItemCVC.xib; sourceTree = "<group>"; };
 		F288D6DA2747D0E700AD6BB0 /* HomeEventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEventData.swift; sourceTree = "<group>"; };
@@ -429,8 +431,9 @@
 				FDCDE609273FA41A00B2F413 /* Review */,
 				FDCDE608273FA40D00B2F413 /* Event */,
 				FDCDE607273FA3F700B2F413 /* Header */,
-				F2A8E0A427417F4000A15287 /* Home.storyboard */,
 				F2A8E0A62741898F00A15287 /* HomeVC.swift */,
+				F2A8E0A427417F4000A15287 /* Home.storyboard */,
+				F280A0AA274F68D600BF71A6 /* HomeHelperVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -827,6 +830,7 @@
 				FD6D44592748CBE0001C5331 /* HomeService.swift in Sources */,
 				FDCDE619273FA48100B2F413 /* HomeNewsTVC.swift in Sources */,
 				FDB75E682743EC3800ACED22 /* GuideManualStepCVC.swift in Sources */,
+				F280A0AB274F68D600BF71A6 /* HomeHelperVC.swift in Sources */,
 				FDB75E5B2743C61F00ACED22 /* GuideProductDataModel.swift in Sources */,
 				FD4C55A0274348020051BCC9 /* GuideHeaderTVC.swift in Sources */,
 			);

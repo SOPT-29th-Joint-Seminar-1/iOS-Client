@@ -11,22 +11,19 @@ class HomeHeaderTVC: UITableViewCell {
 
     // MARK: - Vars & Lets Part
     static let identifier = "HomeHeaderTVC"
+    
+    // MARK: - UI Component Part
     @IBOutlet weak var mainHeaderLabel: UILabel!{
         didSet{
             mainHeaderLabel.setCharacterSpacing()
         }
     }
     @IBOutlet weak var deliveryInfoBtn: UIButton!
-    
-    
     @IBOutlet weak var firstUserLayerView: UIView!
     @IBOutlet weak var originUserLayerView: UIView!
     @IBOutlet weak var firstUserBtn: UIButton!
     @IBOutlet weak var originUserBtn: UIButton!
     
-    
-    // MARK: - UI Component Part
-
     
     // MARK: - Life Cycle Part
       override func awakeFromNib() {
@@ -45,6 +42,10 @@ class HomeHeaderTVC: UITableViewCell {
         //이미지 띄우고
         //3초 띄위기
         //다른곳 터치하면 꺼지기
+        
+        //1. ?Btn에 관련된 Notification 뿌리기
+        NotificationCenter.default.post(name: NSNotification.Name("?Btn"), object: nil)
+        
     }
     
     @IBAction func touchUpToGoGiudeView(_ sender: Any) {

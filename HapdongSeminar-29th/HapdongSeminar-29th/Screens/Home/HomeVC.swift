@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 enum HomeCellCase{
   case header
@@ -28,6 +29,7 @@ class HomeVC: UIViewController {
     @IBOutlet weak var homeTV: UITableView!
     @IBOutlet weak var scrollToTopBtn: UIButton!
     
+    @IBOutlet weak var howtouseImageView: UIImageView!
     
   @IBOutlet weak var headerTopConstraint: NSLayoutConstraint!{
     didSet{
@@ -44,6 +46,7 @@ class HomeVC: UIViewController {
         registerXib()
         setTableView()
         setUI()
+        notificationUI()
     }
     
   // MARK: - IBAction Part
@@ -56,10 +59,21 @@ class HomeVC: UIViewController {
     }
     
   // MARK: - Custom Method Part
+    
+    private func notificationUI(){
+        
+        //2. ?Btn과 관련된 Noti를 받는다. -> 근데 setPopUI를 실행한다.
+      NotificationCenter.default.addObserver(self,
+                                             selector: #selector(setPopUI),
+                                             name: NSNotification.Name("?Btn"),
+                                             object: nil)
+    }
+    
     func setUI(){
         scrollToTopBtn.layer.isHidden = true
         scrollToTopBtn.layer.applyShadow(color: .black, alpha: 0.1, x: 2, y: 2, blur: 10, spread: 0)
         scrollToTopBtn.layer.masksToBounds = false
+        howtouseImageView.isHidden = true
      }
     
     func makeDelegate() {
@@ -85,9 +99,20 @@ class HomeVC: UIViewController {
         //테이블 뷰 셀 사이의 회색 선 없애기
         homeTV.separatorStyle = UITableViewCell.SeparatorStyle.none
     }
+
   
   // MARK: - @objc Function Part
+    @objc func setPopUI(notification : NSNotification){
+        
+        // 3. SetPopUI 실행하는데 yPosition 값을 다시 !btn 으로 Noti를 뿌린다. --> Base VC에서 받을 거임
+        let yPosition :CGFloat = homeTV.contentOffset.y
+        NotificationCenter.default.post(name: NSNotification.Name("!Btn"), object: yPosition)
+        
+        
 
+  
+    }
+    
 }
 // MARK: - Extension Part
 extension HomeVC: UITableViewDelegate {
@@ -100,16 +125,17 @@ extension HomeVC: UITableViewDelegate {
 extension HomeVC: UITableViewDataSource {
      //한 section마다 몇개의 row를 넣어야하는지 지정하는 함수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
         return 4
     }
     
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 4
+//    }
+    
     // indexPath를 활용해 TableViewcell 별로 데이터를 다르게 지정할 수 있다.
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cellCase = cellCaseList[indexPath.section]
+        //section을 row로 바꿈..!
+        let cellCase = cellCaseList[indexPath.row]
         
         switch(cellCase){
             
