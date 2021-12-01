@@ -8,10 +8,18 @@
 import Foundation
 
 extension GuideDataModel{
-  struct Product{
+  
+  
+  struct Product : Codable{
     var name : String
     var price : Int
     var category : GuideDataModel.CategoryList
+    
+    enum CodingKeys : String,CodingKey{
+      case name = "itemName"
+      case price = "itemPrice"
+      case category = "categoryName"
+    }
     
     // 서버 이전에 더미로 리스트 불러오는 함수 제작
     static func loadDummyProductList(category : GuideDataModel.CategoryList) -> [GuideDataModel.Product] {
