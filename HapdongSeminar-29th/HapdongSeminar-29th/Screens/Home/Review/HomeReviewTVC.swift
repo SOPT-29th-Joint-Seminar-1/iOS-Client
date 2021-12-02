@@ -41,6 +41,8 @@ class HomeReviewTVC: UITableViewCell {
           setPager()
           setReviewCV()
           fetchReviewItemList()
+          addNotiObserver()
+          
       }
 
       override func setSelected(_ selected: Bool, animated: Bool) {
@@ -78,7 +80,7 @@ class HomeReviewTVC: UITableViewCell {
     
     func setPager() {
        //페이지 컨트롤의 전체 페이지를 배열의 전체 개수 값으로 설정
-        pager.numberOfPages = reviewContentList.count
+        pager.numberOfPages = 3
        // 페이지 컨트롤의 현재 페이지를 0으로 설정
         pager.currentPage = 0
     }
@@ -100,6 +102,25 @@ class HomeReviewTVC: UITableViewCell {
 //        ])
 //    }
     
+    private func addNotiObserver(){
+        NotificationCenter.default.addObserver(self,
+                                               selector: #selector(reviewBtnClicked),
+                                               name: NSNotification.Name("like"),
+                                               object: nil)
+    }
+    
+    private func postReviewLike(reviewID : Int){
+        BaseService.default.postReviewLike(reviewID: reviewID) { result in
+            result.success { _ in
+                 print("like success")
+                self.fetchReviewItemList()
+            }.catch { error in
+                dump(error)
+            }
+            
+        }
+    }
+    
     private func fetchReviewItemList(){
         BaseService.default.getReviewList { result in
             result.success { list in
@@ -108,6 +129,7 @@ class HomeReviewTVC: UITableViewCell {
 //                self?.itemData = try list.map(HomeReviewDataModel.self)
                 if let reviewList = list{
                     self.reviewList = reviewList
+//                    self.setPager()
                 }
                 print("Review List",self.reviewList)
                 self.reviewCollectionView.reloadData()
@@ -120,12 +142,24 @@ class HomeReviewTVC: UITableViewCell {
                 dump(error)
             }
         }
+        
+
      }
     
 
     // MARK: - @objc Function Part
+    @objc func reviewBtnClicked(notification : NSNotification){
+        if let index = notification.object as? Int{
+            print(index)
+            postReviewLike(reviewID: index)
+        }
+    }
 
   }
+
+/// 순서가 셀의 버튼을 누름 -> 뷰컨으로 신호전달(델리게이트,노티,클로저) + 인덱스  -> 뷰컨의 좋아요
+///
+///
 
 
 

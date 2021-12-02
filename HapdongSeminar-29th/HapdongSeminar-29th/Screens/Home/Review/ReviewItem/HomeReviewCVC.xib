@@ -146,11 +146,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gob-O1-c6u">
+                                <rect key="frame" x="0.0" y="0.0" width="52" height="20"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="likeBtnClicked:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Qrm-I5-UW5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" name="bluegrey"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Gob-O1-c6u" secondAttribute="trailing" id="2T0-rM-Cuy"/>
                             <constraint firstAttribute="width" constant="52" id="4l7-tC-fMi"/>
+                            <constraint firstItem="Gob-O1-c6u" firstAttribute="leading" secondItem="uu6-Jm-EKu" secondAttribute="leading" id="G0F-cd-ofr"/>
+                            <constraint firstItem="Gob-O1-c6u" firstAttribute="top" secondItem="uu6-Jm-EKu" secondAttribute="top" id="NyA-vs-FBN"/>
                             <constraint firstItem="hrJ-aA-3P0" firstAttribute="centerX" secondItem="uu6-Jm-EKu" secondAttribute="centerX" constant="10" id="Phd-XX-cbl"/>
+                            <constraint firstAttribute="bottom" secondItem="Gob-O1-c6u" secondAttribute="bottom" id="dF1-qE-Kox"/>
                             <constraint firstAttribute="bottom" secondItem="SJ6-ci-wXe" secondAttribute="bottom" id="fSR-6L-Re6"/>
                             <constraint firstItem="hrJ-aA-3P0" firstAttribute="centerY" secondItem="uu6-Jm-EKu" secondAttribute="centerY" id="msT-y9-Ddz"/>
                             <constraint firstItem="SJ6-ci-wXe" firstAttribute="leading" secondItem="uu6-Jm-EKu" secondAttribute="leading" id="nN4-r9-KwY"/>
@@ -194,6 +205,8 @@
             <connections>
                 <outlet property="deliveryStarImageView" destination="oHB-ah-uRf" id="tWQ-Ve-jtB"/>
                 <outlet property="laundryStarImageView" destination="N0j-Ty-5Yh" id="n50-EQ-B3L"/>
+                <outlet property="likeBackground" destination="SJ6-ci-wXe" id="jCl-6L-Nfu"/>
+                <outlet property="likeBtn" destination="Gob-O1-c6u" id="ViL-1f-Wms"/>
                 <outlet property="likeLabel" destination="hrJ-aA-3P0" id="8m2-GM-iEj"/>
                 <outlet property="numOfUseLabel" destination="IUS-RV-ub5" id="O43-Bf-m7T"/>
                 <outlet property="pickupStarImageView" destination="hIJ-VK-O6f" id="pu1-KA-yab"/>

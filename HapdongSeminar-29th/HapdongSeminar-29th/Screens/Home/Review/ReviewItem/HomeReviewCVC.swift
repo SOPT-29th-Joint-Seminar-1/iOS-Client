@@ -11,6 +11,11 @@ class HomeReviewCVC: UICollectionViewCell {
   
   // MARK: - Vars & Lets Part
     static let identifier = "HomeReviewCVC"
+    var reviewId: Int = 0
+    var isClicked : Bool = false
+    
+    
+  // MARK: - UI Component Part
     @IBOutlet weak var reviewImageView: UIImageView!
     @IBOutlet weak var userIdLabel: UILabel!
     @IBOutlet weak var numOfUseLabel: UILabel!
@@ -23,14 +28,13 @@ class HomeReviewCVC: UICollectionViewCell {
             reviewLabel.setCharacterSpacing()
         }
     }
+    
+    @IBOutlet weak var likeBackground: UIImageView!
     @IBOutlet weak var likeLabel: UILabel!
-    
-    
-  // MARK: - UI Component Part
+    @IBOutlet weak var likeBtn: UIButton!
 
-
+    
   // MARK: - Life Cycle Part
-
     override func awakeFromNib() {
         super.awakeFromNib()
         setUI()
@@ -39,6 +43,18 @@ class HomeReviewCVC: UICollectionViewCell {
 
   // MARK: - IBAction Part
 
+    @IBAction func likeBtnClicked(_ sender: Any) {
+        NotificationCenter.default.post(name: NSNotification.Name("like"), object: reviewId)
+
+        
+//        isClicked = true
+        likeBackground.image = UIImage(named: "best_icon_blue")
+        likeLabel.textColor = .blue1
+                
+        //
+        //값이 +
+    }
+    
 
   // MARK: - Custom Method Part
     func setUI(){
@@ -46,6 +62,8 @@ class HomeReviewCVC: UICollectionViewCell {
     }
     
     func setData(appData: HomeReviewDataModel){
+        reviewId = appData.id
+        //이미지
         switch(appData.id){
         case 1:
             self.reviewImageView.image = UIImage(named: "img_review1")
@@ -57,77 +75,23 @@ class HomeReviewCVC: UICollectionViewCell {
             self.reviewImageView.image = UIImage(named: "img_review1")
         }
         
+        //닉네임과 세탁 횟수
         self.userIdLabel.text = appData.name
         self.numOfUseLabel.text = "세특 \(appData.usingcount) 회차"
         
-        switch (appData.id){
-        case 1:
-            self.pickupStarImageView.image = UIImage(named: "\(appData.pickupStar)star")
-            self.deliveryStarImageView.image = UIImage(named: "\(appData.deliveryStar)star")
-            self.laundryStarImageView.image = UIImage(named: "\(appData.laundryStar)star")
-        case 2:
-            self.pickupStarImageView.image = UIImage(named: "\(appData.pickupStar)star")
-            self.deliveryStarImageView.image = UIImage(named: "\(appData.deliveryStar)star")
-            self.laundryStarImageView.image = UIImage(named: "\(appData.laundryStar)star")
-        case 3:
-            self.pickupStarImageView.image = UIImage(named: "\(appData.pickupStar)star")
-            self.deliveryStarImageView.image = UIImage(named: "\(appData.deliveryStar)star")
-            self.laundryStarImageView.image = UIImage(named: "\(appData.laundryStar)star")
-        default:
-            self.pickupStarImageView.image = UIImage(named: "5star")
-            self.deliveryStarImageView.image = UIImage(named: "5star")
-            self.laundryStarImageView.image = UIImage(named: "5star")
-        }
-        
-//        switch (appData.pickupStar) {
-//        case 5:
-//            self.pickupStarImageView.image = UIImage(named: "5star")
-//        case 4:
-//            self.pickupStarImageView.image = UIImage(named: "4star")
-//        case 3:
-//            self.pickupStarImageView.image = UIImage(named: "3star")
-//        case 2:
-//            self.pickupStarImageView.image = UIImage(named: "2star")
-//        case 1:
-//            self.pickupStarImageView.image = UIImage(named: "1star")
-//        default:
-//            self.pickupStarImageView.image = UIImage(named: "5star")
-//        }
-        
-//        switch (appData.deliveryStar) {
-//        case 5:
-//            self.deliveryStarImageView.image = UIImage(named: "5star")
-//        case 4:
-//            self.deliveryStarImageView.image = UIImage(named: "4star")
-//        case 3:
-//            self.deliveryStarImageView.image = UIImage(named: "3star")
-//        case 2:
-//            self.deliveryStarImageView.image = UIImage(named: "2star")
-//        case 1:
-//            self.deliveryStarImageView.image = UIImage(named: "1star")
-//        default:
-//            self.deliveryStarImageView.image = UIImage(named: "5star")
-//        }
-        
-//        switch (appData.laundryStar) {
-//        case 5:
-//            self.laundryStarImageView.image = UIImage(named: "5star")
-//        case 4:
-//            self.laundryStarImageView.image = UIImage(named: "4star")
-//        case 3:
-//            self.laundryStarImageView.image = UIImage(named: "3star")
-//        case 2:
-//            self.laundryStarImageView.image = UIImage(named: "2star")
-//        case 1:
-//            self.laundryStarImageView.image = UIImage(named: "1star")
-//        default:
-//            self.laundryStarImageView.image = UIImage(named: "5star")
-//        }
-        
-        
+        //별점
+        print(appData.laundryStar)
+        print(appData.pickupStar)
+        print(appData.deliveryStar)
 
+        self.pickupStarImageView.image = UIImage(named: "\(appData.pickupStar)star")
+        self.deliveryStarImageView.image = UIImage(named: "\(appData.deliveryStar)star")
+        self.laundryStarImageView.image = UIImage(named: "\(appData.laundryStar)star")
+        
+        //리뷰 텍스트
         self.reviewLabel.text = appData.content
         
+        //좋아요수
         if (appData.likecount > 99){
             self.likeLabel.text = "99+"
         } else {
