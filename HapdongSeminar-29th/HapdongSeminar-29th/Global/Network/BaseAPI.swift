@@ -87,7 +87,7 @@ extension BaseAPI: TargetType {
         params[""] = ""
       case .postReviewLike(let reviewID) :
         params["userid"] = 4
-        params["reviewID"] = reviewID
+        params["reviewid"] = reviewID
       default :
         break
     }
