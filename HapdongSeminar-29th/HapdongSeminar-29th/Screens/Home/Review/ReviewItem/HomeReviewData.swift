@@ -11,10 +11,12 @@ struct HomeReviewData {
     
     var image : String
     var userId : String
-    var numOfUse : String
-    var date : String
+    var numOfUse : Int
+    var pickupStar : String
+    var deliveryStar : String
+    var laundryStar : String
     var review : String
-    var like : String
+    var like : Int
     
 
     func makeItemImage() -> UIImage? {

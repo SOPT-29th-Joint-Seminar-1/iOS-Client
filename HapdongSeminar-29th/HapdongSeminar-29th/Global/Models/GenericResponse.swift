@@ -8,7 +8,7 @@
 struct GenericResponse<T> {
   let success : Bool
   let status: Int
-  let message: String
+  let message: String?
   let data: T?
   
   enum CodingKeys: String, CodingKey {
@@ -24,7 +24,7 @@ extension GenericResponse: Decodable where T: Decodable  {
     let container = try decoder.container(keyedBy: CodingKeys.self)
     success = try container.decode(Bool.self, forKey: .success)
     status = try container.decode(Int.self, forKey: .status)
-    message = try container.decode(String.self, forKey: .message)
+    message = try? container.decode(String.self, forKey: .message)
     data = try? container.decode(T.self, forKey: .data)
   }
 }

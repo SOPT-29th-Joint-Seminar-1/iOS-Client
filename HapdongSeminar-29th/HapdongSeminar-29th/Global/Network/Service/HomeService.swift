@@ -12,7 +12,7 @@ import Foundation
 protocol HomeSerViceType {
   
   func getEventBannerList(completion : @escaping (Result<HomeBannerDataModel?, Error>) -> Void)
-  func getReviewList(completion : @escaping (Result<HomeReviewDataModel?, Error>) -> Void)
+  func getReviewList(completion : @escaping (Result<[HomeReviewDataModel]?, Error>) -> Void)
 }
 
 extension BaseService : HomeSerViceType{
@@ -20,7 +20,7 @@ extension BaseService : HomeSerViceType{
     requestObject(.getEventBannerList, completion: completion)
   }
   
-  func getReviewList(completion: @escaping (Result<HomeReviewDataModel?, Error>) -> Void) {
+  func getReviewList(completion: @escaping (Result<[HomeReviewDataModel]?, Error>) -> Void) {
     requestObject(.getReviewList, completion: completion)
   }
 }
