@@ -7,7 +7,10 @@
 
 import Foundation
 
-
-struct HomeBannerDataModel : Codable{
-  let imgURLList : [String]
+// MARK: - HomeBannerDataModel
+struct HomeBannerDataModel: Codable {
+    let eventImage1: String
+    let eventImage2: String
+    let eventImage3: String
+    
 }

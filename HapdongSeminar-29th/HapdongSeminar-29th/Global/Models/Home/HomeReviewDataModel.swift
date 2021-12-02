@@ -7,18 +7,11 @@
 
 import Foundation
 
-struct HomeReviewDataGettable : Codable{
-  let reviewList : [HomeReviewDataModel]
-}
-
-struct HomeReviewDataModel : Codable{
-  let imgURL : String
-  let userName : String
-  let userCount : Int
-  let pickupScore : Int
-  let deliveryScore : Int
-  let washScore : Int
-  let reviewContent : String
-  let likeCount : Int
-  let isClicked : Bool
+// MARK: - HomeReviewDataModel
+struct HomeReviewDataModel: Codable {
+    let id: Int
+    let name: String
+    let pickupStar, deliveryStar, laundryStar, likecount: Int
+    let content, image: String
+    let usingcount: Int
 }

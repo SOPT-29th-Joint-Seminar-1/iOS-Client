@@ -11,7 +11,7 @@ struct Config
 {
   enum Network {
     static var baseURL: String {
-      return "베이스유알엘"
+      return "https://asia-northeast3-wesopt29-8f39a.cloudfunctions.net/api"
     }
   }
 }
