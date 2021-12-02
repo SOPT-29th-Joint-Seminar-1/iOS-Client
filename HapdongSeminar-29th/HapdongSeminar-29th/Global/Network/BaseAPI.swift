@@ -15,8 +15,7 @@ enum BaseAPI{
   case getEventBannerList
   case getReviewList
   case postReviewLike(reviewID : Int)
-  case getProductSearch(keyword : String)
-  case getCategoryList(category : String)
+  case getCategoryList(category : Int?)
 }
 
 
@@ -27,14 +26,18 @@ extension BaseAPI: TargetType {
     var base = Config.Network.baseURL
     switch self{
       case .sampleAPI:
-        base += "더할 주소"
+        base += ""
         
-      case .getEventBannerList,
-          .getReviewList,
-          .postReviewLike,
-          .getProductSearch,
-          .getCategoryList :
-        base += "/서버에서줄예정 ㅋ ㅋ "
+      case .getEventBannerList:
+        base += "/현주채워넣을자리"
+      
+      case .getReviewList,
+          .postReviewLike:
+        base += "/현주채워넣을자리"
+      
+      case .getCategoryList :
+        base += "/category"
+    
     }
     guard let url = URL(string: base) else {
       fatalError("baseURL could not be configured")
@@ -46,13 +49,21 @@ extension BaseAPI: TargetType {
   var path: String {
     switch self{
       case .sampleAPI:
-        return "뒤에붙는 주소"
-      case .getEventBannerList,
-          .getReviewList,
-          .postReviewLike,
-          .getProductSearch,
-          .getCategoryList :
-        return  "/서버에서줄예정 ㅋ ㅋ "
+        return ""
+
+      case .getReviewList:
+        return "/현주채워넣을자리"
+      
+      case .postReviewLike:
+        return "/현주채워넣을자리"
+        
+      case .getCategoryList(let category):
+        if let num = category{
+          return "/\(num)"
+        }else{
+          return ""
+        }
+        
       default :
         return ""
     }
@@ -83,7 +94,8 @@ extension BaseAPI: TargetType {
       case .sampleAPI:
         params[""] = ""
       case .postReviewLike(let reviewID) : 
-        params["서버에서 주는 파라미터"] = reviewID
+        params["현주가 채워넣을 키값 이름1"] = "일단 문자열로 채워넣는데 실제로는 맞는 변수 채워넣으세영"
+        params["현주가 채워넣을 키값 이름2"] = "일단 문자열로 채워넣는데 실제로는 맞는 변수 채워넣으세영"
 
       default :
         break

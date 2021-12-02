@@ -9,7 +9,7 @@ import Foundation
 
 extension GuideDataModel{
   
-  enum CategoryList : String{
+  enum CategoryList : String,Codable{
     case total = "전체"
     case clothes = "의류"
     case living = "리빙"
