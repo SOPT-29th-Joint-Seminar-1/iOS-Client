@@ -6,12 +6,16 @@
 //
 
 import UIKit
+import Moya
 
 class HomeEventTVC: UITableViewCell {
 
     // MARK: - Vars & Lets Part
     static let identifier = "HomeEventTVC"
-    var imgName:[HomeEventData] = []
+    var imgList : [String] = []
+    var page : Int = 0
+    var imgName: [String] = []
+    private var imageList : [HomeBannerDataModel] = []
     
     // MARK: - UI Component Part
     @IBOutlet weak var pager: UIPageControl!
@@ -22,10 +26,10 @@ class HomeEventTVC: UITableViewCell {
     // MARK: - Life Cycle Part
       override func awakeFromNib() {
           super.awakeFromNib()
-          initEventDataList()
+//          initEventDataList()
           setPager()
           registerCVC()
-          
+          fetchEventItemList()
       }
 
       override func setSelected(_ selected: Bool, animated: Bool) {
@@ -50,7 +54,7 @@ class HomeEventTVC: UITableViewCell {
     // MARK: - Custom Method Part
     func setPager() {
         //페이지 컨트롤의 전체 페이지를 images 배열의 전체 개수 값으로 설정
-        pager.numberOfPages = imgName.count
+        pager.numberOfPages = imgList.count
         // 페이지 컨트롤의 현재 페이지를 0으로 설정
         pager.currentPage = 0
         //페이징 가능하도록
@@ -65,28 +69,44 @@ class HomeEventTVC: UITableViewCell {
         eventCV.register(eventitemCVC, forCellWithReuseIdentifier: HomeEventItemCVC.identifier)
     }
     
-    func initEventDataList(){
-        imgName.append(contentsOf: [
-            HomeEventData(image: "event_1"),HomeEventData(image: "event_2"),HomeEventData(image: "event_3")
-        ])
-     }
+
     
+    private func fetchEventItemList(){
+        BaseService.default.getEventBannerList { result in
+            result.success{ list in
+                self.imageList = []
+                
+                if let banner = list{
+                    self.imgList.append(contentsOf: [
+                        banner.eventImage1,
+                        banner.eventImage2,
+                        banner.eventImage3
+                    ])
+                    print("Banner List",self.imgList)
+                    self.eventCV.reloadData()
+                }
+            }.catch{ error in
+//                dump(error)
+            }
+        }
+     }
 
     // MARK: - @objc Function Part
 
 }
 
+
   // MARK: - Extension Part
 extension HomeEventTVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imgName.count
+        return imgList.count
     }
     
     //indexPath에 어떤 cell 데이터를 넣을 지 결정하는 메소드
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeEventItemCVC.identifier, for: indexPath) as? HomeEventItemCVC else {return UICollectionViewCell()}
-        
-        cell.setData(appData: imgName[indexPath.row])
+
+        cell.setData(imgURL: imgList[indexPath.row])
         return cell
     }
 }

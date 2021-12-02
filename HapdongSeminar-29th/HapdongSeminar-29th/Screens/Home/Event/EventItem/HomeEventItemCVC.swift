@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class HomeEventItemCVC: UICollectionViewCell {
   
@@ -28,8 +29,9 @@ class HomeEventItemCVC: UICollectionViewCell {
 
 
   // MARK: - Custom Method Part
-    func setData(appData: HomeEventData ){
-        eventImageView.image = appData.makeItemImage()
+    func setData(imgURL: String){
+        eventImageView.setImage(with: imgURL)
+//        eventImageView.kf.setImage(with: url)
     }
 
   // MARK: - @objc Function Part
