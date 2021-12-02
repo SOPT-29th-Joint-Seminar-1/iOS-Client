@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Moya
 
 class GuideCategoryContainerTVC: UITableViewCell,UITableViewRegisterable {
   
@@ -13,12 +14,11 @@ class GuideCategoryContainerTVC: UITableViewCell,UITableViewRegisterable {
   
   static var isFromNib: Bool = true
   private let categoryList = GuideDataModel.Category.getCategorylist()
-  private var productList : [GuideDataModel.Product] = GuideDataModel.Product.loadDummyProductList(category: .total)
+  private var productList : [GuideDataModel.Product] = []
 
   private var currentCategory : GuideDataModel.CategoryList = .total{
     didSet{
-      productList = GuideDataModel.Product.loadDummyProductList(category: currentCategory)
-      productListTV.reloadData()
+      fetchCategoryItemList()
     }
   }
   // MARK: - UI Component Part
@@ -33,6 +33,7 @@ class GuideCategoryContainerTVC: UITableViewCell,UITableViewRegisterable {
     setCells()
     setCategoryCV()
     setProductListTV()
+    fetchCategoryItemList()
   }
   
   override func setSelected(_ selected: Bool, animated: Bool) {
@@ -60,6 +61,32 @@ class GuideCategoryContainerTVC: UITableViewCell,UITableViewRegisterable {
     productListTV.layer.cornerRadius = 10
     productListTV.backgroundView = UIImageView.init(image: Literals.Image.Guide.productListBackground)
     productListTV.reloadData()
+  }
+  
+  private func fetchCategoryItemList(){
+    
+    BaseService.default.getCategoryProductList(categoryNum: getCategoryListIndex(category: currentCategory)) { result in
+      result.success { list in
+        if let itemList = list{
+          self.productList = itemList
+          self.productListTV.reloadData()
+        }
+      }.catch { error in
+        dump(error)
+      }
+    }
+  }
+  
+  private func getCategoryListIndex(category : GuideDataModel.CategoryList) -> Int?{
+    switch(category){
+      case .total: return nil
+      case .clothes : return 1
+      case .living  : return 2
+      case .bedding : return 3
+      case .shoes   : return 4
+      case .leather : return 5
+      case .repair  : return 6
+    }
   }
   
 }

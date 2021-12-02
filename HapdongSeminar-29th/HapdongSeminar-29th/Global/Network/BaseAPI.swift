@@ -15,7 +15,7 @@ enum BaseAPI{
   case getEventBannerList
   case getReviewList
   case postReviewLike(reviewID : Int)
-  case getCategoryList(category : String)
+  case getCategoryList(category : Int?)
 }
 
 
@@ -27,16 +27,13 @@ extension BaseAPI: TargetType {
     switch self{
       case .sampleAPI:
         base += ""
-    case .getEventBannerList:
+      case .getEventBannerList:
         base += "/main"
-
-    case .getReviewList,
+      case .getReviewList,
         .postReviewLike:
         base += "/review"
-
-    case .getCategoryList :
+      case .getCategoryList :
         base += "/category"
-
     }
     guard let url = URL(string: base) else {
       fatalError("baseURL could not be configured")
@@ -54,8 +51,12 @@ extension BaseAPI: TargetType {
         return "/list"
       case .postReviewLike:
         return "/like"
-      case .getCategoryList :
-        return ""
+      case .getCategoryList(let category):
+        if let num = category{
+          return "/\(num)"
+        }else{
+          return ""
+        }
       default :
         return ""
     }

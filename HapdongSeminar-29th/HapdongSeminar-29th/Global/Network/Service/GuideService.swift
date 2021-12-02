@@ -8,3 +8,14 @@
 import Foundation
 
 
+protocol GuideSerViceType {
+  
+  func getCategoryProductList(categoryNum : Int?, completion : @escaping (Result<[GuideDataModel.Product]?, Error>) -> Void)
+}
+
+extension BaseService : GuideSerViceType{
+  func getCategoryProductList(categoryNum: Int?, completion: @escaping (Result<[GuideDataModel.Product]?, Error>) -> Void) {
+    requestObject(.getCategoryList(category: categoryNum), completion: completion)
+  }
+
+}
