@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Moya
 
 class HomeReviewTVC: UITableViewCell {
 
@@ -13,6 +14,7 @@ class HomeReviewTVC: UITableViewCell {
   private var currentIndex : CGFloat = 0
   static let identifier = "HomeReviewTVC"
   var reviewContentList: [HomeReviewData] = []
+  private var reviewList: [HomeReviewDataModel] = []
 
   
   // MARK: - UI Component Part
@@ -34,10 +36,11 @@ class HomeReviewTVC: UITableViewCell {
 
       override func awakeFromNib() {
           super.awakeFromNib()
-          initReviewDataList()
+//          initReviewDataList()
           registerCVC()
           setPager()
           setReviewCV()
+          fetchReviewItemList()
       }
 
       override func setSelected(_ selected: Bool, animated: Bool) {
@@ -89,29 +92,53 @@ class HomeReviewTVC: UITableViewCell {
         
     }
     
-    func initReviewDataList(){
-        reviewContentList.append(contentsOf: [
-            HomeReviewData(image: "img_review1", userId: "깨끗한사과", numOfUse: "세특 15회차", date: "어제", review: "만족합니다. 세특 알고 삶이 편해졌어요. ^^", like:"0"),
-            HomeReviewData(image: "img_review2", userId: "민수", numOfUse: "세특 2회차", date: "어제", review: "종종 자주 이용할게요!", like:"0"),
-            HomeReviewData(image: "img_review3", userId: "미뇽이", numOfUse: "세특 12회차", date: "어제", review: "좋습니다:)", like:"0")
-        ])
-    }
+//    func initReviewDataList(){
+//        reviewContentList.append(contentsOf: [
+//            HomeReviewData(image: "img_review1", userId: "깨끗한사과", numOfUse: "세특 15회차", review: "만족합니다. 세특 알고 삶이 편해졌어요. ^^", like:"0"),
+//            HomeReviewData(image: "img_review2", userId: "민수", numOfUse: "세특 2회차", review: "종종 자주 이용할게요!", like:"0"),
+//            HomeReviewData(image: "img_review3", userId: "미뇽이", numOfUse: "세특 12회차", review: "좋습니다:)", like:"0")
+//        ])
+//    }
+    
+    private func fetchReviewItemList(){
+        BaseService.default.getReviewList { result in
+            result.success { list in
+                self.reviewList = []
+                
+//                self?.itemData = try list.map(HomeReviewDataModel.self)
+                if let reviewList = list{
+                    self.reviewList = reviewList
+                }
+                print("Review List",self.reviewList)
+                self.reviewCollectionView.reloadData()
+            }.catch{ error in
+                print("review Err")
+                if let err = error as? MoyaError{
+                  dump(err)
+                }
+                print("엥? ")
+                dump(error)
+            }
+        }
+     }
     
 
     // MARK: - @objc Function Part
 
   }
 
+
+
 // MARK: - Extension Part
 extension HomeReviewTVC: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return reviewContentList.count
+        return reviewList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: HomeReviewCVC.identifier, for: indexPath) as? HomeReviewCVC else {return UICollectionViewCell()}
         
-        cell.setData(appData: reviewContentList[indexPath.row])
+        cell.setData(appData: reviewList[indexPath.row])
         return cell
     }
 }
