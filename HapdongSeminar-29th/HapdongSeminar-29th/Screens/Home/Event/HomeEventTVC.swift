@@ -54,7 +54,7 @@ class HomeEventTVC: UITableViewCell {
     // MARK: - Custom Method Part
     func setPager() {
         //페이지 컨트롤의 전체 페이지를 images 배열의 전체 개수 값으로 설정
-        pager.numberOfPages = imgList.count
+        pager.numberOfPages = 3
         // 페이지 컨트롤의 현재 페이지를 0으로 설정
         pager.currentPage = 0
         //페이징 가능하도록
