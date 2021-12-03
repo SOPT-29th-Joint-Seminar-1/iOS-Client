@@ -27,21 +27,18 @@ extension BaseAPI: TargetType {
     switch self{
       case .sampleAPI:
         base += ""
-        
       case .getEventBannerList:
-        base += "/현주채워넣을자리"
-      
+        base += "/main"
       case .getReviewList,
-          .postReviewLike:
-        base += "/현주채워넣을자리"
-      
+        .postReviewLike:
+        base += "/review"
       case .getCategoryList :
         base += "/category"
-    
     }
     guard let url = URL(string: base) else {
       fatalError("baseURL could not be configured")
     }
+    print("URL",url)
     return url
   }
   
@@ -49,21 +46,17 @@ extension BaseAPI: TargetType {
   var path: String {
     switch self{
       case .sampleAPI:
-        return ""
-
+        return "뒤에붙는 주소"
       case .getReviewList:
-        return "/현주채워넣을자리"
-      
+        return "/list"
       case .postReviewLike:
-        return "/현주채워넣을자리"
-        
+        return "/like"
       case .getCategoryList(let category):
         if let num = category{
           return "/\(num)"
         }else{
           return ""
         }
-        
       default :
         return ""
     }
@@ -90,13 +83,12 @@ extension BaseAPI: TargetType {
   // MARK: - Parameters
   private var bodyParameters: Parameters? {
     var params: Parameters = [:]
-    switch self{
+    switch self {
       case .sampleAPI:
         params[""] = ""
-      case .postReviewLike(let reviewID) : 
-        params["현주가 채워넣을 키값 이름1"] = "일단 문자열로 채워넣는데 실제로는 맞는 변수 채워넣으세영"
-        params["현주가 채워넣을 키값 이름2"] = "일단 문자열로 채워넣는데 실제로는 맞는 변수 채워넣으세영"
-
+      case .postReviewLike(let reviewID) :
+        params["userid"] = 4
+        params["reviewid"] = reviewID
       default :
         break
     }
@@ -128,11 +120,6 @@ extension BaseAPI: TargetType {
         return JSONEncoding.default
     }
   }
-  
-
-  
-  
-  
   
   
   
